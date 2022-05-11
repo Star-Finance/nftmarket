@@ -1,0 +1,96 @@
+.page-dodo
+    .container
+        height: 100%
+        width: 100%
+        background-size: cover
+        position: relative
+        height: 100%
+        overflow: auto
+        background-image: url('./img/bg.png')
+        background-attachment: fixed
+        background-size: cover
+        padding: 134px 0 0
+
+        .main
+            max-width: 1400px
+            padding: 0 20px
+            margin: 0 auto
+            color: #FFFFFF
+
+            .header
+                max-width: 1355px
+                font-size: 42px
+                font-family: Avenir-Heavy, Avenir
+                font-weight: 800
+                line-height: 57px
+                margin: 93px 0 81px
+
+            .item
+                display: flex
+                padding: 0 0 167px
+                max-width: 1140px
+                margin: 0 auto
+
+                .title
+                    width: 557px
+                    font-size: 48px
+                    font-family: Avenir-Heavy, Avenir
+                    font-weight: 800
+                    color: #FFFFFF
+                    line-height: 52px
+                    margin: 30px 0 0
+
+                .text
+                    flex: 1
+                    font-size: 26px
+                    font-family: Avenir-Medium, Avenir
+                    font-weight: 500
+                    color: #FFFFFF
+                    line-height: 36px
+                    margin: 50px 0 110px
+
+                .btn
+                    btnColor(1)
+                    width: 660px
+                    height: 66px
+                    line-height: @height
+                    border: 0 none
+                    font-size: 21px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+
+        .success
+            display: flex
+            width: 1104px
+            margin: 100px auto
+
+            .info
+                .tit
+                    background: linear-gradient(343deg, #FF00E5 0%, #FFA200 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    height: 76px
+                    font-size: 56px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 76px
+                    margin: 30px 0 15px
+
+                .txt
+                    height: 57px
+                    font-size: 42px
+                    font-family: Avenir-Medium, Avenir
+                    font-weight: 500
+                    color: #FFFFFF
+                    line-height: 57px
+                    margin: 0 0 220px
+
+                .btn
+                    btnColor(1)
+                    height: 66px
+                    line-height: 60px
+                    font-size: 22px
+                    font-family: Avenir-Heavy, Avenir
+                    font-weight: 800
+                    color: #FFFFFF

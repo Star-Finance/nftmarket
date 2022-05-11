@@ -1,0 +1,51 @@
+.BoomDetail
+    #myBoomHistory
+        width: torem(1460)
+        margin: 0 auto;
+        .title
+            font-size: torem(40);
+            font-family: Avenir-Black, Avenir;
+            font-weight: 900;
+            color: #FFFFFF;
+            letter-spacing: torem(1);
+            margin:torem(70) 0 torem(36) torem(12)
+
+        .combination-box
+            background: transparent
+            padding: 0
+            .item-box
+                .item
+                    background: #242041;
+                    .i-right
+                        color: #A1A4CE;
+                div.End
+                    background: rgba(#838383,0.4);
+                    .i-right
+                        color: #6B6C80;
+                .prize1
+                    background: linear-gradient(209deg, #3C2041 0%, #242041 100%);
+                    .i-right
+                      color: #FF246C;
+                .prize2
+                    background: linear-gradient(209deg, #47322F 0%, #242041 100%);
+                    .i-right
+                        color: #FF7F11;
+                .prize3
+                    background: linear-gradient(209deg, #504434 0%, #242041 100%);
+                    .i-right
+                      color: #E8B807;
+                .prize4
+                    background: linear-gradient(209deg, #213C65 0%, #242041 100%);
+                    .i-right
+                      color: #1BB1FF;
+                .prize5
+                    background: linear-gradient(209deg, #37245C 0%, #242041 100%);
+                    .i-right
+                      color: #A942FF;
+                .prize6
+                    background: linear-gradient(220deg, #47322F 0%, #3D2140 40%, #3C2041 56%, #242041 100%, #242041 100%);
+                    .i-right
+                        color: #A1A4CE;
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;

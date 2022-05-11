@@ -1,0 +1,264 @@
+.page-MyNFTList
+    background: #25252D
+    padding: 40px 0 0
+
+    .lt-header
+        top: 40px
+        position: fixed
+        background: none
+
+        .main
+            position: relative
+            z-index: 1
+
+        &:before
+            content: ' '
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: -1
+            backdrop-filter: blur(5px)
+
+        @media screen and (max-width: 768px)
+            background: #25252d
+            height: 44px
+            position: fixed
+            top: 0
+
+    .content
+        color: #fff
+        width: 100%
+
+        @media screen and (max-width: 768px)
+            margin-top: 40px
+
+        .banner
+            height: 494px
+
+            @media screen and (max-width: 768px)
+                height: auto
+
+            .bannerBg
+                width: 100%
+                height: 327px
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
+                position: absolute
+                z-index: 0
+
+                @media screen and (max-width: 768px)
+                    height: 133px
+                    background-size: cover
+
+            .bannerMain
+                max-width: 1400px
+                margin: 0 auto
+                padding: 200px 20px 0
+                justifyContentSpaceBetween()
+                position: relative
+                z-index: 1
+
+                @media screen and (max-width: 768px)
+                    width: auto
+                    padding: 10px
+                    display: block
+
+                .user
+                    width: 756px
+                    display: flex
+
+                    @media screen and (max-width: 768px)
+                        display: block
+                        text-align: center
+                        width: 100%
+                        margin: 78px 0 0
+
+                    .userAvatar
+                        size(194px)
+                        position: relative
+                        margin: 0 38px 0 0
+                        background-color: #25252d
+                        background-repeat: no-repeat
+                        background-size: 100% auto
+                        background-position: center
+                        border: 4px solid #929296
+                        border-radius: 100%
+
+                        @media screen and (max-width: 768px)
+                            size: 72px
+                            margin: 0 auto
+
+                        .icon
+                            position: absolute
+                            bottom: 0
+                            right: 0
+                            size: 52px
+
+                            @media screen and (max-width: 768px)
+                                size: 18px
+
+                    .userInfo
+                        flex: 1
+
+                        .username
+                            height: 48px
+                            line-height: @height
+                            font-size: 40px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #FFFFFF
+                            margin: 32px 0 0
+
+                            @media screen and (max-width: 768px)
+                                font-size: 18px
+                                height: 20px
+                                line-height: @height
+                                margin: 13px 0 0
+
+                        .userAddress
+                            height: 22px
+                            line-height: @height
+                            font-size: 20px
+                            font-family: Avenir-Medium, Avenir
+                            font-weight: 500
+                            color: #FFFFFF
+                            margin: 10px 0 24px
+                            display: flex
+                            cursor: pointer
+
+                            span
+                                padding: 0 12px
+
+                            @media screen and (max-width: 768px)
+                                font-size: 14px
+                                height: 16px
+                                line-height: @height
+                                margin: 10px 0 0
+
+                        .userDesc
+                            font-size: 14px
+                            font-family: Avenir-Medium, Avenir
+                            font-weight: 500
+                            color: #FFFFFF
+                            word-wrap: break-word
+                            word-break: break-all
+
+                            @media screen and (max-width: 768px)
+                                font-size: 14px
+
+                .nav
+                    justifyContentSpaceBetween()
+                    padding: 80px 0 0
+
+                    @media screen and (max-width: 768px)
+                        margin: 24px 10px 0
+                        background: #1B1A21
+                        border-radius: 15px
+                        padding: 0
+
+                    .item
+                        height: 38px
+                        line-height: 38px
+                        font-size: 20px
+                        font-family: Avenir-Heavy, Avenir
+                        font-weight: 800
+                        color: #FFFFFF
+                        padding: 0 4px
+                        position: relative
+                        margin: 0 10px
+                        cursor: pointer
+
+                        @media screen and (max-width: 768px)
+                            height: 28px
+                            line-height: @height
+                            font-size: 12px
+                            margin: 0
+                            padding: 0 6px
+                            color: #606074
+
+                        &.cur
+                            @media screen and (max-width: 768px)
+                                height: 28px
+                                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                border-radius: 15px
+                                color: #fff
+
+                                &:after
+                                    display: none
+
+                            &:after
+                                content: ' '
+                                display: block
+                                width: 100%
+                                height: 8px
+                                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                border-radius: 4px
+                                bottom: -25px
+                                left: 0
+                                position: absolute
+
+        .box
+            max-width: 1404px
+            margin: 0 auto
+            padding: 0 20px
+            min-height: 500px
+
+            @media screen and (max-width: 768px)
+                width: 100%
+
+            .main
+                margin: 44px auto 0
+                padding: 0 0 26px
+                clear: both
+
+                @media screen and (max-width: 1440px)
+                    max-width: 1020px
+
+                @media screen and (max-width: 1020px)
+                    max-width: 680px
+
+                @media screen and (max-width: 768px)
+                    margin: 22px 0 0
+                    display: block
+
+                .item
+                    cursor: pointer
+                    box-sizing: border-box
+                    margin: 0 28px 28px 0
+                    float: left
+
+                    &:nth-child(4n)
+                        margin: 0 0 28px
+
+                    @media screen and (max-width: 1440px)
+                        &:nth-child(4n)
+                            margin: 0 28px 28px 0
+
+                        &:nth-child(3n)
+                            margin: 0 0 28px
+
+                    @media screen and (max-width: 1020px)
+                        &:nth-child(4n), &:nth-child(3n)
+                            margin: 0 28px 28px 0
+
+                        &:nth-child(2n)
+                            margin: 0 0 28px
+
+                    @media screen and (max-width: 768px)
+                        margin: 0 0 10px !important
+                        float: none
+
+                        .cardBlock
+                            width: 100%
+
+                .mainLoading
+                    text-align: center
+                    width: 100px
+                    margin: 0 auto
+
+            .page
+                text-align: center
+                padding: 20px 0

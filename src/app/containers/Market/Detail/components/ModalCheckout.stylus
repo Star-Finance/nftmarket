@@ -1,0 +1,186 @@
+.ModalCheckout
+    checkbox-border-color()
+        border-color: rgba(253, 52, 110, 1)
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner
+               checkbox-border-color()
+        .ant-checkbox-checked 
+            .ant-checkbox-inner:after
+                checkbox-border-color()
+        .ant-checkbox-checked:after
+                checkbox-border-color()
+        .ant-checkbox-wrapper
+         color: #8485A0;
+        .ant-checkbox-inner
+            background-color: transparent
+            border-color: #8485A0;    
+        .ant-checkbox-input:focus+.ant-checkbox-inner
+             border-color: #fff;
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner
+                checkbox-border-color()
+       
+        .ant-checkbox-input:checked+.ant-checkbox-inner
+             checkbox-border-color()
+        .ant-checkbox-checked 
+            .ant-checkbox-inner
+               checkbox-border-color()
+
+       
+    .ant-modal-body
+        padding: 0
+        display: flex
+
+        >.left
+            height: 500px
+            position: relative
+            width: 420px
+
+            .nft-img
+                background-image: url('../img/nft.png')
+                background-color: #fff;
+                background-size: cover
+                background-repeat:no-repeat
+                background-position: center center
+                width: 420px
+                height: 550px
+                position: absolute
+                left: -10px
+                top: -25px
+                border-radius: 10px
+
+            img
+                height: 550px
+                border-radius: 10px
+
+        >.right
+            width: 470px
+            display: flex
+            flex-direction: column
+
+    .ant-modal-content
+        background: rgba(44, 45, 58, 1)
+        border-radius: 9px
+        padding: 0 0
+
+    .modalTitle
+        position: relative
+        color: #fff
+        padding: 30px 30px 20px
+
+        .title
+            font-size: 30px
+            color: #fff
+            text-align: center
+
+        em
+            position: absolute
+            top: 5px
+            right: 20px
+            width: 18px
+            height: 18px
+            display: block
+            background: url('../../../../components/LogoutDialog/img/close.png') no-repeat
+            background-size: 100% 100%
+            text-indent: -999em
+            overflow: hidden
+            cursor: pointer
+
+    .modalMain
+        flex: 1
+        // color: rgba(255, 255, 255, 0.8)
+        color:#fff;
+        border-radius: 9px
+        // padding: 0 22px 36px
+        box-sizing: border-box
+        padding: 0 0 0
+        margin: 20px 0 0
+        flex: 1
+        font-size: 14px
+        .body
+            padding: 0 36px
+            width: 100%
+            // font-weight: 700
+            height: 100%
+            justifyContentSpaceBetween()
+            flex-direction: column
+
+            .item
+                padding: 12px 0
+                justifyContentSpaceBetween()
+
+                .name
+                    // width: 106px
+                    font-weight: 900
+                .value
+                    font-weight: 700
+                    text-align: right
+
+                    img
+                        width: 20px
+                        margin-right: 6px
+
+           .item:nth-child(1) 
+                .value
+                    // font-size: 18px;
+                    font-weight: 900;
+                    // color: #6B6C80;
+            .item:last-child
+                border-bottom: 0
+            .item:nth-child(3)
+                .value
+                    alignItemsCenter()
+                    font-size: 18px
+            .item:nth-child(2)
+                .top
+                    font-size:14px
+                    alignItemsCenter()
+                    margin-bottom: 4px
+                .name
+                    .top
+                      color: #AAACC1;
+                    .bottom
+                        font-size: 20px
+                .value 
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    .top
+                        justify-content: flex-end
+                        margin-bottom: 6px
+                    .bottom
+                        font-size: 20px;
+                        font-family: Avenir-Heavy, Avenir;
+                        font-weight: 800;
+                        color: #FFFFFF;
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+    .ModalBtn
+        // justifyContentCenter()
+        margin: 0 0 0
+        padding: 16px 0 40px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .div-check>a
+             color:rgba(253, 52, 110, 1)
+        .btn
+            padding: 20px 36px
+            width: 100%
+            .ant-btn
+                width: 100%
+                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                border-radius: 10px;
+                border:0
+                height: 50px
+                &:hover
+                    background: linear-gradient(24deg, #FF42D5 0%, #FFA844 100%);
+                &:active
+                    background: linear-gradient(24deg, #E023B6 0%, #E08926 100%);
+            .ant-btn-primary[disabled], .ant-btn-primary[disabled]:active, .ant-btn-primary[disabled]:focus, .ant-btn-primary[disabled]:hover
+                color: rgba(255,255,255,.45);
+                border-color: #6A6A72;
+                background: #6A6A72;
+                text-shadow: none;
+                box-shadow: none;
+      

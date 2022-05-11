@@ -1,0 +1,61 @@
+
+.page-footer
+    background: #151521
+    align-content: center
+    justify-content: space-between
+    position: relative
+    padding: 35px 72px
+
+    @media screen and (max-width: 1000px)
+        padding: 20px 10px
+
+    .links
+        justify-content: space-between
+        color: #fff
+        padding-bottom: 36px
+        width: 90%
+        max-width: 1400px
+        margin: 0 auto
+        display: flex
+
+        @media screen and (max-width: 1000px)
+            flexWrap()
+            padding-bottom: 0
+
+            dl
+                flexWrapItem(2)
+
+                &:last-child
+                    flexWrapItem(1)
+
+        dt
+            font-size: 22px
+            padding-bottom: 10px
+
+        dd
+            padding: 3px 0
+
+            a, span
+                color: rgba(#fff, .5)
+                cursor: pointer
+
+                &:hover
+                    color: rgba(#fff, .3)
+
+                i
+                    font-size: 20px
+
+        .icons-link
+            a
+                margin-right: 10px
+                display: inline-block
+                width: 40px
+                height: 40px
+                text-align: center
+                line-height: 40px
+                fontColor()
+
+                .icon
+                    margin: 10px 0 0
+                    size: 30px
+

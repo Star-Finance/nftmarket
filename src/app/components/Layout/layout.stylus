@@ -1,0 +1,102 @@
+::-webkit-input-placeholder /* WebKit browsers */
+    color: #6A6D76
+    font-size: 12px
+    font-family: 'Poppins-Regular'
+
+::-moz-placeholder /* Mozilla Firefox 19+ */
+    color: #6A6D76
+    font-size: 12px
+    font-family: 'Poppins-Regular'
+
+:-ms-input-placeholder /* Internet Explorer 10+ */
+    color: #6A6D76
+    font-size: 12px
+    font-family: 'Poppins-Regular'
+
+:root
+    --var-bg: #F6F6F6
+    --var-text-color: #304659
+    --var-main-color: #ffd94d
+    --var-block-bg: #fff
+
+    .dark
+        --var-bg: #1F2127
+        --var-text-color: #fff
+        --var-main-color: #ffd94d
+        --var-block-bg: rgba(#000, 0.2)
+
+html, body, #root
+    // min-width: 1330px
+    display: flex
+    flex-direction: column
+    flex: 1 1 0%
+    position: relative
+    background: #25252D
+
+.lt-spin
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.lt-layout
+    background: var(--var-bg)
+    flex: 1
+    color: var(--var-text-color)
+
+    // min-width 1440px
+    @media screen and (max-width: 768px)
+        min-width: auto
+
+    .lt-content
+        height: 100%
+
+    .fade-scale-enter
+        opacity: 0
+        transform: scale(0.9)
+
+    .fade-scale-enter-active
+        opacity: 1
+        transform: translateX(0)
+        transition: opacity 500ms, transform 500ms
+
+    .fade-scale-exit
+        opacity: 1
+
+    .fade-scale-exit-active
+        opacity: 0
+        transform: scale(0.9)
+        transition: opacity 500ms, transform 500ms
+
+    .fade-enter
+        opacity: 0
+
+    .fade-enter-active
+        opacity: 1
+        transition: all 300ms
+
+    .fade-exit
+        opacity: 1
+
+    .fade-exit-active
+        opacity: 0
+        transition: opacity 300ms
+
+.customFooterModal
+    .ant-modal-content
+        background: #2C2D3A
+        border-radius: 16px
+        text-align: center
+
+        .text
+            height: 30px
+            font-size: 22px
+            font-family: Avenir-Medium, Avenir
+            font-weight: 500
+            color: #FFFFFF
+            line-height: 30px
+
+            span
+                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;

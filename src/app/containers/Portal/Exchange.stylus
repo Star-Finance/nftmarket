@@ -1,0 +1,294 @@
+.page-Exchange
+    padding: torem(42) 0 0
+    background-color: #100D27
+    color: #FFFFFF
+
+    .lt-top
+        background-color: #100D27
+
+    .content
+        background-image: url('https://qc-shop-1258490024.file.myqcloud.com/bomb/exchange_big_bg.png')
+
+    .opt-container
+        height: torem(936)
+        display: flex
+
+        .opt-box
+            display: flex
+            align-items: center
+            margin: torem(230) auto auto
+
+            >img
+                height: torem(482)
+                // width: torem(404)
+                margin-top: torem(10)
+
+            .right
+                // width: torem(600)
+                margin-left: torem(78)
+
+                .title
+                    font-size: torem(48)
+                    font-family: Avenir-Heavy, Avenir
+                    font-weight: 800
+
+                    span
+                        textColor()
+
+                .link
+                    margin-top: torem(26)
+
+                    a
+                        font-size: torem(20)
+                        font-family: Avenir-Medium, Avenir
+                        font-weight: 500
+                        color: #FF1A5E
+
+                .desc
+                    font-size: torem(20)
+                    font-family: Avenir-Medium, Avenir
+                    font-weight: 500
+                    font-size: torem(20)
+                    margin: torem(10) 0 torem(50)
+                    width: torem(910)
+
+                .buy-list
+                    div.row-end
+                        background-image: none
+                        background-color: rgba(161, 164, 206, 0.34)
+                        color: #9293A6
+
+                        .price
+                            .new
+                                color: #9293A6
+                                background: transparent
+                                -webkit-text-fill-color: #9293A6
+
+                                span
+                                    color: #9293A6
+                                    background: transparent
+                                    -webkit-text-fill-color: #9293A6
+
+                    .row
+                        margin: torem(14) 0
+                        padding: 0 torem(24)
+                        display: flex
+                        align-items: center
+                        width: torem(791)
+                        height: torem(86)
+                        border-radius: torem(10)
+                        // border: torem(1) solid
+                        // border-image: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1)) 1 1
+                        background-color: rgba(216, 216, 216, 0.34)
+                        background-image: url('./img/exchange_buy_border.png')
+                        background-size: torem(791) torem(86)
+
+                        .seq
+                            font-size: torem(20)
+                            font-family: PingFangSC-Medium, PingFang SC
+                            font-weight: 500
+                            width: torem(160)
+                            // margin-right: torem(60)
+
+                        .limit
+                            font-size: torem(20)
+                            font-family: PingFangSC-Medium, PingFang SC
+                            font-weight: 500
+                            flex: 1
+
+                            span
+                                font-size: torem(24)
+                                font-family: PingFangSC-Medium, PingFang SC
+                                font-weight: 500
+
+                        .price
+                            display: flex
+                            align-items: center
+                            margin: auto 0
+
+                            .new
+                                textColor()
+                                font-size: torem(20)
+                                font-family: PingFangSC-Medium, PingFang SC
+                                margin-right: torem(16)
+
+                                span
+                                    font-size: torem(30)
+                                    font-weight: 600
+
+                            .old
+                                display: flex
+                                align-items: center
+                                font-size: torem(18)
+                                font-family: PingFangSC-Medium, PingFang SC
+                                font-weight: 500
+                                color: #9293A6
+                                text-decoration: line-through
+
+                        .btn
+                            btnColor(1)
+                            flexCenter()
+                            width: torem(164)
+                            height: torem(42)
+                            border-radius: torem(8)
+                            font-size: torem(16)
+                            font-family: PingFangSC-Semibold, PingFang SC
+                            font-weight: 600
+                            margin-left: torem(30)
+
+                .price-title
+                    font-size: torem(24)
+                    font-family: PingFangSC-Medium, PingFang SC
+                    font-weight: 500
+
+                .price
+                    font-size: torem(24)
+                    font-family: PingFangSC-Medium, PingFang SC
+                    font-weight: 500
+                    margin: torem(4) 0 torem(44)
+
+                    span
+                        textColor()
+                        font-size: torem(38)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        display: inline-block
+                        margin-right: torem(18)
+
+                .btns
+                    display: flex
+                    width: torem(626)
+
+                    .btn-buy
+                        btnColor(1)
+                        flexCenter()
+                        width: torem(222)
+                        height: torem(60)
+                        border-radius: torem(8)
+                        font-size: torem(24)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        color: #FFFFFF
+
+                    .btn-exchange
+                        width: torem(381)
+                        height: torem(60)
+                        border-radius: torem(8)
+                        font-size: torem(24)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        margin-left: torem(20)
+
+    .intro-container
+        display: flex
+
+        .intro-box
+            margin: 0 auto torem(80)
+            width: torem(1440)
+            background-image: url('https://qc-shop-1258490024.file.myqcloud.com/bomb/exchange_hack_bg.png')
+            padding: torem(66) torem(110) torem(84)
+            background-size: 98%
+            background-position: center
+            background-repeat: no-repeat
+
+            >.title
+                font-size: torem(40)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                margin: 0 0 torem(24)
+                text-align: center
+                color: #02EEF6
+
+            .center
+                display: flex
+
+                >img
+                    height: torem(366)
+
+                .right
+                    margin-left: torem(60)
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+
+                    .row
+                        .title
+                            font-size: torem(22)
+                            font-family: PingFangSC-Semibold, PingFang SC
+                            font-weight: 600
+                            color: #02EEF6
+
+                        .desc
+                            font-size: torem(22)
+                            font-family: PingFangSC-Regular, PingFang SC
+                            font-weight: 400
+
+                        &:nth-child(1)
+                            margin-bottom: torem(34)
+
+            .south
+                display: flex
+                margin-top: torem(40)
+                padding-left: torem(10)
+
+                .div-p-box
+                    font-size: torem(20)
+                    font-family: PingFangSC-Regular, PingFang SC
+                    font-weight: 400
+                    color: #AAACC1
+                    border-right: torem(2) dashed rgba(255, 255, 255, 0.2)
+                    padding-top: torem(30)
+
+                    .div-p
+                        display: flex
+                        margin-bottom: torem(4)
+
+                        .name
+                            width: torem(360)
+                            color: #FFFFFF
+
+                        .value
+                            width: torem(256)
+
+                            // display: flex
+                            // align-items: center
+                            .copy
+                                width: torem(16)
+                                height: torem(16)
+                                cursor: pointer
+                                margin-left: torem(6)
+
+                .links-box
+                    padding: torem(32) torem(88) torem(12)
+
+                    .icons
+                        margin: 0 0 torem(26)
+
+                        a
+                            color: #fff
+                            margin-right: torem(50)
+
+                            .icon
+                                width: torem(44)
+                                height: torem(44)
+
+                        a:hover
+                            color: #fff
+
+                    .amount
+                        textColor()
+                        font-size: torem(38)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+
+            .footer
+                .btn
+                    btnColor(1)
+                    flexCenter()
+                    width: torem(474)
+                    height: torem(60)
+                    border-radius: torem(8)
+                    font-size: torem(24)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    margin: torem(58) auto 0

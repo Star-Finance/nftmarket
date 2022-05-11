@@ -1,0 +1,1086 @@
+
+@media screen and (max-width: 768px)
+    .page-marketDetail
+        padding: 0
+
+// #root,.lt-content
+// overflow:auto
+.page-marketDetail
+    padding: 40px 0 0
+    overflow: auto
+
+    // .lt-header
+    // background: #25252d
+    ::-webkit-scrollbar
+        width: 5px
+        height: 5px
+
+    ::-webkit-scrollbar-track-piece
+        -webkit-border-radius: 6px
+        background-color: rgba(0, 0, 0, 0.2)
+
+    ::-webkit-scrollbar-thumb:vertical
+        height: 5px
+        -webkit-border-radius: 6px
+        background-color: rgba(125, 125, 125, 0.7)
+
+    ::-webkit-scrollbar-thumb:horizontal
+        width: 5px
+        -webkit-border-radius: 6px
+        background-color: rgba(125, 125, 125, 0.7)
+
+    .right-div-btn
+        width: 500px
+        padding: 30px 22px
+        // border-left: 1px dashed rgba(255, 255, 255, 0.3)
+        background: #25252D
+        border-radius: 12px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        .div_btn
+            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+            border-radius: 7px
+            height: 50px
+            font-size: 20px
+            font-weight: 900
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            border: 0
+
+            &:hover
+                background: linear-gradient(24deg, #FF42D5 0%, #FFA844 100%)
+                // box-shadow: 0px 2px 14px 0px #FF00E5;
+                // border-radius: 8px;
+
+            &:active
+                background: linear-gradient(24deg, #E023B6 0%, #E08926 100%)
+
+        .ant-btn-primary[disabled], .ant-btn-primary[disabled]:active, .ant-btn-primary[disabled]:focus, .ant-btn-primary[disabled]:hover
+            color: rgba(255, 255, 255, 0.45)
+            border-color: #6A6A72
+            background: #6A6A72
+            text-shadow: none
+            box-shadow: none
+
+        .r-title
+            display: flex
+            align-items: center
+
+            .icon
+                width: 24px
+                height: 24px
+                margin-right: 24px
+
+            span
+                font-size: 18px
+                font-weight: 900
+
+    .nftImgDialog
+        .ant-modal-content
+            background-color: transparent
+            min-width: 400px
+
+            .modalMain
+                text-align: center
+
+                img
+                    position: static !important
+                    transform: translate(0, 0) !important
+
+            .modalTitle
+                position: relative
+                color: #fff
+                border-bottom: 0
+                padding: 0 20px 20px
+
+                em
+                    position: absolute
+                    top: -20px
+                    right: -40px
+                    width: 28px
+                    height: 28px
+                    display: block
+                    background: url('../../../components/LogoutDialog/img/close.png') no-repeat
+                    background-size: 100% 100%
+                    text-indent: -999em
+                    overflow: hidden
+                    cursor: pointer
+
+    .container
+        background: url('./img/bg.png') no-repeat top center
+        background-size: 100% 100%
+        position: relative
+        padding: 147px 0 0 0
+        // height: 100%
+        box-sizing: border-box
+        min-width: 1440px
+        height: 100%
+        overflow: auto
+
+        .content
+            width: 100%
+            // max-width: 768px
+            margin: 0 auto
+            text-align: center
+            height: 100%
+            overflow: auto
+
+            // display: flex
+            // flex-direction: column
+            >.div-img
+                text-align: center
+                position: relative
+                display: inline-block
+                position: fixed
+                transform: translate(-50%, 0)
+                left: 50%
+                height: 334px
+
+                // display: flex
+                // margin: auto
+                .ant-spin-spinning
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+
+                    .anticon-loading
+                        color: #fd346e
+
+                .video
+                    height: 100%
+
+                .top-icons
+                    position: absolute
+                    top: 0
+                    right: -360px
+
+                    img
+                        background-color: transparent
+                        box-shadow: none
+                        margin-right: 24px
+                        cursor: pointer
+
+                .right-shadow
+                    position: absolute
+                    // right -82px;
+                    right: -80px
+                    top: 0
+                    background-color: transparent
+                    // width: 40px;
+                    // height:76px;
+                    // background: linear-gradient(205deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+                    // opacity: 0.59;
+
+                .left-shadow
+                    position: absolute
+                    left: -80px
+                    top: 0
+                    background-color: transparent
+
+                .div-icon
+                    width: 40px
+                    height: 40px
+                    background: rgba(255, 255, 255, 0.14)
+                    border-radius: 10px
+                    position: absolute
+                    right: -66px
+                    bottom: 0
+                    cursor: pointer
+                    flexCenter()
+
+                >div>img
+                    // height: 334px !important
+                    // min-width 234px
+                    // background-color: #fff
+                    box-shadow: 0px 20px 40px 0px rgba(255, 255, 255, 0.25)
+                    transform: translate(0, 0) !important
+                    position: static !important
+                    cursor: pointer
+                    // border-radius: 16px
+
+            .main-box-c
+                background: #2C2D3A
+                border-radius: 80px 80px 0px 0px
+                // margin-top: 62px
+                margin-top: 402px
+                padding: 30px 0 100px
+                text-align: left
+                flex: 1
+                overflow: auto
+                position: absolute
+                width: 100%
+
+            div.sell
+                .nft-title
+                    top: 0
+                    margin-top: 50px
+
+            .main-box
+                color: #FFFFFF
+                width: 1440px
+                margin: 0 auto
+
+                .nft-title
+                    // padding-left: 20px
+                    position: relative
+                    top: 50px
+
+                    .meme
+                        font-size: 18px
+                        // font-weight: 800
+                        color: #6B6C80
+
+                    .nft-name
+                        .name
+                            font-size: 46px
+                            font-weight: 900
+
+                        .order-id
+                            font-size: 28px
+                            font-weight: 900
+                            display: inline-block
+                            margin-left: 20px
+
+                .title
+                    height: 40px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    line-height: 40px
+                    letter-spacing: 1px
+                    // margin-top: 60px;
+                    // font-size: 46px;
+                    margin: 0
+                    font-size: 36px
+
+                .head
+                    display: flex
+                    // background: #2C2D3A
+                    border-radius: 12px
+
+                    .left
+                        display: flex
+                        justify-content: space-between
+                        font-size: 28px
+                        flex: 1
+                        padding: 0 90px 0 0
+                        height: 160px
+                        align-self: flex-end
+
+                        .item
+                            display: flex
+                            align-items: center
+
+                            .avatar
+                                width: 91px
+                                height: 91px
+                                border-radius: 50%
+                                background-size: cover
+                                margin-right: 24px
+                                cursor: pointer
+
+                            .info
+                                cursor: pointer
+
+                                .nickname
+                                    alignItemsCenter()
+
+                                    span
+                                        font-size: 32px
+
+                                .address a
+                                    font-size: 20px
+                                    color: #A1A4CE
+
+                            span
+                                font-size: 32px
+
+                            .icon
+                                width: 32px
+                                height: 32px
+                                margin-left: 24px
+                                position: relative
+                                top: 2px
+
+                    // .right
+                    // width: 500px
+                    // padding: 30px 60px
+                    // // border-left: 1px dashed rgba(255, 255, 255, 0.3)
+                    // background: #25252D;
+
+                    // border-radius: 12px;
+                    // display: flex
+                    // flex-direction: column
+                    // justify-content: center
+                    // .div_btn
+                    // background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                    // border-radius: 7px
+                    // height: 50px
+                    // font-size: 20px
+                    // font-weight: 900
+                    // display: flex
+                    // justify-content: center
+                    // align-items: center
+                    // cursor pointer
+                    // border:0
+                    // &:hover
+                    // background: linear-gradient(24deg, #FF42D5 0%, #FFA844 100%);
+                    // // box-shadow: 0px 2px 14px 0px #FF00E5;
+                    // // border-radius: 8px;
+                    // &:active
+                    // background: linear-gradient(24deg, #E023B6 0%, #E08926 100%);
+
+                    // .ant-btn-primary[disabled], .ant-btn-primary[disabled]:active, .ant-btn-primary[disabled]:focus, .ant-btn-primary[disabled]:hover
+                    // color: rgba(255,255,255,.45);
+                    // border-color: #6A6A72;
+                    // background: #6A6A72;
+                    // text-shadow: none;
+                    // box-shadow: none;
+                    // .r-title
+                    // display: flex
+                    // align-items: center
+
+                    // .icon
+                    // width: 24px
+                    // height: 24px
+                    // margin-right: 24px
+
+                    // span
+                    // font-size: 18px
+                    // font-weight: 900
+                    .center
+                        display: flex
+                        justify-content: space-between
+                        margin: 16px 0 24px
+
+                        .buy
+                            display: flex
+                            align-items: center
+                            // justify-content: space-between
+                            // overflow hidden
+                            width: 100%
+
+                            .name
+                                margin-right: 30px
+                                flex: 1
+                                word-wrap: break-word
+
+                        .item:nth-child(1)
+                            position: relative
+                            top: -3px
+
+                            .name
+                                height: 41px
+                                font-size: 28px
+                                font-weight: 900
+                                line-height: 41px
+                                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                -webkit-background-clip: text
+                                -webkit-text-fill-color: transparent
+
+                            .value
+                                font-size: 18px
+                                font-weight: 500
+                                color: #A4A4A4
+
+                        .item:nth-child(2)
+                            .name
+                                font-size: 18px
+                                color: #FFFFFF
+                                height: 25px
+                                line-height: 25px
+
+                            .value
+                                width: 157px
+                                height: 41px
+                                font-size: 30px
+                                font-weight: 900
+                                color: #FFFFFF
+                                line-height: 41px
+                                letter-spacing: 4px
+
+                .body
+                    margin-top: 32px
+                    display: flex
+                    justify-content: space-between
+
+                    .item-box
+                        border-radius: 12px
+                        background: #25252D
+                        padding: 10px 0
+
+                        .box
+                            padding: 0 18px
+
+                    .hide-item-box
+                        .div-table, .box
+                            display: none
+
+                    // .div-table
+                    // padding: 0 6px
+                    .ant-pagination-item-ellipsis
+                        color: #fff
+
+                    .ant-pagination-item-link-icon
+                        color: #ef466f
+
+                    .ant-pagination-next .ant-pagination-item-link, .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-item-active
+                        background-color: transparent
+
+                    .ant-pagination-disabled .ant-pagination-item-link, .ant-pagination-disabled:focus-visible .ant-pagination-item-link, .ant-pagination-disabled:hover .ant-pagination-item-link
+                        color: #fff
+
+                    .ant-table-pagination.ant-pagination
+                        margin: 10px 16px 8px
+                        color: #fff
+
+                        // background-color: rgba(255,255,255,0.1)
+                        .ant-pagination-item
+                            a
+                                color: #fff
+
+                        >li
+                            background-color: rgba(255, 255, 255, 0.1)
+                            border: 0
+                            color: #fff
+                            border-radius: 9px
+
+                            button
+                                color: #fff
+
+                        .ant-pagination-next .ant-pagination-item-link, .ant-pagination-prev .ant-pagination-item-link
+                            border: 0
+
+                        .ant-pagination-item-active
+                            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%) !important
+                            box-shadow: 0px 1px 3px 1px rgba(215, 91, 91, 0.5)
+                            border-radius: 9px
+                            border: 0
+
+                            a
+                                color: #fff
+
+                    .ant-table
+                        background: transparent
+                        color: #fff
+                        min-height: 432px
+                        // max-height: 420px
+                        overflow: auto
+
+                        .ant-table-tbody>tr.ant-table-placeholder:hover>td
+                            background: transparent
+
+                        .ant-empty-normal
+                            color: gray
+
+                        .ant-table-cell-scrollbar
+                            display: none
+
+                        thead>tr>th
+                            background: transparent
+                            color: #6B6C80
+                            border: 0
+                            font-size: 13px
+                            padding-bottom: 6px
+                            padding-top: 6px
+                            padding-left: 10px
+                            padding-right: 10px
+
+                        tbody>tr>td
+                            border-color: rgba(255, 255, 255, 0.15)
+                            padding: 10px
+
+                            &:first-child
+                                padding-left: 20px
+
+                        .ant-table-thead>tr>th:first-child
+                            padding-left: 20px
+
+                        .ant-table-tbody>tr.ant-table-row:hover>td
+                            background: transparent
+
+                    .right
+                        width: 500px
+
+                        .TrxHistory
+                            height: 554px
+
+                            .ant-table
+                                .owner
+                                    a
+                                        color: #fff
+
+                                tbody>tr>td
+                                    padding: 16px 10px
+
+                                    &:first-child
+                                        padding-left: 20px
+
+                    .center
+                        width: 500px
+
+                        .Listings
+                            display: flex
+                            flex-direction: column
+                            height: 100%
+                            height: 554px
+
+                            .div-table
+                                flex: 1
+                                overflow: hidden
+
+                                .ant-table
+                                    .ant-btn
+                                        width: 67px
+                                        height: 34px
+                                        // border-radius: 6px
+                                        border-radius: 5px
+                                        // border: 1px solid #ff00e5
+                                        // border-image: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1)) 1 1;
+                                        // color: #ff00e5
+                                        // background-image: linear-gradient(#FF00E5,#FF00E5),linear-gradient(97.83deg,#FFA200 9.62%,#FFA200 34.78%,#FF00E5 62.68%,#FF00E5 88.39%,#FF00E5 114.65%);
+                                        background-image: linear-gradient(#25252d, #25252d), linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1))
+                                        background-clip: padding-box, border-box
+                                        background-origin: border-box
+                                        border: 1.2px solid transparent
+
+                                        span
+                                            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                            -webkit-background-clip: text
+                                            -webkit-text-fill-color: transparent
+
+                                        &:hover
+                                            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                            // border-image: none
+                                            // border: 1px solid transparent
+                                            border: 0
+                                            border-color: transparent
+                                            color: #fff
+                                            border-radius: 5px
+                                            overflow: hidden
+
+                                            span
+                                                -webkit-text-fill-color: #fff
+
+                                        &:active
+                                            background: linear-gradient(24deg, #E023B6 0%, #E08926 100%)
+
+                                    .owner
+                                        display: flex
+                                        align-items: center
+
+                                        a
+                                            color: #fff
+                                            display: flex
+
+                                        img
+                                            width: 25px
+                                            height: 25px
+                                            border-radius: 25px
+                                            margin-right: 8px
+                                            cursor: pointer
+
+                                    .Price
+                                        word-wrap: break-word
+                                        display: flex
+                                        align-items: center
+
+                                        // justify-content: center
+                                        a
+                                            display: inline-block
+                                            max-width: 130px
+                                            // width: 58px
+                                            height: 19px
+                                            font-size: 14px
+                                            font-weight: 500
+                                            color: #FFB100
+                                            line-height: 19px
+                                            overflow: hidden
+                                            text-overflow: ellipsis
+                                            white-space: nowrap
+
+                                        span
+                                            height: 19px
+                                            font-size: 14px
+                                            color: #545563
+                                            line-height: 19px
+                                            margin-left: 8px
+
+                    .left
+                        width: 368px
+                        height: 554px
+                        display: flex
+                        flex-direction: column
+
+                        .view
+                            // padding: 16px 0;
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            margin-bottom: 24px
+                            cursor: pointer
+
+                            .headTitle
+                                padding: 16px 20px
+
+                            .v-left
+                                font-size: 18px
+                                font-weight: 900
+                                display: flex
+                                align-items: center
+
+                                .icon
+                                    margin-right: 12px
+
+                        .Description
+                            // border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+                            // border-bottom-left-radius: 0
+                            // border-bottom-right-radius: 0
+                            overflow: auto
+                            display: flex
+                            flex-direction: column
+                            // flex: 1
+                            max-height: 346px
+                            margin-bottom: 24px
+
+                            .headTitle
+                                .icon
+                                    width: 22px
+                                    height: 22px
+
+                            .box
+                                font-size: 14px
+                                color: rgba(255, 255, 255, 0.6)
+                                flex: 1
+                                overflow: auto
+                                padding-bottom: 8px
+
+                        .Properties
+                            // border-top-left-radius: 0
+                            // border-top-right-radius: 0
+                            // padding-top: 8px
+                            .headTitle
+                                padding: 16px
+
+                            .box
+                                display: flex
+                                flex-wrap: wrap
+
+                                .item-c
+                                    width: 50%
+                                    display: flex
+
+                                .item-c:nth-child(2n+1)
+                                    justify-content: flex-start
+
+                                .item-c:nth-child(2n)
+                                    justify-content: flex-end
+
+                                .item
+                                    width: calc(100% -8px)
+                                    padding: 12px 0
+                                    text-align: center
+                                    font-size: 16px
+                                    border: 1px solid rgba(255, 255, 255, 0.17)
+                                    margin-bottom: 16px
+                                    cursor: pointer
+
+                                .active-item
+                                    background-color: rgba(255, 78, 231, 0.1)
+                                    color: #FF3AE4
+                                    border: 0
+
+@media screen and (max-width: 1600px)
+    .page-marketDetail .container .content .main-box
+        width: 1400px
+
+@media screen and (max-width: 768px)
+    .lt-header
+        .main
+            .left
+                .logo
+                    margin: 0
+
+                .search
+                    display: none
+
+    .page-marketDetail
+        .nftImgDialog
+            .modalMain
+                >div
+                    height: auto !important
+
+            .ant-modal-content
+                min-width: 300px
+
+            img
+                height: auto !important
+                width: 100% !important
+
+    .ant-modal
+        width: 94% !important
+
+        div.modalMain
+            font-size: 14px
+
+    div.ModalCheckout
+        .ant-modal-body
+            display: block
+
+            .ModalBtn
+                padding-top: 0
+                padding-bottom: 20px
+
+                .btn
+                    padding: 10px 36px
+
+                .div-check
+                    padding: 0 16px
+                    display: flex
+                    flex-direction: column
+
+                    a
+                        margin-left: 24px
+
+                    .ant-checkbox-wrapper
+                        font-size: 12px
+                        margin: 0 auto
+
+                        .ant-checkbox
+                            position: relative
+                            top: 4px
+
+            .modalMain
+                margin-top: 0
+
+                .body
+                    .item
+                        padding: 8px 0
+
+            >.right
+                width: 100%
+
+                .nft-img
+                    position: static
+                    width: 143px
+                    height: 184px
+                    margin: auto
+                    border-radius: 10px
+                    background: #D8D8D8
+                    box-shadow: 0px 7px 15px 0px rgba(140, 50, 147, 0.25)
+                    background-size: cover
+                    background-position: center center
+
+            .modalTitle
+                padding: 10px 30px 10px
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+                margin-bottom: 20px
+
+                em
+                    top: 15px
+
+                .title
+                    font-size: 16px
+                    text-align: center
+
+            >.left
+                width: 100%
+                position: static
+                height: auto
+
+    div.ModalReview
+        .ant-checkbox+span
+            padding-right: 0
+
+        .ModalBtn
+            padding: 16px 10px 0
+
+            .ant-checkbox-wrapper
+                font-size: 12px
+                alignItemsCenter()
+
+        .modalMain
+            padding: 0 12px 16px
+
+            .score-box
+                font-size: 13px
+
+                .head
+                    display: block
+                    padding: 12px 6px
+
+                    .right
+                        margin-left: 0
+
+                .body
+                    padding: 0 6px
+
+                    .item
+                        .name
+                            width: 132px
+
+    div.page-marketDetail .TrxHistory .div-table .date .anticon-field-time svg, .page-marketDetail .TrxHistory .div-table .price .anticon-field-time svg
+        font-size: 14px
+
+    div.page-marketDetail .TrxHistory .div-table .date .anticon-field-time, .page-marketDetail .TrxHistory .div-table .price .anticon-field-time
+        margin-right: 3px
+
+    div.page-marketDetail
+        .container
+            width: 100%
+            min-width: 300px
+            padding: 45px 0 0
+
+            >.trxTypeNav
+                display: none
+
+            .headTitle
+                .h-left
+                    .icon
+                        width: 19px
+                        height: 19px
+
+            .content
+                position: relative
+
+                >.div-img
+                    margin-top: 24px
+                    max-width: 80%
+                    // position: static
+                    left: 50%
+                    transform: translateX(-50%)
+                    height: auto
+
+                    // .left-shadow
+                    // left: -20px
+
+                    // .right-shadow
+                    // right: -20px
+                    .top-icons
+                        right: -80px
+
+                        img
+                            width: 26px
+                            margin-right: 8px
+
+                    .trxTypeNav
+                        // position: static
+                        display: flex
+                        width: 300px
+                        top: 100%
+                        height: 28px
+                        left: 50%
+                        transform: translate(-50%, 0)
+                        margin-top: 18px
+                        border-radius: 14px
+                        background: #1B1A21
+
+                        .item
+                            border-radius: 0
+                            transition: none
+                            height: 100%
+                            background-color: transparent
+                            padding-right: 0
+                            justifyContentCenter()
+
+                            .icon
+                                height: 18px
+                                width: 18px
+                                margin-left: 0
+
+                            span
+                                display: none
+
+                        .activeItem
+                            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                            border-radius: 14px
+
+                        .item:hover
+                            transform: translate(0, 0)
+
+                    div.div-icon
+                        right: -56px
+
+                .right-div-btn
+                    background: #25252D
+                    position: fixed
+                    bottom: 0
+                    width: 100%
+                    border-radius: 0
+                    padding: 16px 14px 20px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    color: #fff
+
+                .div_btn
+                    width: 176px
+
+                .r-title
+                    margin-bottom: 4px
+
+                    img
+                        width: 24px
+
+                .center
+                    text-align: left
+
+                    .name
+                        font-size: 16px
+                        font-weight: 900
+                        color: #FFFFFF
+                        line-height: 22px
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+
+                .main-box-c
+                    // border-radius: 27px 27px 0px 0px;
+                    border-radius: 0
+                    padding: 20px 0 100px
+                    margin-top: 342px
+
+                .main-box
+                    width: 100%
+                    padding: 0 10px
+
+                    .nft-title
+                        top: 0
+                        margin-bottom: 14px
+                        padding-left: 0
+
+                        .meme
+                            font-size: 12px
+
+                        .nft-name
+                            .name
+                                font-size: 15px
+
+                            .order-id
+                                font-size: 12px
+
+                    .head
+                        // flex-direction: column
+                        .left
+                            height: auto
+                            padding: 0
+
+                            .item
+                                .icon
+                                    width: 12px
+                                    height: 12px
+
+                                .info
+                                    .address
+                                        display: flex
+
+                                        a
+                                            font-size: 12px
+
+                                    .nickname
+                                        .icon
+                                            margin-left: 6px
+
+                                        span
+                                            font-size: 12px
+
+                                .avatar
+                                    width: 30px
+                                    height: 30px
+                                    margin-right: 10px
+
+                        .right
+                            width: 100%
+                            display: none
+
+                    .body
+                        flex-direction: column
+                        margin-top: 10px
+
+                        .ant-table tbody>tr>td
+                            padding: 6px 4px
+
+                        .ant-table
+                            min-height: 222px
+
+                        .headTitle
+                            padding: 2px 16px
+
+                        .ant-table
+                            font-size: 12px
+
+                            thead>tr>th
+                                font-size: 12px
+                                padding: 6px 4px
+
+                        >div
+                            margin-top: 10px
+
+                        .h-left
+                            font-size: 14px
+
+                        .center, .left, .right
+                            width: 100%
+
+                        .right
+                            .TrxHistory
+                                height: auto
+
+                                .ant-table
+                                    tbody>tr>td
+                                        padding: 10px 4px
+
+                        div.center
+                            .Listings
+                                height: auto
+
+                                .div-table
+                                    .ant-table
+                                        tbody>tr>td:first-child
+                                            padding-left: 10px
+
+                                        .owner
+                                            a
+                                                img
+                                                    width: 16px
+
+                                        .Price
+                                            a
+                                                font-size: 12px
+
+                                        .ant-btn
+                                            width: auto
+                                            height: auto
+                                            padding: 4px 10px
+
+                        .left
+                            display: block
+                            height: auto
+
+                            .Properties
+                                .headTitle
+                                    padding: 2px 16px
+
+                            .Description
+                                margin-bottom: 10px
+
+                                .box
+                                    margin-top: 10px
+
+                            .view
+                                margin-bottom: 10px
+
+                                .icon
+                                    width: 16px
+                                    height: 16px
+
+                                .headTitle
+                                    // padding: 2px 16px
+                                    .h-left
+                                        .icon
+                                            width: 19px
+                                            height: 19px

@@ -1,0 +1,76 @@
+.listingDialog
+    .ant-modal-body
+        padding: 0
+
+    .ant-modal-content
+        background: #2C2D3A
+        border-radius: 16px
+        padding: 30px 34px
+
+    .modalTitle
+        position: relative
+        color: #fff
+
+        .title
+            font-size: 26px
+            color: #fff
+
+        em
+            position: absolute
+            top: 5px
+            right: 0
+            width: 20px
+            height: 20px
+            display: block
+            background: url('../../../../components/LogoutDialog/img/close.png') no-repeat
+            background-size: 100% 100%
+            text-indent: -999em
+            overflow: hidden
+            cursor: pointer
+
+    .modalMain
+        .item
+            position: relative
+            margin: 28px 0 0
+
+            img
+                size: 40px
+                position: absolute
+                top: 8px
+                left: 0
+
+            .text
+                padding: 0 0 0 62px
+
+                div
+                    &:nth-child(1)
+                        height: 25px
+                        font-size: 18px
+                        font-family: Avenir-Heavy, Avenir
+                        font-weight: 800
+                        color: #FFFFFF
+                        line-height: 25px
+
+                    &:nth-child(2)
+                        font-size: 14px
+                        font-family: Avenir-Book, Avenir
+                        font-weight: normal
+                        color: #6B6C80
+                        line-height: 19px
+
+            .btn
+                height: 50px
+                line-height: @height
+                border-radius: 7px
+                border: 0 none
+                width: 100%
+                padding: 0
+                font-size: 20px
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                background: #6A6A72
+                margin: 20px 0 0
+
+                &.done
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)

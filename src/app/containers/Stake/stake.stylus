@@ -1,0 +1,442 @@
+
+body
+    #root
+        .page-stake.en
+            .bannerTitle
+                padding-top: torem(90)
+                font-size: torem(45)
+
+            .bannerDesc
+                font-size: torem(19)
+                margin: torem(27) 0 0
+
+            .info
+                .desc
+                    margin-bottom: torem(36)
+
+                .coin
+                    margin-bottom: torem(36)
+
+                .reword
+                    padding-top: torem(47)
+
+.page-stake
+    background: #100D27
+    width: 100%
+    color: #fff
+
+    .banner
+        height: torem(400)
+        background: #161031 url('./img/banner.png') no-repeat top center
+
+        .bannerMain
+            max-width: torem(1400)
+            margin: 0 auto
+            padding: 0 torem(20)
+
+            .bannerTitle
+                font-size: torem(48)
+                font-family: PingFangSC-Semibold, PingFang SC
+                font-weight: 600
+                color: #FFFFFF
+                line-height: torem(70)
+                padding: torem(123) 0 0
+
+                span
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+
+            .bannerDesc
+                width: torem(770)
+                margin: torem(28) 0 0
+                font-size: torem(20)
+                font-family: PingFangSC-Semibold, PingFang SC
+                font-weight: 600
+                color: #FFFFFF
+                line-height: torem(28)
+
+    .generate-plan
+        margin: torem(88) auto 0
+        padding: torem(40) torem(70) torem(50)
+        width: torem(1440)
+        // height: torem(500);
+        border: torem(1) solid
+        border-image: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1)) 1 1
+
+        .title
+            font-size: torem(36)
+            font-weight: 600
+            color: #FFFFFF
+
+        .intro
+            font-size: torem(16)
+            font-weight: 600
+            color: #A1A4CE
+            margin: torem(18) 0 torem(72)
+
+        .body
+            display: flex
+
+            .right-img
+                position: relative
+                top: torem(-10)
+
+                img
+                    width: torem(176)
+                    height: torem(234)
+
+            .opt
+                margin-right: torem(66)
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                align-items: center
+                position: relative
+                top: torem(-10)
+
+                .num
+                    font-size: torem(16)
+                    font-weight: 600
+                    color: #A1A4CE
+
+                .amount
+                    font-size: torem(34)
+                    font-weight: 600
+                    textColor()
+                    margin: torem(10) 0 torem(32)
+
+                .btn
+                    btnColor(1)
+                    flexCenter()
+                    width: torem(255)
+                    height: torem(60)
+                    font-size: torem(24)
+                    font-weight: 600
+
+            .left-imgs
+                padding-left: torem(10)
+                display: flex
+                position: relative
+                flex: 1
+
+                .item-box
+                    position: absolute
+                    width: torem(166)
+                    height: torem(220)
+
+                    &:nth-child(2)
+                        left: torem(156)
+
+                    &:nth-child(3)
+                        left: torem(262)
+                        top: torem(-16)
+
+                    &:nth-child(4)
+                        left: torem(416)
+                        top: torem(-2)
+
+                    &:nth-child(5)
+                        left: torem(522)
+                        top: torem(-16)
+
+                    .div-img
+                        position: absolute
+                        width: torem(166)
+                        height: torem(220)
+                        background-image: url('../Activity/AvatarPlan/img/1155_7.png')
+                        background-size: cover
+                        background-position: center
+                        border-radius: torem(9)
+                        box-shadow: 0 torem(6) torem(18) 0 rgba(101, 76, 128, 1)
+
+                        &::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            background-color: rgba(0, 0, 0, 0.5)
+                            border-radius: torem(9)
+
+                    .active
+                        &::before
+                            display: none
+
+                .lb-origin
+                    .div-img
+                        transform-origin: 0% 100%
+
+                        &:nth-child(1)
+                            transform: rotate(-5deg)
+                            bottom: 0
+
+                        &:nth-child(2)
+                            transform: rotate(1deg)
+                            bottom: torem(10)
+
+                        &:nth-child(3)
+                            transform: rotate(3deg)
+                            bottom: torem(20)
+                            left: torem(14)
+
+                        &:nth-child(4)
+                            transform: rotate(6deg)
+                            bottom: torem(25)
+                            left: torem(23)
+
+                        &:nth-child(5)
+                            transform: rotate(10deg)
+                            bottom: torem(30)
+                            left: torem(28)
+
+                    &:nth-child(3), &:nth-child(5)
+                        .div-img
+                            &:nth-child(1)
+                                transform: rotate(-3deg)
+
+                            &:nth-child(2)
+                                transform: rotate(1deg)
+                                bottom: torem(10)
+                                left: torem(5)
+
+                            &:nth-child(3)
+                                transform: rotate(4deg)
+                                bottom: torem(16)
+                                left: torem(16)
+
+                            &:nth-child(4)
+                                transform: rotate(8deg)
+                                bottom: torem(22)
+                                left: torem(25)
+
+                            &:nth-child(5)
+                                transform: rotate(13deg)
+                                bottom: torem(26)
+                                left: torem(31)
+
+                    &:nth-child(5)
+                        .div-img
+                            &:nth-child(4)
+                                left: torem(27)
+
+                            &:nth-child(5)
+                                transform: rotate(14deg)
+                                left: torem(34)
+
+                .lt-origin
+                    .div-img
+                        transform-origin: 0% 0%
+
+                        &:nth-child(1)
+                            transform: rotate(6deg)
+                            left: torem(-28)
+                            top: torem(-6)
+
+                        &:nth-child(2)
+                            transform: rotate(3deg)
+                            left: torem(-14)
+
+                        &:nth-child(3)
+                            transform: rotate(0)
+                            left: 0
+
+                        &:nth-child(4)
+                            transform: rotate(-3deg)
+                            left: torem(10)
+
+                        &:nth-child(5)
+                            transform: rotate(-6deg)
+                            left: torem(23)
+
+                    &:nth-child(4)
+                        .div-img
+                            &:nth-child(2)
+                                left: torem(-15)
+
+                            &:nth-child(4)
+                                left: torem(15)
+
+                            &:nth-child(5)
+                                left: torem(28)
+
+    .block
+        max-width: torem(1440)
+        margin: 0 auto
+        padding: 0 0 torem(200)
+
+        .blockTitle
+            text-align: center
+            padding: torem(70) 0 torem(28)
+
+            span
+                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                font-size: torem(50)
+
+                em
+                    font-family: Trattatello
+                    font-size: torem(56)
+
+        .blockBox
+            border: torem(1) solid
+            border-image: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1)) 1 1
+            display: flex
+            padding: torem(60) torem(56) torem(66)
+            width: 14.4rem
+            justify-content: center
+
+            .imgWrap
+                position: relative
+                width: torem(428)
+                height: torem(570)
+                overflow: hidden
+
+                .img
+                    size: 100%
+                    position: relative
+                    background: #161031 url('./img/img.png') top center
+                    background-size: cover
+
+                .btn
+                    btnColor(1)
+                    flexCenter()
+                    width: torem(280)
+                    height: torem(60)
+                    line-height: @height
+                    font-size: torem(24)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    color: #FFFFFF
+                    position: absolute
+                    bottom: torem(36)
+                    left: 50%
+                    transform: translate(-50%, 0)
+                    border: 0 none
+
+                    &.empty
+                        bottom: torem(225)
+
+                .emptyText
+                    text-align: center
+                    font-size: torem(16)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    top: torem(360)
+                    width: 100%
+                    color: #f53737
+                    position: absolute
+
+            .info
+                flex: 1
+                padding: 0 0 0 torem(60)
+
+                .title
+                    height: torem(50)
+                    font-size: torem(36)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    color: #FFFFFF
+                    line-height: torem(50)
+
+                .desc
+                    font-size: torem(16)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    color: #A1A4CE
+                    line-height: torem(22)
+                    margin: torem(22) 0 torem(52)
+
+                .progressWrap
+                    .progress
+                        display: flex
+
+                        .progressBar
+                            height: torem(26)
+                            flex: 1
+                            border-radius: torem(13)
+                            background: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1))
+
+                            .progressBarMain
+                                background: #403E53
+                                margin: torem(1)
+                                border-radius: torem(13)
+                                border: torem(4) solid #100D27
+
+                                div
+                                    height: torem(16)
+                                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                    border-radius: torem(13)
+
+                        .progressText
+                            height: torem(26)
+                            font-size: torem(22)
+                            font-family: PingFangSC-Semibold, PingFang SC
+                            font-weight: 600
+                            color: #9293A6
+                            line-height: torem(26)
+                            padding: 0 0 0 torem(20)
+
+                    .coin
+                        height: torem(28)
+                        font-size: torem(20)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        color: #FFFFFF
+                        line-height: torem(28)
+                        margin: torem(22) 0 torem(48)
+
+                .totalWrap
+                    justifyContentSpaceBetween()
+                    padding: 0 torem(150) 0 0
+
+                    .item
+                        text-align: center
+
+                        div
+                            height: torem(40)
+                            font-size: torem(28)
+                            font-family: PingFangSC-Semibold, PingFang SC
+                            font-weight: 600
+                            color: #FFFFFF
+                            line-height: torem(40)
+                            margin: 0 0 torem(2)
+
+                        span
+                            height: torem(22)
+                            font-size: torem(16)
+                            font-family: PingFangSC-Semibold, PingFang SC
+                            font-weight: 600
+                            color: #6B6C80
+                            line-height: torem(22)
+
+                .reword
+                    font-size: torem(20)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    color: #FFFFFF
+                    line-height: torem(28)
+                    padding: torem(64) 0 torem(18)
+
+                    span
+                        font-size: torem(35)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        color: #FFFFFF
+                        line-height: torem(49)
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+
+                .btn
+                    btnColor(1)
+                    flexCenter()
+                    width: torem(509)
+                    height: torem(60)
+                    line-height: @height
+                    font-size: torem(24)
+                    font-family: PingFangSC-Semibold, PingFang SC
+                    font-weight: 600
+                    color: #FFFFFF
+                    border: 0 none

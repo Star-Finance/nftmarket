@@ -1,0 +1,318 @@
+//  @media screen and (min-width:768px)
+    div.collectionsDown
+        .ant-popover-arrow
+            display: none
+
+        .ant-popover-inner
+            background: none
+            padding: torem(15)
+            position: relative
+            border: torem(1) solid rgba(255, 255, 255, 0.1)
+            box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05)
+            width: torem(1030)
+
+            &:after
+                display: block
+                content: ' '
+                filter: blur(torem(10))
+                size(100%)
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 1
+                filter: blur(torem(10))
+                background: rgba(#000, 0.8)
+                border-radius: torem(12)
+
+            .collectionsDownMain
+                position: relative
+                z-index: 2
+
+                .collectionsDownContent
+                    color: #fff
+                    flexWrap()
+
+                    .item
+                        flexWrapItem(3)
+
+                        .itemContent
+                            margin: torem(10)
+                            display: flex
+                            height: torem(70)
+                            border-radius: torem(35)
+                            padding: torem(10)
+                            box-sizing: border-box
+                            cursor: pointer
+
+                            &.cur, &:hover
+                                background: rgba(#fff, 0.15)
+
+                            .avatar
+                                size(torem(50))
+                                border-radius: torem(50)
+                                overflow: hidden
+
+                                img
+                                    display: block
+                                    size(100%)
+
+                            .name
+                                one-line()
+                                width: torem(118)
+                                height: torem(50)
+                                line-height: @height
+                                font-size: torem(20)
+                                font-family: Avenir-Medium, Avenir
+                                font-weight: 500
+                                color: #FFFFFF
+                                margin: 0 torem(18) 0 torem(13)
+
+                            .collect
+                                height: torem(50)
+                                line-height: @height
+                                position: relative
+
+                                .icon
+                                    position: absolute
+                                    top: 50%
+                                    transform: translateY(-50%)
+
+    .filtersFormDown
+        background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+        box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05)
+        border-radius: torem(12)
+        border: torem(1) solid rgba(255, 255, 255, 0.1)
+        padding: torem(15)
+
+        .ant-select-item, .ant-select-item-empty
+            padding: 0 torem(20)
+            color: #fff
+            height: torem(56)
+            line-height: @height
+            border-radius: torem(35)
+            margin: torem(5) 0
+            font-size: torem(20)
+
+        .ant-select-item-option-active:not(.ant-select-item-option-disabled)
+            background: rgba(#fff, 0.1)
+
+        .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+            background: rgba(#fff, 0.15)
+
+        .ant-select-item-option-state
+            color: #fff !important
+
+    .page-marketList
+        padding: 1.32rem 0 0
+
+        @media screen and (max-width: 768px)
+            padding: torem(40) 0 0
+
+        .lt-header
+              background: #25252d;
+        .content
+            background: #25252D url('./img/bg.png') no-repeat top center
+            background-size: 100% 100%
+            color: #fff
+            height: 100%
+
+            .box
+                width: torem(1400)
+                margin: 0 auto
+                padding: 0 torem(20)
+
+                @media screen and (max-width: 768px)
+                    width: 100%
+
+                .conditionBox
+                    padding: torem(48) 0 torem(57)
+                    display: none
+
+                    @media screen and (max-width: 768px)
+                        padding: 0
+
+                    .condition
+                        justifyContentSpaceBetween()
+
+                        .collections
+                            font-size: torem(28)
+                            height: torem(56)
+                            line-height: @height
+                            font-family: Avenir-Black, Avenir
+                            color: #FFFFFF
+                            cursor: pointer
+
+                            .icon
+                                width: torem(18)
+                                height: torem(10)
+                                margin: 0 0 0 torem(15)
+
+                        .type
+                            display: flex
+                            width: torem(844)
+                            height: torem(56)
+                            line-height: @height
+                            background: #1B1A21
+                            border-radius: torem(29)
+
+                            .item
+                                text-align: center
+                                flex: 1
+                                cursor: pointer
+                                font-size: torem(24)
+                                font-family: Avenir-Black, Avenir
+                                font-weight: 500
+                                color: #606074
+
+                                &.cur
+                                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                    border-radius: torem(29)
+                                    color: #FFFFFF
+                                    font-weight: 900
+
+                        .filters
+                            font-size: torem(28)
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #FFFFFF
+                            position: relative
+                            height: torem(56)
+                            line-height: @height
+                            cursor: pointer
+
+                            .icon
+                                height: torem(18)
+                                width: torem(28)
+                                margin: 0 torem(15) 0 0
+
+                    .filtersForm
+                        display: flex
+
+                        .item
+                            &:nth-child(1)
+                                .ant-select-selector
+                                    width: torem(340)
+
+                            &:nth-child(2)
+                                padding: 0 torem(28)
+
+                                .ant-select-selector
+                                    width: torem(340)
+
+                            &:nth-child(3)
+                                flex: 1
+
+                                .ant-select
+                                    margin: 0 torem(28) 0 0
+                                    width: torem(195)
+
+                                .to
+                                    height: torem(58)
+                                    line-height: @height
+                                    padding: 0 torem(28)
+                                    font-size: torem(18)
+
+                                .ant-input
+                                    flex: 1
+
+                                ::-webkit-input-placeholder /* WebKit browsers */
+                                    color: #6A6D76
+                                    font-size: torem(18)
+
+                                ::-moz-placeholder /* Mozilla Firefox 19+ */
+                                    color: #6A6D76
+                                    font-size: torem(18)
+
+                                ::-ms-input-placeholder /* Internet Explorer 10+ */
+                                    color: #6A6D76
+                                    font-size: torem(18)
+
+                        .itemTitle
+                            font-size: torem(22)
+                            font-family: Avenir-Heavy, Avenir
+                            font-weight: 800
+                            color: #FFFFFF
+                            margin: torem(28) 0 torem(32)
+
+                        .itemForm
+                            display: flex
+
+                            .ant-select
+                                .ant-select-selector
+                                    background: rgba(#fff, 0.15)
+                                    border-radius: torem(35)
+                                    border: 0 none
+                                    padding: 0 torem(58) 0 torem(28)
+                                    height: torem(58)
+                                    line-height: @height
+
+                                    .ant-select-selection-item
+                                        height: torem(58)
+                                        line-height: @height
+                                        color: #fff
+                                        font-size: torem(18)
+
+                                .ant-select-arrow
+                                    size(torem(20))
+                                    color: #fff
+                                    margin: 0
+                                    transform: translateY(-50%)
+                                    right: torem(20)
+
+                            .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input
+                                height: torem(58)
+                                line-height: @height
+                                color: #fff
+                                font-size: torem(18)
+
+                            .ant-select-multiple .ant-select-selection-item
+                                margin: 0
+                                background: none
+                                border: 0
+                                height: torem(66) !important
+                                line-height: torem(58) !important
+
+                            .ant-select-selection-item-remove
+                                color: #999
+
+                            .ant-input
+                                background: rgba(#fff, 0.15)
+                                border-radius: torem(35)
+                                border: 0 none
+                                padding: 0 torem(28)
+                                height: torem(58)
+                                line-height: @height
+                                color: #fff
+                                font-size: torem(18)
+
+                .main
+                    flexWrap()
+                    padding: torem(44) 0 0
+
+                    @media screen and (max-width: 768px)
+                        display: block
+                        padding: torem(20) 0 0
+
+                    .item
+                        padding: 0 torem(10) torem(20) 0
+                        flexWrapItem(4)
+                        cursor: pointer
+                        box-sizing: border-box
+
+                        &:nth-child(4n)
+                            padding: 0 0 torem(20)
+
+                        @media screen and (max-width: 768px)
+                            padding: 0 0 torem(10) !important
+
+                            .cardBlock
+                                width: 100%
+
+                    .mainLoading
+                        width: 100%
+                        text-align: center
+                        padding: torem(150) 0
+
+                .page
+                    text-align: center
+                    padding: torem(20) 0

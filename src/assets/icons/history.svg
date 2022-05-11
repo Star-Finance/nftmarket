@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>历史数据</title>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="market-price" transform="translate(-1193.000000, -1469.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="历史数据" transform="translate(1193.000000, 1469.000000)">
+                <path d="M11.0769231,1.84615385 C4.98461538,1.84615385 0,6.83076923 0,12.9230769 C0,19.0153846 4.98461538,24 11.0769231,24 C17.1692308,24 22.1538461,19.0153846 22.1538461,12.9230769 L11.0769231,12.9230769 L11.0769231,1.84615385 Z" id="路径"></path>
+                <path d="M24,11.0769231 C24,4.98461538 19.0153846,0 12.9230769,0 L12.9230769,11.0769231 L24,11.0769231 Z" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>

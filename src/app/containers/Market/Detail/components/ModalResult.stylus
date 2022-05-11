@@ -1,0 +1,183 @@
+.ModalResult
+    .ant-modal-body
+        padding: 0
+        
+    .ant-modal-content
+        background: rgba(44, 45, 58, 1)
+        border-radius: 9px
+        padding: 20px 0
+
+    .modalTitle
+        position: relative
+        color:#fff
+        border-bottom: 1px solid rgba(255,255,255,0.2)
+        padding:0 20px 20px
+        .title
+            font-size: 24px
+            color: #fff
+            text-align: center
+
+        em
+            position: absolute
+            top: 5px
+            right: 20px
+            width: 18px
+            height: 18px
+            display: block
+            background: url('../../../../components/LogoutDialog/img/close.png') no-repeat
+            background-size: 100% 100%
+            text-indent: -999em
+            overflow: hidden
+            cursor: pointer
+
+    .modalMain
+        color:rgba(255,255,255,1)
+        border-radius: 9px
+        // padding: 0 22px 36px
+        box-sizing: border-box
+        padding: 0 40px 16px
+        font-size: 16px
+        justifyContentSpaceBetween()
+        margin: 20px 0 0
+        width:100%
+        .content
+            width: 100%
+            >p
+             margin:4px 0 24px 0
+             font-size: 20px
+             color: #AAACC1;
+        .body
+            display: flex
+            width: 100%
+            .left
+                width: 231px;
+                height: 297px;   
+                // background-image: url('../img/nft.png')
+                background-color: #fff
+                background-size: cover
+                background-position: center
+                border-radius: 8px
+            .right
+                flex:1
+                margin-left: 20px
+                justifyContentSpaceBetween()
+                flex-direction: column
+                font-size: 18px
+                padding: 6px 24px
+                .top
+                   justifyContentSpaceBetween()
+                   .t-left
+                       .name
+                           margin-bottom: 16px
+                        .value
+                            alignItemsCenter()
+                            img,.anticon
+                                margin-right: 10px
+                   .t-right
+                        .name
+                           margin-bottom: 16px
+                        .value
+                           color: #6B6C80;
+                           text-align: right
+                           a
+                            color: #6B6C80;
+                .bottom
+                    .title
+                        font-size: 22px
+                        margin-bottom: 20px
+                    .shares
+                        a
+                         color:#97A4CA
+                         margin-right: 30px
+                         .icon 
+                             width: 44px
+                             height: 44px
+                        a:hover
+                         color:#fff
+
+            // .body
+            //     padding: 0 36px
+            //     .item
+            //         padding: 12px 0
+            //         display: flex
+            //         .name
+            //             width: 232px
+            //         .value
+            //             font-weight: 700
+            //             color:#fff
+ 
+            //     .item:last-child
+            //         border-bottom: 0
+    .ModalBtn
+        justifyContentCenter()
+        margin: 17px 0 0
+        padding-top:16px
+        font-size: 16px
+        border-top: 1px solid rgba(255,255,255,0.3)
+        .ant-checkbox-wrapper
+            color:rgba(255,255,255,0.8)
+            font-size: 16px
+        .btn
+            width: 120px
+            height: 36px
+            line-height: @height
+            text-align: center
+            color: #fff
+            border: 1px solid #616570
+            border-radius: 18px
+
+            &:hover
+                background: #2781FF
+                border: 1px solid #2781FF
+                cursor: pointer
+                
+@media screen and (max-width: 768px)
+    div.ModalResult 
+        .modalTitle 
+            .title
+                font-size: 17px
+        .ant-modal-content
+            padding: 20px 0 8px
+        .modalMain 
+            padding: 0
+            .content
+                p
+                 padding: 0 30px 6px
+                 font-size: 14px
+            .body
+                flex-direction: column
+                align-items: center
+                .left
+                    width: 139px;
+                    height: 178px
+                    margin-bottom: 10px
+                .right
+                    margin-left: 0
+                    padding: 6px 0
+                    width: 100%
+                    font-size: 16px
+                    .top
+                        padding: 0 30px
+                        .t-left 
+                            .name
+                                font-size: 16px 
+                                margin-bottom: 8px
+                        .t-right 
+                            .name
+                                margin-bottom: 8px
+                    .bottom
+                        display: flex
+                        padding: 20px 40px 0
+                        margin-top: 20px
+                        border-top:1px solid rgba(255,255,255,0.15)
+                        .shares 
+                            a 
+                              margin-right: 12px
+                             .icon
+                                 width: 26px
+                                 height: 26px
+                        .title
+                            font-size: 16px
+                            margin-bottom: 0
+                            margin-right: 30px
+                            flex:1

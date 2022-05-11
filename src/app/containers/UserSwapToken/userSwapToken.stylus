@@ -1,0 +1,338 @@
+.unitDownDom
+    .ant-popover-arrow
+        display: none
+
+    .ant-popover-inner
+        background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+        box-shadow: 0px 14px 10px -10px rgba(0, 0, 0, 0.05)
+        border-radius: 7px
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        margin: 10px 0 0
+
+        .unitDownDomMain
+            position: relative
+            z-index: 2
+            color: #fff
+
+            .item
+                display: flex
+                font-size: 14px
+                padding: 5px 0
+
+                span
+                    padding: 0 0 0 10px
+                    height: 24px
+                    line-height: @height
+                    display: block
+                    width: 60px
+                    font-size: 18px
+                    font-weight: bold
+
+                img
+                    size: 24px
+
+#root
+    width: 100%
+
+.page-userSwapToken
+    background: #2C2D3A
+    // padding: 132px 0 0;
+    padding: 72px 0 0
+    width: 100%
+
+    .content
+        background: #2C2D3A
+        background-size: 100% 100%
+        color: #fff
+        height: 100%
+
+        .header
+            background: #25252D
+
+            .headerMain
+                width: 1440px
+                margin: 0 auto
+                position: relative
+                display: flex
+                height: 140px
+
+                .back
+                    position: absolute
+                    top: 52px
+
+                    .icon
+                        height: 40px
+                        width: 24px
+
+                .userAvatar
+                    size: 92px
+                    margin: 22px 0 0 50px
+
+                    img
+                        size: 100%
+                        display: block
+
+                .userInfo
+                    padding: 32px 0 0 22px
+                    margin-left: 50px
+
+                    .userLtd
+                        height: 28px
+                        font-size: 24px
+                        font-family: Avenir-Heavy, Avenir
+                        font-weight: 800
+                        color: #6B6C80
+                        line-height: 28px
+
+                    .username
+                        height: 40px
+                        font-size: 30px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        line-height: 40px
+                        margin: 9px 0 0
+
+        .box
+            width: 1440px
+            margin: 60px auto
+            padding: 0 50px
+            justifyContentCenter()
+
+            .left
+                h2
+                    font-size: 34px
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 40px
+                    letter-spacing: 1px
+                    margin-top: 60px
+
+                .title
+                    height: 40px
+                    font-size: 34px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 40px
+                    margin: 44px 0 30px
+
+                .item
+                    padding: 0 0 50px
+
+                    .itemTitle
+                        justifyContentSpaceBetween()
+                        height: 30px
+                        line-height: @height
+                        font-size: 18px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        margin: 0 0 17px
+
+                    .type
+                        display: flex
+                        border-radius: 12px
+                        border-radius: 12px
+                        border: 1px solid #FFA200
+                        overflow: hidden
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+
+                        .typeItem
+                            flex: 1
+                            height: 84px
+                            padding: 0 45px
+                            background: #2C2D3A
+                            cursor: pointer
+
+                            &.cur
+                                background: none
+
+                            .typeTitle
+                                font-size: 20px
+                                font-family: Avenir Black, Avenir
+                                font-weight: 900
+                                margin: 17px 0 0
+
+                                .icon
+                                    margin: 0 12px 0 0
+
+                            .typeDesc
+                                height: 25px
+                                font-size: 13px
+                                font-family: Avenir-Medium, Avenir
+                                font-weight: 500
+                                color: #FFFFFF
+                                line-height: 25px
+
+                    .input
+                        width: 584px
+                        height: 68px
+                        border-radius: 12px
+                        border: 1px solid rgba(#fff, 0.15)
+                        position: relative
+
+                        ::-webkit-input-placeholder /* WebKit browsers */
+                            color: rgba(#fff, 0.8)
+                            font-size: 24px
+
+                        ::-moz-placeholder /* Mozilla Firefox 19+ */
+                            color: rgba(#fff, 0.8)
+                            font-size: 24px
+
+                        :-ms-input-placeholder /* Internet Explorer 10+ */
+                            color: rgba(#fff, 0.8)
+                            font-size: 24px
+
+                        .ant-input
+                            height: 100%
+                            color: #fff
+                            font-size: 24px
+                            font-weight: 900
+                            padding: 0 26px
+                            background: #2C2D3A
+                            border-radius: 12px
+                            position: relative
+                            z-index: 1
+                            width: 474px
+
+                        .unitWrap
+                            width: 132px
+                            height: 100%
+                            background: linear-gradient(7deg, #FF00E5 0%, #FFA200 100%)
+                            border-radius: 12px
+                            position: absolute
+                            top: 0
+                            right: 0
+
+                            .unit
+                                position: absolute
+                                display: flex
+                                align-items: center
+                                right: 26px
+                                top: 50%
+                                transform: translateY(-50%)
+                                height: 32px
+
+                                img
+                                    size: 32px
+                                    margin-right: 10px
+
+                                .icon
+                                    margin: 6px 0 0 10px
+
+                        .from
+                            background: transparent
+
+                        .ant-picker
+                            width: 100%
+                            height: 100%
+                            color: #fff
+                            font-size: 24px
+                            font-weight: 900
+                            padding: 0 26px
+
+                            .ant-picker-input>input
+                                color: #fff
+                                font-size: 24px
+                                font-weight: 900
+
+                            .anticon
+                                color: #fff
+
+                    .fee
+                        justifyContentSpaceBetween()
+
+                        .feeTitle
+                            font-size: 14px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #AAACC1
+
+                        .feeNumber
+                            font-size: 14px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #AAACC1
+
+                .btn
+                    width: 451px
+                    height: 50px
+                    line-height: @height
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                    border-radius: 7px
+                    font-size: 20px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    text-align: center
+                    border: 0 none
+                    padding: 0
+
+                    // margin-top:20px
+                    &[disabled]
+                        color: rgba(#FFFFFF, 0.5)
+                        background: rgba(#999, 0.5)
+
+                .intro
+                    width: 583px
+                    margin-top: 24px
+                    font-size: 18px
+                    font-weight: 400
+                    color: #9293A6
+
+            .right
+                .title
+                    height: 40px
+                    font-size: 30px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 40px
+                    margin: 68px 0 22px
+
+                .myCardBlock
+                    background: #25252D
+
+@media screen and (max-width: 768px)
+    .page-userSwapToken
+        padding: 32px 0 0 0
+
+        .content
+            .box
+                margin: 12px auto
+                width: 100%
+                padding: 0 10px
+
+                .left
+                    .intro
+                        font-size: 14px
+
+                    .btn
+                        margin-top: 20px
+
+                    h2
+                        font-size: 20px
+                        margin-top: 20px
+
+                    .item
+                        padding-bottom: 20px
+
+                        .itemTitle
+                            font-size: 14px
+
+                        .input
+                            width: 100%
+                            height: 46px
+
+                            .unitWrap
+                                z-index: 10
+
+                            .ant-input
+                                width: 100%
+
+                    .btn
+                        width: 100%
+
+                    .intro
+                        width: 100%

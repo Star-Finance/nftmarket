@@ -1,0 +1,192 @@
+/* 样式片段及函数 */
+size()
+  if (length(arguments) == 1)
+    width: arguments[0]
+    height: arguments[0]
+  else
+    width: arguments[0]
+    height: arguments[1]
+
+fontHeight()
+  if (length(arguments) == 1)
+    height: arguments[0]
+    line-height: arguments[0]
+    font-size: arguments[0]
+  else
+    height: arguments[0]
+    line-height: arguments[0]
+    font-size: arguments[1]
+
+fontScale($fontSize)
+  font-size: 12px
+  transform: scale(($fontSize / 12), ($fontSize / 12))
+
+one-line($width=100%)
+  width: $width
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+multi-line($lines)
+  display: -webkit-box
+  overflow: hidden
+  text-overflow: ellipsis
+  -webkit-line-clamp: $lines
+  -webkit-box-orient: vertical
+
+no-wrap()
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+
+flexCenter()
+  display: flex
+  align-items: center
+  justify-content: center
+
+alignItemsCenter()
+  display: flex
+  align-items: center
+
+justifyContentCenter()
+  display: flex
+  justify-content: center
+
+justifyContentSpaceBetween()
+  display: flex
+  justify-content: space-between
+
+flexWrap()
+  display: flex
+  flex-wrap: wrap
+  align-content: flex-start
+
+flexWrapItem(n)
+  flex: 0 0 (100 / n)%
+
+abCenter($direction = xy)
+  position: absolute
+
+  if ($direction == x)
+    top: 0
+    left: 50%
+    transform: translate(0, -50%)
+  else if ($direction == y)
+    top: 50%
+    left: 0
+    transform: translate(-50%, 0)
+  else if ($direction == xy)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+hide-text()
+  text-indent: 101%
+  white-space: nowrap
+  overflow: hidden
+
+/*
+ * 重写 css
+ */
+clear(n)
+  zoom: 1
+
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: ' '
+    clear: n
+    height: 0
+
+/* rem 下慎用 */
+placeholder($fontSize = 22px, $color = rgba(#fff, 0.8))
+  ::-webkit-input-placeholder /* WebKit browsers */
+    color: $color
+    font-size: $fontSize
+    font-weight: 400
+
+  ::-moz-placeholder /* Mozilla Firefox 19+ */
+    color: $color
+    font-size: $fontSize
+    font-weight: 400
+
+  :-ms-input-placeholder /* Internet Explorer 10+ */
+    color: $color
+    font-size: $fontSize
+    font-weight: 400
+
+torem($value)
+  (((($value / 100rem))))
+
+fontColor()
+  color: #fff
+  cursor: pointer
+
+  &:hover
+    color: #A1A4CE
+
+  &:active
+    color: #AAACC1
+
+btnColor($type)
+  border-radius: 6px
+  color: #fff
+  cursor: pointer
+  text-align: center
+
+  if ($type == 1)
+    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+    border:0
+    &:hover
+      background: linear-gradient(24deg, #FF42D5 0%, #FFA844 100%)
+
+    &:active
+      background: linear-gradient(24deg, #E023B6 0%, #E08926 100%)
+
+    &.disabled, &[disabled]
+      background: #6A6A72
+      cursor not-allowed
+      
+  else if ($type == 2)
+    border: 1px solid #FFFFFF
+
+    &:hover
+      border: 1px solid rgba(#FFFFFF, 0.1)
+      background: rgba(#FFFFFF, 0.1)
+
+    &:active
+      border: 1px solid rgba(#FFFFFF, 0.04)
+      background: rgba(#FFFFFF, 0.04)
+  else if ($type == 3)
+      border-image: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1)) 1 1;
+      background-image: linear-gradient(rgba(#100d27,1),rgba(#100d27,1)),linear-gradient(24deg,#ff00e5,#ffa200);
+      background-clip: padding-box,border-box;
+      background-origin: border-box;
+      border: 1.2px solid transparent;
+      border-radius: 8px
+      span
+        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      &:hover
+          background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+          border:0;
+          border-color:transparent
+          color: #fff
+          border-radius: 5px
+          overflow: hidden
+          -webkit-text-fill-color:#fff
+          span
+           -webkit-text-fill-color:#fff
+      &:active
+          background: linear-gradient(24deg, #E023B6 0%, #E08926 100%)
+.bg-cover
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat;
+textColor()
+  color: #FFFFFF;
+  background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;

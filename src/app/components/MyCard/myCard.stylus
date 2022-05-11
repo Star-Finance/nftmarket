@@ -1,0 +1,108 @@
+.cardDownDom
+    .ant-popover-arrow
+        display: none
+
+    .ant-popover-inner
+        background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+        box-shadow: 0px 14px 10px -10px rgba(0, 0, 0, 0.05)
+        border-radius: 7px
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        margin: -10px 0 0
+
+        .cardDownDomMain
+            position: relative
+            z-index: 2
+
+            .item
+                display: flex
+                font-size: 14px
+                padding: 5px 0
+                cursor: pointer
+                color: #fff
+
+                &:hover
+                    color: rgba(#fff, 0.7)
+
+                span
+                    padding: 0 0 0 10px
+
+.myCardBlock
+    background: #2C2D3A
+    border-radius: 12px
+    padding: 0 20px 22px
+    box-sizing: border-box
+    position: relative
+
+    &:hover
+        background: #37394C
+
+    .cardHeader
+        justifyContentSpaceBetween()
+        padding: 16px 0
+
+        .right
+            display: flex
+
+            .owned
+                padding: 0 10px
+
+            .more
+                cursor: pointer
+
+    .cardImage
+        border-radius: 5px
+        cursor: pointer
+        margin: 0 auto
+
+    .cardContent
+        position: relative
+        justifyContentSpaceBetween()
+
+        .userLtd
+            height: 19px
+            font-size: 14px
+            font-family: Avenir-Book, Avenir
+            font-weight: normal
+            color: #6B6C80
+            line-height: 19px
+            margin: 12px 0 0
+
+        .username
+            height: 36px
+            font-size: 26px
+            font-family: Avenir-Black, Avenir
+            font-weight: 900
+            color: #FFFFFF
+            line-height: 36px
+            margin: 6px 0
+            one-line(250px)
+
+        .num
+            height: 22px
+            font-size: 16px
+            font-family: Avenir-Book, Avenir
+            font-weight: normal
+            color: #B4B7D6
+            line-height: 22px
+
+        .priceTitle
+            height: 19px
+            font-size: 14px
+            font-family: Avenir-Book, Avenir
+            font-weight: normal
+            color: #FFFFFF
+            line-height: 19px
+            margin: 0 0 5px
+            text-align: right
+
+        .priceNumber
+            height: 30px
+            font-size: 22px
+            font-family: Avenir-Black, Avenir
+            font-weight: 900
+            color: #FFFFFF
+            line-height: 30px
+            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            text-align: right

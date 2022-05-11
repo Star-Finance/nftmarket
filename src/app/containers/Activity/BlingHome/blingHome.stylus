@@ -1,0 +1,143 @@
+.page-blingHome
+    .container
+        background: url('./img/bg.png') no-repeat top center
+        background-size: 100% 100%
+        position: relative
+        padding: 92px 0 0
+        height: 100%
+        box-sizing: border-box
+
+        .btn
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 192px
+            height: 67px
+            background: linear-gradient(225deg, #fa2b56 0%, #f91c3d 100%)
+            box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+            border-radius: 8px
+            font-size: 21px
+            font-family: PingFangSC-Regular, PingFang SC
+            font-weight: 400
+            color: #ffffff
+            line-height: 30px
+
+        .header
+            text-align: center
+            font-size: 59px
+            font-family: Avenir-Heavy, Avenir
+            font-weight: 800
+            color: #FFFFFF
+            line-height: 83px
+
+        .main
+            display: flex
+            width: 1330px
+            margin: 0 auto
+
+            .left
+                .mynft
+                    display: block
+                    width: 478px
+                    margin-top:29px;
+
+                .redeemCount
+                    font-size: 26px
+                    font-family: PingFangSC-Medium, PingFang SC
+                    font-weight: 500
+                    color: #FFFFFF
+                    text-align: center
+                    margin: -50px 50px 20px 0
+
+            .right
+                .rarenft
+                    width: 260px
+                    height: 45px
+                    font-size: 32px
+                    font-family: PingFangSC-Medium, PingFang SC
+                    font-weight: 500
+                    color: #ffffff
+                    line-height: 45px
+                    margin-top:56px;
+
+                .blind
+                    font-size: 16px;
+                    font-family: Avenir-Book, Avenir
+                    font-weight: normal
+                    color: #FFFFFF
+                    line-height: 25px 
+                    margin-top:12px;  
+                    opacity:0.9
+
+                .swathto
+                    font-size: 21px
+                    font-family: PingFangSC-Regular, PingFang SC
+                    font-weight: 400
+                    color: #ffffff
+                    line-height: 30px
+                    display: flex
+                    padding: 40px 0
+                    button
+                        color: #ffffff
+                        font-size: 21px
+                        font-family: PingFangSC-Regular, PingFang SC
+                        font-weight: 400
+                    .white
+                        cursor: pointer
+                        width: 360px
+                        height: 67px
+                        background:#fff
+                        border-radius: 7px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin: 0 38px 0 0
+                        color: #25252D;
+
+                    .openbox
+                        cursor: pointer
+                        width: 360px
+                        height: 67px
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                        border-radius: 7px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+
+                .swath
+                    width: 738px
+                    height: 67px
+                    background: #fa2953
+                    box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+                    border-radius: 7px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 21px
+                    font-family: PingFangSC-Regular, PingFang SC
+                    font-weight: 400
+                    color: #ffffff
+                    line-height: 30px
+
+                .messi
+                    font-size: 28px;
+                    font-family: Avenir-Black, Avenir;
+                    font-weight: 900;
+                    color: #FFFFFF;
+                    line-height: 44px;
+                    
+
+                .Owning
+                    font-size: 18px;
+                    font-family: Avenir-Book, Avenir;
+                    font-weight: normal;
+                    color: #FFFFFF;
+                    line-height: 25px;
+                    margin-top:13px;
+
+                .nftzs
+                    display: flex
+                    margin: 20px 0 0
+
+                    img
+                        margin: 0 20px 0 0

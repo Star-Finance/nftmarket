@@ -1,0 +1,343 @@
+.collectionsDown
+    .ant-popover-arrow
+        display: none
+
+    .ant-popover-inner
+        background: none
+        padding: 15px
+        position: relative
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05)
+        width: 1030px
+
+        &:after
+            display: block
+            content: ' '
+            filter: blur(10px)
+            size(100%)
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 1
+            filter: blur(10px)
+            background: rgba(#000, 0.8)
+            border-radius: 12px
+
+        .collectionsDownMain
+            position: relative
+            z-index: 2
+
+            .collectionsDownContent
+                color: #fff
+                flexWrap()
+
+                .item
+                    flexWrapItem(3)
+
+                    .itemContent
+                        margin: 10px
+                        display: flex
+                        height: 70px
+                        border-radius: 35px
+                        padding: 10px
+                        box-sizing: border-box
+                        cursor: pointer
+
+                        &.cur, &:hover
+                            background: rgba(#fff, 0.15)
+
+                        .avatar
+                            size(50px)
+                            border-radius: 50px
+                            overflow: hidden
+
+                            img
+                                display: block
+                                size(100%)
+
+                        .name
+                            one-line()
+                            width: 118px
+                            height: 50px
+                            line-height: @height
+                            font-size: 20px
+                            font-family: Avenir-Medium, Avenir
+                            font-weight: 500
+                            color: #FFFFFF
+                            margin: 0 18px 0 13px
+
+                        .collect
+                            height: 50px
+                            line-height: @height
+                            position: relative
+
+                            .icon
+                                position: absolute
+                                top: 50%
+                                transform: translateY(-50%)
+
+.filtersFormDown
+    background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+    box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05)
+    border-radius: 12px
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    padding: 15px
+
+    .ant-select-item, .ant-select-item-empty
+        padding: 0 20px
+        color: #fff
+        height: 56px
+        line-height: @height
+        border-radius: 35px
+        margin: 5px 0
+        font-size: 20px
+
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled)
+        background: rgba(#fff, 0.1)
+
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+        background: rgba(#fff, 0.15)
+
+    .ant-select-item-option-state
+        color: #fff !important
+
+.page-marketList
+    padding: 125px 0 0
+    background: #25252D
+
+    @media screen and (max-width: 768px)
+        padding: 40px 0 0
+
+    .content
+        background: #25252D url('./img/bg.png') no-repeat top center
+        background-size: 100% 100%
+        color: #fff
+        height: 100%
+
+        .box
+            max-width: 1404px
+            margin: 0 auto
+            padding: 0 20px
+
+            @media screen and (max-width: 768px)
+                width: 100%
+
+            .conditionBox
+                padding: 48px 0 57px
+                display: none
+
+                @media screen and (max-width: 768px)
+                    padding: 0
+
+                .condition
+                    justifyContentSpaceBetween()
+
+                    .collections
+                        font-size: 28px
+                        height: 56px
+                        line-height: @height
+                        font-family: Avenir-Black, Avenir
+                        color: #FFFFFF
+                        cursor: pointer
+
+                        .icon
+                            width: 18px
+                            height: 10px
+                            margin: 0 0 0 15px
+
+                    .type
+                        display: flex
+                        width: 844px
+                        height: 56px
+                        line-height: @height
+                        background: #1B1A21
+                        border-radius: 29px
+
+                        .item
+                            text-align: center
+                            flex: 1
+                            cursor: pointer
+                            font-size: 24px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 500
+                            color: #606074
+
+                            &.cur
+                                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                border-radius: 29px
+                                color: #FFFFFF
+                                font-weight: 900
+
+                    .filters
+                        font-size: 28px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        position: relative
+                        height: 56px
+                        line-height: @height
+                        cursor: pointer
+
+                        .icon
+                            height: 18px
+                            width: 28px
+                            margin: 0 15px 0 0
+
+                .filtersForm
+                    display: flex
+
+                    .item
+                        &:nth-child(1)
+                            .ant-select-selector
+                                width: 340px
+
+                        &:nth-child(2)
+                            padding: 0 28px
+
+                            .ant-select-selector
+                                width: 340px
+
+                        &:nth-child(3)
+                            flex: 1
+
+                            .ant-select
+                                margin: 0 28px 0 0
+                                width: 195px
+
+                            .to
+                                height: 58px
+                                line-height: @height
+                                padding: 0 28px
+                                font-size: 18px
+
+                            .ant-input
+                                flex: 1
+
+                            ::-webkit-input-placeholder /* WebKit browsers */
+                                color: #6A6D76
+                                font-size: 18px
+
+                            ::-moz-placeholder /* Mozilla Firefox 19+ */
+                                color: #6A6D76
+                                font-size: 18px
+
+                            ::-ms-input-placeholder /* Internet Explorer 10+ */
+                                color: #6A6D76
+                                font-size: 18px
+
+                    .itemTitle
+                        font-size: 22px
+                        font-family: Avenir-Heavy, Avenir
+                        font-weight: 800
+                        color: #FFFFFF
+                        margin: 28px 0 32px
+
+                    .itemForm
+                        display: flex
+
+                        .ant-select
+                            .ant-select-selector
+                                background: rgba(#fff, 0.15)
+                                border-radius: 35px
+                                border: 0 none
+                                padding: 0 58px 0 28px
+                                height: 58px
+                                line-height: @height
+
+                                .ant-select-selection-item
+                                    height: 58px
+                                    line-height: @height
+                                    color: #fff
+                                    font-size: 18px
+
+                            .ant-select-arrow
+                                size(20px)
+                                color: #fff
+                                margin: 0
+                                transform: translateY(-50%)
+                                right: 20px
+
+                        .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input
+                            height: 58px
+                            line-height: @height
+                            color: #fff
+                            font-size: 18px
+
+                        .ant-select-multiple .ant-select-selection-item
+                            margin: 0
+                            background: none
+                            border: 0
+                            height: 66px !important
+                            line-height: 58px !important
+
+                        .ant-select-selection-item-remove
+                            color: #999
+
+                        .ant-input
+                            background: rgba(#fff, 0.15)
+                            border-radius: 35px
+                            border: 0 none
+                            padding: 0 28px
+                            height: 58px
+                            line-height: @height
+                            color: #fff
+                            font-size: 18px
+
+            .main
+                margin: 44px auto 0
+                padding: 0 0 26px
+                clear: both
+
+                @media screen and (max-width: 1440px)
+                    max-width: 1020px
+
+                @media screen and (max-width: 1020px)
+                    max-width: 680px
+
+                @media screen and (max-width: 768px)
+                    margin: 22px 0 0
+                    display: block
+
+                .item
+                    padding: 20px 0 0 0
+                    cursor: pointer
+                    box-sizing: border-box
+                    margin: 0 28px 28px 0
+                    float: left
+
+                    &.item1155
+                        background: url('./img/1155.png') no-repeat top center
+                        background-size: calc(100% - 20px) auto
+
+                    &:nth-child(4n)
+                        margin: 0 0 28px
+
+                    @media screen and (max-width: 1440px)
+                        &:nth-child(4n)
+                            margin: 0 28px 28px 0
+
+                        &:nth-child(3n)
+                            margin: 0 0 28px
+
+                    @media screen and (max-width: 1020px)
+                        &:nth-child(4n), &:nth-child(3n)
+                            margin: 0 28px 28px 0
+
+                        &:nth-child(2n)
+                            margin: 0 0 28px
+
+                    @media screen and (max-width: 768px)
+                        margin: 0 0 10px !important
+                        float: none
+
+                        .cardBlock
+                            width: 100%
+
+                .mainLoading
+                    width: 100%
+                    text-align: center
+                    padding: 150px 0
+
+            .page
+                text-align: center
+                padding: 20px 0

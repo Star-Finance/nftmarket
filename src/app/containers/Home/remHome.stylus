@@ -1,0 +1,491 @@
+
+    div.page-home
+        // .lt-layout 
+        @media screen and (min-width: 768px)
+            .lt-header
+                background-color: transparent
+        .banner
+            color: #fff
+            position: relative
+            background: #25252D
+
+            @media screen and (max-width: 768px)
+                height: torem(203)
+                margin: torem(40) 0 0
+
+            .swiper-button-prev
+                background-image: url('./img/bannerArrowLeft.png')
+                background-size: 100% 100%
+                width: torem(83)
+                height: torem(112)
+                top: calc(torem(50) + 50%)
+                transform: translateY(-50%)
+                left: torem(17)
+                opacity: 0.7
+
+                @media screen and (max-width: 768px)
+                    width: torem(17)
+                    height: torem(23)
+                    top: calc(torem(17) + 50%)
+
+                &.swiper-button-disabled
+                    opacity: 0.25
+
+                &:after
+                    display: none
+
+            .swiper-button-next
+                background-image: url('./img/bannerArrowRight.png')
+                background-size: 100% 100%
+                width: torem(83)
+                height: torem(112)
+                top: calc(torem(50) + 50%)
+                transform: translateY(-50%)
+                right: torem(17)
+                opacity: 0.7
+
+                @media screen and (max-width: 768px)
+                    width: torem(17)
+                    height: torem(23)
+                    top: calc(torem(17) + 50%)
+
+                &.swiper-button-disabled
+                    opacity: 0.25
+
+                &:after
+                    display: none
+
+            .swiper-container
+                height 100%
+                @media screen and (max-width: 768px)
+                    height: torem(203)
+
+            .bannerItem
+                height: 100%
+                display: flex
+                @media screen and (max-width: 768px)
+                    height:  torem(203)
+
+                .box
+                    width: torem(1300)
+                    margin: auto
+
+                    // height: 100%
+                    padding: torem(220) torem(20) 0
+                    clear: both
+
+                    @media screen and (max-width: 768px)
+                        width: 100%
+                        padding:torem(8) torem(20) 0
+                        box-sizing: border-box
+
+                    .left
+                        width: torem(558)
+                        float: left
+
+                        @media screen and (max-width: 768px)
+                            width: torem(150)
+
+                        .title
+                            font-size: torem(50)
+
+                            @media screen and (max-width: 768px)
+                                font-size: torem(12)
+                                padding: 0 0 0 torem(10)
+
+                        .text
+                            width: torem(558)
+                            padding: torem(10) torem(20)
+                            font-size: torem(17)
+                            box-sizing: border-box
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.28) 100%)
+
+                            @media screen and (max-width: 768px)
+                                font-size: torem(12)
+                                padding: torem(10)
+                                width: auto
+                                height: auto
+
+                            .btnWrap
+                                display: flex
+                                padding: torem(20) 0 torem(10)
+
+                                .btn
+                                    width: torem(162)
+                                    height: torem(50)
+                                    line-height: @height
+                                    text-align: center
+                                    border-radius: torem(6)
+                                    border: torem(1) solid #FFFFFF
+                                    a
+                                     color:#fff
+                                    &:nth-child(2)
+                                        margin: 0 torem(25)
+
+                    .right
+                        width: torem(638)
+                        height: torem(510)
+                        float: right
+                        display: block
+
+                        @media screen and (max-width: 768px)
+                            width: torem(155)
+                            height: torem(100)
+                            background-size: auto 100% !important
+
+                .btnBox
+                    padding: torem(46) torem(20)
+                    display: flex
+                    font-size: torem(17)
+                    font-weight: bold
+
+                    @media screen and (max-width: 768px)
+                        display: none
+
+                    .Blind
+                        width: torem(166)
+                        height: torem(50)
+                        line-height: @height
+                        text-align: center
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        border-radius: torem(6)
+                        position: relative
+                        cursor: pointer
+
+                        span
+                            position: relative
+                            z-index: 1
+
+                        &:after
+                            display: block
+                            content: ' '
+                            width: torem(156)
+                            height: torem(50)
+                            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                            border-radius: torem(8)
+                            filter: blur(torem(9))
+                            position: absolute
+                            top: torem(6)
+                            right: torem(5)
+
+                    .UserSwapToken
+                        margin-left: torem(30)
+
+                    .Messi
+                        width: torem(166)
+                        height: torem(50)
+                        line-height: @height
+                        text-align: center
+                        border-radius: torem(6)
+                        border: torem(1) solid #FFFFFF
+                        margin: 0 0 0 torem(28)
+                        cursor: pointer
+
+                &.banner0
+                    background: #25252D url('./img/banner.jpeg') no-repeat top center
+                    background-size: auto 100%
+
+                    .box
+                        .right
+                            background: url('./img/banner0.png') no-repeat
+                            background-size: 100% auto
+
+                &.banner1
+                    background: #25252D url('./img/banner.jpeg') no-repeat top center
+                    background-size: auto 100%
+
+                    .box
+                        .right
+                            background: url('./img/banner1.png') no-repeat
+                            background-size: 100% auto
+
+                &.banner2
+                    background: #25252D url('./img/banner.jpeg') no-repeat top center
+                    background-size: auto 100%
+
+                    .box
+                        .right
+                            background: url('./img/banner2.png') no-repeat
+                            background-size: 100% auto
+
+                &.banner3
+                    background: none
+                    background-size: auto 100%
+                    position: relative
+
+                    .video
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        top: 0
+                        right: 0
+                        size: 100%
+                        object-fit: fill
+
+                    .box
+                        z-index: 1
+                        position: relative
+
+                        .left
+                            .title
+                                font-size: torem(57)
+
+                            .text
+                                background: none 
+                                padding: torem(48) 0 0
+                        
+
+                        .right
+                            background: url('./img/banner3.png') no-repeat top center
+                            background-size: auto 100%
+
+        .content
+            padding: torem(88) 0 0
+            background: #25252D
+            color: #fff
+
+            @media screen and (max-width: 768px)
+                padding: torem(26) 0 0
+
+            .box
+                width: torem(1400)
+                margin: 0 auto
+                padding: 0 torem(20)
+
+                @media screen and (max-width: 768px)
+                    width: 100%
+
+                .header
+                    justifyContentSpaceBetween()
+
+                    .title
+                        font-size: torem(38)
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+
+                        @media screen and (max-width: 768px)
+                            font-size: torem(20)
+
+                    .more
+                        font-size: torem(26)
+                        font-family: Avenir-Medium, Avenir
+                        font-weight: 500
+                        color: #FFFFFF
+                        cursor: pointer
+
+                        @media screen and (max-width: 768px)
+                            font-size: torem(14)
+                            height: torem(26)
+                            line-height: @height
+
+                .swiper-container
+                    box-sizing: border-box
+
+                .swiper-button-prev
+                    background-image: url('./img/arrowLeft.png')
+                    background-size: 100% 100%
+                    size(torem(54))
+                    left: torem(-27)
+                    margin-top: torem(-27)
+                    z-index: 1
+
+                    @media screen and (max-width: 768px)
+                        display: none
+
+                    &:after
+                        display: none
+
+                .swiper-button-next
+                    background-image: url('./img/arrowRight.png')
+                    background-size: 100% 100%
+                    size(torem(54))
+                    right: torem(-27)
+                    margin-top: torem(-27)
+                    z-index: 1
+
+                    @media screen and (max-width: 768px)
+                        display: none
+
+                    &:after
+                        display: none
+
+                .collections
+                    margin: 0 0 torem(120)
+
+                    @media screen and (max-width: 768px)
+                        margin: 0 0 torem(20)
+
+                    .main
+                        margin: torem(44) 0 0
+                        position: relative
+
+                        @media screen and (max-width: 768px)
+                            margin: torem(22) 0 0
+
+                        .item
+                            width: torem(388)
+
+                            .max
+                                position: relative
+
+                                .user
+                                    position: absolute
+                                    width: 100%
+
+                                    .avatar
+                                        size(torem(96))
+                                        border: torem(1) solid #fff
+                                        border-radius: torem(96)
+                                        overflow: hidden
+                                        margin: torem(70) auto torem(25)
+
+                                        img
+                                            width: 100%
+                                            display: block
+
+                                    .name
+                                        text-align: center
+                                        margin: 0 0 torem(6)
+                                        font-size: torem(20)
+                                        font-family: Avenir-Black, Avenir
+                                        font-weight: 900
+                                        color: #FFFFFF
+
+                                    .address
+                                        text-align: center
+                                        font-size: torem(14)
+                                        font-family: Avenir-Medium, Avenir
+                                        font-weight: 500
+                                        color: #FFFFFF
+
+                                .img
+                                    height:torem(280)
+
+                                    img
+                                        size(100%)
+                                        display: block
+
+                            .min
+                                justifyContentSpaceBetween()
+                                margin:torem(5) 0 0
+
+                                img
+                                    display: block
+                                    width:torem(125)
+                                    height: torem(102)
+
+                                    @media screen and (max-width: 768px)
+                                        flex: 1
+
+                                        &:nth-child(2)
+                                            margin: 0 torem(5)
+
+                .boom
+                    margin: 0 0 torem(77)
+
+                    @media screen and (max-width: 768px)
+                        margin: 0 0 torem(20)
+
+                    .main
+                        margin: torem(44) 0 0
+                        position: relative
+
+                        @media screen and (max-width: 768px)
+                            margin: torem(22) 0 0
+
+                        .item
+                            width: torem(340)
+                            height: torem(245)
+                            position: relative
+                            border-radius: torem(5)
+
+                            .itemMain
+                                position: absolute
+                                size(100%)
+
+                                .itemTitle
+                                    border-bottom: torem(1) solid rgba(#fff, 0.3)
+                                    height: torem(50)
+                                    line-height: @height
+                                    color: #fff
+                                    justifyContentSpaceBetween()
+                                    padding: 0 torem(14)
+
+                                    .itemText
+                                        font-size: torem(20)
+                                        font-family: Avenir-Black, Avenir
+                                        font-weight: 900
+
+                                    .itemTime
+                                        font-size: torem(18)
+                                        font-family: Avenir-Book, Avenir
+                                        font-weight: normal
+                                        background: url('./img/boomTime.png') no-repeat left center
+                                        background-size: torem(17) auto
+                                        padding: 0 0 0 torem(27)
+
+                                .itemNumber
+                                    text-align: center
+                                    font-size: torem(34)
+                                    font-family: Avenir-Black, Avenir
+                                    font-weight: 900
+                                    margin: torem(29) 0 0
+
+                                .itemType
+                                    font-size: torem(20)
+                                    font-family: Avenir-Medium, Avenir
+                                    font-weight: 500
+                                    text-align: center
+
+                                .itemBtn
+                                    width: torem(213)
+                                    height: torem(50)
+                                    line-height: @height
+                                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                    border-radius: torem(7)
+                                    font-size: torem(20)
+                                    font-family: Avenir-Heavy, Avenir
+                                    font-weight: 800
+                                    text-align: center
+                                    margin: torem(17) auto 0
+
+                            img
+                                size(100%)
+
+                .newest
+                    padding: 0 0 torem(60)
+                    width: 100%
+
+                    .main
+                        flexWrap()
+                        margin: torem(44) 0 0
+
+                        @media screen and (max-width: 768px)
+                            margin: torem(22) 0 0
+                            display: block
+
+                        .item
+                            padding: 0 torem(10) torem(20) 0
+                            flexWrapItem(4)
+                            cursor: pointer
+                            box-sizing: border-box
+
+                            &:nth-child(4n)
+                                padding: 0 0 torem(20)
+
+                            @media screen and (max-width: 768px)
+                                padding: 0 0 torem(10) !important
+
+                                .cardBlock
+                                    width: 100%
+
+                    .loadMore
+                        text-align: center
+                        padding: torem(30) 0
+
+                        span
+                            cursor: pointer
+
+                            &.disable
+                                cursor: not-allowed

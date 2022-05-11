@@ -1,0 +1,203 @@
+.page-GetKey
+    padding: torem(42) 0 0
+    background-color: #100D27
+    color: #FFFFFF
+
+    .lt-top
+        background-color: #100D27
+
+    .opt-container
+        height: torem(956)
+        // background-image: url('https://qc-shop-1258490024.file.myqcloud.com/bomb/getKeyOptBoxBg.jpg')
+        display: flex
+        position: relative
+
+        .div-portal
+            width: torem(400)
+            height: torem(400)
+            position: absolute
+            right: 10%
+            top: 30%
+            flexCenter()
+            font-size: torem(32)
+            cursor: pointer
+            opacity: 0
+            overflow: hidden
+            transition: opacity 1s
+
+            &:hover
+                opacity: 1
+
+            img
+                width: 350%
+                position: absolute
+                right: -26%
+
+        .opt-box
+            display: flex
+            align-items: center
+            margin: auto torem(610) auto auto
+
+            // position: absolute
+            // top: 24%
+            // left: 12%
+            // z-index: 20
+            .bg-gif
+                position: absolute
+                width: 100%
+                height: 100%
+
+            >img
+                height: torem(482)
+                // width: torem(404)
+                margin-top: torem(90)
+
+            .right
+                // width: torem(600)
+                margin-left: torem(32)
+
+                .cost-title
+                    font-size: torem(48)
+                    font-family: Avenir-Heavy, Avenir
+                    font-weight: 800
+
+                    &:nth-child(2)
+                        textColor()
+
+                .desc
+                    font-size: torem(20)
+                    font-family: Avenir-Medium, Avenir
+                    font-weight: 500
+                    margin: torem(16) 0 torem(50)
+                    width: torem(600)
+
+                .price-title
+                    font-size: torem(24)
+                    font-family: PingFangSC-Medium, PingFang SC
+                    font-weight: 500
+
+                .price
+                    font-size: torem(24)
+                    font-family: PingFangSC-Medium, PingFang SC
+                    font-weight: 500
+                    margin: torem(4) 0 torem(44)
+
+                    span
+                        textColor()
+                        font-size: torem(38)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        display: inline-block
+                        margin-right: torem(18)
+
+                .btns
+                    display: flex
+
+                    // width: torem(626)
+                    .btn
+                        btnColor(1)
+                        flexCenter()
+                        width: torem(222)
+                        height: torem(60)
+                        border-radius: torem(8)
+                        font-size: torem(24)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        color: #FFFFFF
+
+                    .btn-exchange
+                        // width: torem(381)
+                        width: torem(400)
+                        height: torem(60)
+                        border-radius: torem(8)
+                        font-size: torem(24)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+                        margin-left: torem(20)
+
+    .intro-container
+        display: flex
+
+        .intro-box
+            margin: auto
+
+            .title
+                font-size: torem(40)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                margin: torem(60) 0 torem(24)
+
+            .video-box
+                width: torem(1440)
+                height: torem(614)
+                border: torem(1) solid
+                border-image: linear-gradient(225deg, rgba(50, 197, 255, 1), rgba(182, 32, 224, 1), rgba(247, 181, 0, 1)) 1 1
+                padding: torem(10)
+
+                .div-iframe
+                    width: 100%
+                    height: 100%
+                    background-image: url('./img/youtube_bg.png')
+                    display: flex
+                    position: relative
+
+                    .ant-spin
+                        margin: auto
+
+                        .anticon-loading
+                            color: #fd346e
+
+                    iframe
+                        width: 100%
+                        height: 100%
+                        position: absolute
+
+            .div-p-box
+                margin-top: torem(30)
+
+                .div-p
+                    display: flex
+                    margin-bottom: torem(16)
+
+                    .name
+                        font-size: torem(24)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+
+                    .value
+                        max-width: torem(1438)
+                        font-size: torem(20)
+                        font-family: PingFangSC-Regular, PingFang SC
+                        font-weight: 400
+                        color: #9293A6
+                        padding-top: torem(6)
+
+                .div-p:nth-child(3)
+                    flex-direction: column
+
+            .links-box
+                padding-bottom: torem(130)
+
+                .icons
+                    margin: torem(40) 0 torem(14)
+
+                    a
+                        color: #fff
+                        margin-right: torem(30)
+
+                        .icon
+                            width: torem(44)
+                            height: torem(44)
+
+                    a:hover
+                        color: #fff
+
+                .links
+                    a
+                        display: flex
+                        font-size: torem(18)
+                        font-family: PingFangSC-Regular, PingFang SC
+                        font-weight: 400
+                        color: #6B6C80
+                        margin-bottom: torem(6)

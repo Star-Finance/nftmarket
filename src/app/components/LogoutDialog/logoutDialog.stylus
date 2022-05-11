@@ -1,0 +1,93 @@
+.logoutDialog
+    .ant-modal-body
+        padding: 0
+
+    .ant-modal-content
+        background: #42454D
+        border-radius: 9px
+        padding: 20px
+
+    .modalTitle
+        position: relative
+
+        .title
+            font-size: 20px
+            color: #fff
+
+        em
+            position: absolute
+            top: 5px
+            right: 0
+            width: 18px
+            height: 18px
+            display: block
+            background: url('./img/close.png') no-repeat
+            background-size: 100% 100%
+            text-indent: -999em
+            overflow: hidden
+            cursor: pointer
+
+    .modalMain
+        background: #35373E
+        border: 1px solid #464952
+        border-radius: 9px
+        padding: 30px 22px 36px
+        box-sizing: border-box
+        justifyContentSpaceBetween()
+        margin: 20px 0 0
+
+        .account
+            .address
+                font-size: 24px
+                color: #fff
+                height: 26px
+                line-height: @height
+                margin: 0 0 25px
+
+            .link
+                display: flex
+
+                a
+                    height: 19px
+                    display: block
+                    background: url('./img/link.png') no-repeat right center
+                    background-size: 19px 19px
+                    padding: 0 30px 0 0
+                    cursor: pointer
+                    color: #fff
+                    margin: 0 0 0 18px
+
+                i
+                    height: 19px
+                    display: block
+                    background: url('./img/copy.png') no-repeat right center
+                    background-size: 19px 19px
+                    padding: 0 30px 0 0
+                    cursor: pointer
+                    color: #fff
+
+        .text
+            font-size: 13px
+            font-family: 'Poppins-SemiBold'
+            font-weight: 600
+            color: #7D88BB
+            margin: 10px 0 0
+
+    .ModalBtn
+        justifyContentCenter()
+        margin: 17px 0 0
+
+        .btn
+            width: 120px
+            height: 36px
+            line-height: @height
+            text-align: center
+            color: #fff
+            border: 1px solid #616570
+            border-radius: 18px
+
+            &:hover
+                background: #2781FF
+                border: 1px solid #2781FF
+                cursor: pointer
+                

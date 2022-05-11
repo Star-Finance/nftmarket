@@ -1,0 +1,90 @@
+.page-messiBlindBox
+    background: url('./img/bg.png') no-repeat top center
+    background-size: 100% auto
+    background-size: cover
+
+    .container
+        overflow: hidden
+        position: relative
+
+        .MessiNFT
+            width: 1266px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            .title
+                padding: 0 0 20px 135px
+
+            .main
+                display: flex
+
+                .left
+                    position: relative
+
+                    .messi
+                        width: 519px
+
+                    .messi-nft
+                        position: absolute
+                        bottom: 54px
+                        left: 138px
+                        width: 231px
+                        height: 67px
+                        line-height: @height
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        border-radius: 7px
+                        text-align: center
+                        font-size: 28px
+                        font-family: PingFangSC-Regular, PingFang SC
+                        font-weight: 400
+                        color: #FFFFFF
+                        cursor: pointer
+
+                .right
+                    margin-top: 20px
+
+                    .row
+                        display: flex
+
+                        img
+                            height: 276px
+
+                    .row:nth-child(1)
+                        justify-content: center
+
+        .ordinary
+            width: 636px
+            height: 236px
+            position: relative
+            background: url('../BlingBox//img/open_box_2.gif')
+            background-size: 460px
+            background-position: center center
+            background-repeat: no-repeat
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            &.active
+                background: url('../BlingBox//img/open_box_1.gif')
+
+            .ordinary-nft
+                width: 439px
+                height: 67px
+                background: #fa2953
+                position: absolute
+                left: 50%
+                bottom: -50%
+                transform: translate(-50%, 0)
+                font-size: 21px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #ffffff
+                line-height: 30px
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                border: 0 none

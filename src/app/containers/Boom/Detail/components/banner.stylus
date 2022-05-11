@@ -1,0 +1,168 @@
+.BoomDetail
+    .modal-box
+        div.modalRule
+            height: torem(600)
+            padding: 0.34rem 0;
+            img 
+              width: torem(969)
+              height: torem(448)
+            .modalTitle
+                font-size: torem(38);
+                font-family: Avenir-Black, Avenir;
+                font-weight: 900;
+                letter-spacing: torem(1);
+                text-align: center
+                margin-bottom: torem(14)
+            .modalMain
+                font-size: torem(18);
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                padding: 0 torem(42)
+                .center
+                    display: flex
+                    align-items: center
+                    padding: torem(22) 0
+                    .name
+                        margin-right: torem(74)
+                    .value
+                        img 
+                          margin-left: torem(10)
+    .banner
+        padding: torem(60) 0 torem(96) 0
+        display: flex
+        background-image: url(../img/bg.gif)
+        // background-position: center center
+        background-repeat: repeat repeat
+        .left
+            // width: 45%
+            flex: 1
+            display: flex
+            justify-content: flex-end
+            .info
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: torem(540)
+                margin-right: torem(100)
+                padding-top: torem(47)
+                // margin-left: torem(100)
+                .title
+                    font-size: torem(36);
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    letter-spacing: torem(1);
+                    margin-bottom: torem(14)
+                .total
+                    font-size: torem(100);
+                    font-family: Trattatello;
+                    color: #FFFFFF;
+                    letter-spacing: torem(2);
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding-right: torem(10)
+                    line-height: torem(100)
+                    margin:0  0 torem(10)
+
+                .reward-level
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    // display: inline-block
+                    .item
+                        display: inline-block
+                        // width: 50%
+                        min-width: torem(246)
+                        font-size: torem(18);
+                        // font-weight: 600;
+                        color: #FFFFFF;
+                        line-height: torem(25);
+                        margin-bottom: torem(2)
+                        // flex:0 0 50%   
+                        &:nth-child(2n+1)
+                            margin-right: torem(20) 
+                        &:nth-child(2n)
+                            min-width:torem(210)  
+                        &:last-child
+                            opacity:0
+                .Countdown
+                    display: flex
+                    margin-top: torem(36)
+                    .item
+                        width: torem(92);
+                        height: torem(92);
+                        background: #2D2C67;
+                        border-radius: 50%
+                        margin: 0 torem(21)
+                        flexCenter()
+                        flex-direction: column
+                        .value
+                            font-size: torem(26);
+                            font-family: Avenir Heavy;
+                            color: #FFFFFF;
+                        .name
+                            font-size:torem(14)
+                            color: #AAACC1
+                .btn
+                    width: torem(541);
+                    height: torem(60);
+                    border-radius: torem(8);
+                    font-size: torem(28);
+                    font-family: Avenir-Heavy, Avenir;
+                    font-weight: 800;
+                    color: #FFFFFF;
+                    margin-top: torem(36)
+                    btnColor(1)
+                    flexCenter()
+                .look-rule
+                    margin-top: torem(20);
+                    font-size: torem(20);
+                    font-weight: 600;
+                    color: #FF1A5E;
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    img
+                     display: inline-block
+                     margin-left:torem(8) 
+                    
+
+        .right
+            //flex:1
+            width: 50%
+            overflow hidden
+            display: flex
+            @keyframes slidein { from { transform:translateX(torem(40)); } to { transform:translateX(torem(-2240)); } }
+            @keyframes slideout { from { transform:translateX(torem(-2240));  } to { transform:translateX(torem(40));  } }
+            #slides
+                margin: auto
+                position relative
+                min-width: torem(3200)
+                .slide
+                    &:nth-child(1)
+                        margin-bottom: torem(14)
+                    .img-fluid
+                        display: inline-block
+                        width: torem(300);
+                        height: torem(300);
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center center
+                        margin-right: torem(20)
+
+                #slide1
+                        animation: 30s linear 0s infinite alternate slidein;
+                #slide2
+                    animation: 30s linear 0s infinite alternate slideout;
+                #cover-anim-gradient-left 
+                    margin-top: 0;
+                    left: torem(-12);
+                    top:0
+                    height: 100%;
+                    width: torem(300);
+                    position: absolute;
+                    background: linear-gradient(to right, rgba(16, 13, 39, 1) 1%, rgba(0, 0, 0, 0));

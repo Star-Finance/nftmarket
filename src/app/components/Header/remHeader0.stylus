@@ -1,0 +1,186 @@
+@media screen and (min-width:768px)
+
+ .page-home,.page-marketList,.page-MyNFTList,.page-MyNFTShell
+    .lt-top
+        height: torem(40)
+        line-height: @height
+        padding: 0 torem(60)
+        background: #25252D
+        color: #fff
+        position: fixed
+        top: 0
+        width 100%
+        z-index 3
+
+        @media screen and (max-width: 768px)
+            display: none
+        @media screen and (max-width: torem(820))
+            padding: 0 0
+        .main
+            justifyContentSpaceBetween()
+            margin: 0 auto
+            // width: torem(1400)
+            padding: 0 torem(20)
+
+            @media screen and (max-width: 768px)
+                padding: torem(7) torem(10)
+                width: auto
+
+            .left
+                font-size: torem(16)
+                display: flex
+
+                img
+                    margin: torem(8) 0
+                    size(torem(24))
+
+                .balance
+                    margin: 0 torem(20) 0 torem(10)
+
+                .collection
+                    cursor: pointer
+
+            .right
+                font-size: torem(16)
+                display: flex
+
+                .UserSwapToken
+                    padding-right:torem(20)
+                    cursor: pointer 
+
+                .connect
+                    cursor: pointer
+
+                    &.user
+                        background-size: torem(24) torem(24)
+                        padding: 0 torem(34) 0 0
+
+                    &:hover
+                        color: rgba(#fff, 0.5)
+
+                .im
+                    background-size: auto torem(20)
+                    display: flex
+                    margin: 0 0 0 torem(16)
+
+                    a
+                        height: torem(40)
+                        line-height: torem(40)
+
+                    .item
+                        size(torem(24))
+                        margin: torem(8) 0 torem(8) torem(16)
+                        color: #fff
+
+                        &:hover
+                            color: rgba(#fff, 0.5)
+                            cursor: pointer
+
+    .lt-header
+        width: 100%
+        position: fixed
+        top: torem(40)
+        border-bottom: torem(1) solid rgba(#fff, 0.15)
+        height: torem(92)
+        z-index: 2
+        background: transparent
+
+        @media screen and (max-width: 768px)
+            background: #25252d
+            height: torem(44)
+            position: fixed
+            top: 0
+
+        .main
+            padding: torem(20)
+            clear: both
+            margin: 0 auto
+            // width: torem(1400)
+
+            @media screen and (max-width: 768px)
+                padding: torem(7) torem(10)
+                width: auto
+
+            .left
+                float: left
+                display: flex
+
+                .logo
+                    width: torem(202)
+                    height: torem(52)
+                    background-size: 100% auto
+                    cursor: pointer
+
+                    @media screen and (max-width: 768px)
+                        width: torem(116)
+                        height: torem(26)
+
+                .search
+                    width: torem(390)
+                    height: torem(40)
+                    margin: 0 0 0 torem(36)
+                    border: torem(1) solid #E6E8F0
+                    background-size: torem(12) torem(12)
+                    padding: 0 0 0 torem(30)
+                    border-radius: torem(30)
+
+                    .ant-input
+                        background: none
+                        border: 0 none
+                        height: torem(34)
+                        line-height: @height
+                        color: #fff
+
+                        &:focus
+                            box-shadow: none
+
+            .right
+                float: right
+                display: flex
+                font-size: torem(21)
+
+                @media screen and (max-width: 768px)
+                    display: none
+
+                .menu
+                    display: flex
+
+                    .item
+                        // margin: 0 torem(40) 0 0
+                        height: torem(36)
+                        line-height: @height
+                        color: #fff
+
+                .create
+                    height: torem(36)
+                    line-height: @height
+                    border-radius: torem(20)
+                    padding: 0 torem(30)
+                    color: #fff
+                    border: torem(1) solid #fff
+                    font-size: torem(21)
+                    cursor: pointer
+
+                .language
+                    background-size: 100% 100%
+                    size(torem(30))
+                    margin: torem(9) 0 torem(9) torem(40)
+                    cursor: pointer
+
+                .theme
+                    background-repeat: no-repeat
+                    background-size: 100% 100%
+                    size(torem(30))
+                    margin: torem(9) 0 torem(9) torem(24)
+                    cursor: pointer
+
+
+            .mobileMenu
+                float: right
+                display: none
+                height: torem(26)
+                line-height: @height
+                color: #fff
+
+                .icon
+                    size: @height

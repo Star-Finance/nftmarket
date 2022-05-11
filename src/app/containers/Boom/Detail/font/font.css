@@ -1,0 +1,16 @@
+/* 自定义字体引入 */
+
+@font-face {
+  font-family: Avenir;
+  src: url(./Avenir.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: TransformersMovie;
+  src: url(./Transformers-Movie.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Trattatello;
+  src: url(./Trattatello.ttf) format("truetype");
+}

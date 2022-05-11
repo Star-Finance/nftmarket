@@ -1,0 +1,130 @@
+.cardBlock
+    background: #2C2D3A
+    border-radius: 12px
+    padding: 0 20px 22px
+    box-sizing: border-box
+
+    &:hover
+        background: #37394C
+
+    .cardHeader
+        justifyContentSpaceBetween()
+        padding: 16px 0
+
+        .typeList
+            display: flex
+
+            .typeItem
+                margin: 0 10px 0 0
+
+        .typeItem
+            size(20px)
+            background-size: 20px 20px
+
+            &.typeItem1
+                background-image: url('./img/1.png')
+
+            &.typeItem2
+                background-image: url('./img/2.png')
+
+            &.typeItem3
+                background-image: url('./img/3.png')
+
+            &.typeItem4
+                background-image: url('./img/4.png')
+
+            &.money
+                background-image: url('./img/money.png')
+
+            &.auction
+                background-image: url('./img/money.png')
+
+            &.money
+                background-image: url('./img/money.png')
+
+    .cardImage
+        border-radius: 5px
+        cursor: pointer
+        margin: 0 auto
+
+    .cardContent
+        position: relative
+
+        .name
+            font-size: 22px
+            font-family: Avenir-Black, Avenir
+            font-weight: 900
+            color: #FFFFFF
+            margin: 10px 0 9px
+            height: 36px
+            line-height: @height
+            one-line(250px)
+
+        .address
+            display: flex
+            margin: 0 0 10px
+
+            .userAvatar
+                size(28px)
+                border-radius: 28px
+                overflow: hidden
+                margin: 0 12px 0 0
+
+                img
+                    display: block
+                    size(100%)
+
+            .userAddress
+                font-size: 16px
+                font-family: Avenir-Medium, Avenir
+                font-weight: 500
+                color: #FFFFFF
+                height: 28px
+                line-height: @height
+
+        .cardContentBottom
+            justifyContentSpaceBetween()
+
+            .price
+                font-family: PingFangSC-Semibold, PingFang SC
+                background: url('./img/money.png') no-repeat left center
+                background-size: 15px 15px
+                padding: 0 0 0 25px
+
+                span
+                    height: 36px
+                    font-size: 26px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 36px
+                    background: linear-gradient(354deg, #FF477F 0%, #FF8923 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+
+            .time
+                font-size: 14px
+                font-family: Lato-Regular, Lato
+                font-weight: 400
+                color: #FFFFFF
+                background: url('./img/time.png') no-repeat left center
+                background-size: 15px 15px
+                padding: 0 0 0 25px
+                height: 15px
+                line-height: @height
+                margin: 15px 0 0
+
+        .cordLike
+            position: absolute
+            top: 0
+            right: 0
+            background: url('./img/like.png') no-repeat top center
+            background-size: 23px 21px
+            padding: 25px 0 0
+            min-width: 30px
+            text-align: center
+            font-size: 18px
+
+            &.isLike
+                background-image: url('./img/likeIsLike.png')
+                color: #FF1A5E

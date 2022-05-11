@@ -1,0 +1,122 @@
+//  @media screen and (min-width: 768px)
+    div.cardBlock
+        background: #2C2D3A
+        border-radius: torem(12)
+        padding: 0 torem(20) torem(22)
+        box-sizing border-box
+
+        &:hover
+            background: #37394C
+
+        .cardHeader
+            justifyContentSpaceBetween()
+            padding: torem(16) 0
+
+            .typeList
+                display: flex
+                
+                .typeItem
+                    margin: 0 torem(10) 0 0
+
+            .typeItem
+                size(torem(20))
+                background-size: torem(20) torem(20)
+                
+                &.typeItem1
+                    background-image: url(./img/1.png)
+
+                &.typeItem2
+                    background-image: url(./img/2.png)
+
+                &.typeItem3
+                    background-image: url(./img/3.png)
+
+                &.typeItem4
+                    background-image: url(./img/4.png)
+                    
+                &.money
+                    background-image: url(./img/money.png)
+
+                &.auction
+                    background-image: url(./img/money.png)
+
+                &.money
+                    background-image: url(./img/money.png)
+
+        .cardImage
+            border-radius: torem(5)
+            cursor pointer
+            margin: 0 auto
+            width 2.8rem !important
+            height: 2.8rem !important
+        .cardContent
+            position: relative
+
+            .name
+                font-size: torem(18)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                margin: torem(18) 0 torem(10)
+
+            .address
+                display: flex
+                margin: 0 0 torem(10)
+
+                .userAvatar
+                    size(torem(34))
+                    border-radius: torem(34)
+                    overflow: hidden
+                    margin: 0 torem(12) 0 0
+
+                    img
+                        display: block
+                        size(100%)
+
+                .userAddress
+                    font-size: torem(16)
+                    font-family: Avenir-Medium, Avenir
+                    font-weight: 500
+                    color: #FFFFFF
+                    height: torem(34)
+                    line-height: @height
+
+            .cardContentBottom
+                justifyContentSpaceBetween()
+
+                .price
+                    font-size: torem(20);
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    background: url(./img/money.png) no-repeat left center
+                    background-size: torem(15) torem(15)
+                    height: torem(30)
+                    line-height: @height
+                    padding: 0 0 0 torem(25)
+
+                .time
+                    font-size: torem(14)
+                    font-family: Lato-Regular, Lato
+                    font-weight: 400
+                    color: #FFFFFF
+                    background: url(./img/time.png) no-repeat left center
+                    background-size: torem(15) torem(15)
+                    padding: 0 0 0 torem(25)
+                    height: torem(15)
+                    line-height: @height
+                    margin: torem(15) 0 0
+
+            .cordLike
+                position: absolute
+                top: 0
+                right: 0
+                background: url(./img/like.png) no-repeat top center
+                background-size: torem(23) torem(21)
+                padding: torem(25) 0 0
+                min-width: torem(30)
+                text-align: center
+
+                &.isLike
+                    background-image: url(./img/likeIsLike.png)
+                    color: #FF1A5E

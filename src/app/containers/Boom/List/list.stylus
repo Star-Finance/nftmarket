@@ -1,0 +1,275 @@
+.page-boomList
+    padding: 40px 0 0
+    background: #25252D
+
+    @media screen and (max-width: 768px)
+        padding: 40px 0 0
+
+    .content
+        background: #100D27
+        background-size: 100% 100%
+        color: #fff
+        height: 100%
+
+        .banner
+            height: 1040px
+            background: url('./img/banner01.jpeg') no-repeat top center
+
+            .block
+                max-width: 1400px
+                margin: 0 auto
+                display: flex
+
+                .left
+                    .name
+                        height: 80px
+                        width: 200px
+                        background: url('./img/name.png')
+                        margin: 166px 0 0 24px
+
+                    .title
+                        margin: 10px 0 0 24px
+
+                    .video
+                        width: 757px
+                        height: 426px
+                        background: #fff
+                        margin: 20px 0 0 24px
+                        border-radius: 15px
+
+                        .frequency
+                            height: 100%
+                            width: 100%
+                            border-radius: 15px
+
+                    .btn
+                        btnColor(1)
+                        width: 440px
+                        height: 70px
+                        line-height: @height
+                        border-radius: 12px
+                        font-size: 32px
+                        font-family: Avenir-Heavy, Avenir
+                        color: #FFFFFF
+                        font-weight: 500
+                        margin: 46px 0 0 24px
+
+                .right
+                    margin: 136px 0 0 215px
+
+                    .item
+                        width: 380px
+                        height: 225px
+                        position: relative
+                        border-radius: 5px
+                        margin-top: 30px
+
+                        @media screen and (max-width: 768px)
+                            height: 285px
+                            padding: 0 0 40px
+
+                        .itemMain
+                            position: absolute
+                            size(100%)
+
+                            .itemTitle
+                                border-bottom: 1px solid rgba(#fff, 0.3)
+                                height: 50px
+                                line-height: @height
+                                color: #fff
+                                justifyContentSpaceBetween()
+                                padding: 0 14px
+
+                                .itemText
+                                    font-size: 18px
+
+                                .itemTime
+                                    font-size: 18px
+                                    font-weight: normal
+                                    background: url('./img/boomTime.png') no-repeat left center
+                                    background-size: 17px auto
+                                    padding: 0 0 0 27px
+
+                                    span
+                                        background: linear-gradient(180deg, #EEEEEE 0%, #D8D8D8 100%)
+                                        -webkit-background-clip: text
+
+                            .itemNumber
+                                text-align: center
+                                font-size: 34px
+                                font-family: Avenir-Black, Avenir
+                                font-weight: 900
+                                margin: 29px 0 -10px
+                                background: linear-gradient(180deg, #EEEEEE 0%, #D8D8D8 100%)
+                                -webkit-background-clip: text
+                                -webkit-text-fill-color: transparent
+
+                            .itemType
+                                font-size: 20px
+                                font-family: Avenir-Medium, Avenir
+                                font-weight: 500
+                                text-align: center
+                                color: #A7A7AF
+
+                            .itemBtn
+                                width: 213px
+                                height: 50px
+                                line-height: @height
+                                font-size: 20px
+                                font-family: Avenir-Heavy, Avenir
+                                font-weight: 800
+                                margin: 17px auto 0
+                                btnColor(1)
+
+                        img
+                            size(100%)
+
+        .list
+            max-width: 1400px
+            margin: 0 auto
+            padding: 0 20px 126px
+
+            @media screen and (max-width: 768px)
+                width: 100%
+
+            .item
+                display: flex
+                padding: 126px 0 0
+
+                .img
+                    size: 400px 528px
+                    background-position: top center
+                    background-size: auto 100%
+                    position: relative
+
+                    .tag
+                        position: absolute
+                        top: -7px
+                        font-size: 28px
+                        font-family: Avenir-Heavy, Avenir
+                        font-weight: 800
+                        color: #FFFFFF
+                        text-align: center
+                        line-height: 58px
+                        width: 166px
+                        height: 68px
+                        background-size: 100% auto
+
+                        &.end
+                            background-image: url('./img/end.png')
+
+                        &.sell
+                            background-image: url('./img/sell.png')
+
+                .info
+                    flex: 1
+                    padding: 0 0 0 58px
+
+                    .title
+                        .titleTxt
+                            font-size: 42px
+
+                        .titleTime
+                            font-size: 36px
+                            color: #6B6C80
+                            padding: 0 0 0 36px
+
+                        .titleTag
+                            display: inline-block
+                            height: 32px
+                            line-height: 32px
+                            background: #6A6A72
+                            border-radius: 6px
+                            color: #fff
+                            transform: translateY(-10px)
+                            margin: 0 0 0 24px
+                            padding: 0 14px
+
+                    .txt
+                        font-size: 20px
+                        font-family: Avenir-Medium, Avenir
+                        font-weight: 500
+                        color: #AAACC1
+
+                    .price
+                        height: 40px
+                        font-size: 38px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        line-height: 40px
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        margin: 20px 0 30px
+
+                    .card
+                        width: 960px
+                        position: relative
+
+                        .cardItem
+                            width: 214px
+                            height: 214px
+                            
+                            img
+                                size: 100%
+
+                        .swiper-button-prev
+                            background-image: url('./img/arrowLeft.png')
+                            background-size: 100% 100%
+                            size(54px)
+                            left: -27px
+                            margin-top: -27px
+                            z-index: 1
+
+                            @media screen and (max-width: 768px)
+                                display: none
+
+                            &:after
+                                display: none
+
+                        .swiper-button-next
+                            background-image: url('./img/arrowRight.png')
+                            background-size: 100% 100%
+                            size(54px)
+                            right: -27px
+                            margin-top: -27px
+                            z-index: 1
+
+                            @media screen and (max-width: 768px)
+                                display: none
+
+                            &:after
+                                display: none
+
+                    .btnWrap
+                        display: flex
+                        margin: 32px 0 0
+
+                        .btn
+                            flex: 1
+                            text-align: center
+                            font-size: 26px
+                            font-family: PingFangSC-Semibold, PingFang SC
+                            font-weight: 600
+
+                            &.buy
+                                btnColor(1)
+                                height: 60px
+                                line-height: @height
+
+                            &.boom
+                                border-radius: 4px
+                                background: linear-gradient(24deg, rgba(255, 0, 229, 1), rgba(255, 162, 0, 1))
+                                padding: 1px
+                                margin: 0 0 0 36px
+
+                                div
+                                    background: #100D27
+                                    border-radius: 4px
+                                    height: 58px
+                                    line-height: @height
+
+                                    span
+                                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                                        -webkit-background-clip: text
+                                        -webkit-text-fill-color: transparent

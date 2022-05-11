@@ -1,0 +1,96 @@
+.page-success
+    .container
+        background: url('./img/bg.png') no-repeat top center
+        background-size: 100% 100%
+        position: relative
+        // padding: 92px 0 0
+        height: 100%
+        box-sizing: border-box
+
+        .content
+            position: relative
+
+            .mynft
+                display: block
+                width: 478px
+                height: 636px
+                position: absolute
+                top: 58px
+                left: 175px
+
+            .tulations
+                width: 420px
+                height: 73px
+                font-size: 56px
+                font-family: Futura-Medium, Futura
+                font-weight: 500
+                color: #f3264d
+                line-height: 75px
+                position: absolute
+                top: 98px
+                left: 700px
+                background: linear-gradient(343deg, #FF00E5 0%, #FFA200 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            .claim
+                width: 569px
+                height: 60px
+                font-size: 42px
+                font-family: Futura-Medium, Futura
+                font-weight: 500
+                color: #ffffff
+                line-height: 61px
+                position: absolute
+                top: 188px
+                left: 700px
+
+            .lottery
+                width: 643px
+                height: 30px
+                font-size: 20px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #ffffff
+                line-height: 30px
+                position: absolute
+                top: 308px
+                left: 700px
+
+            .btn
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 439px
+                height: 67px
+                background: linear-gradient(225deg, #ffffff 0%, #ffffff 100%)
+                box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+                border-radius: 7px
+                font-size: 21px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #20033e
+                line-height: 30px
+                position: absolute
+                left: 700px
+                top: 408px
+
+            .share
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 439px
+                height: 67px
+                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+                border-radius: 7px
+                font-size: 21px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #ffffff
+                line-height: 30px
+                position: absolute
+                left: 700px
+                top: 508px

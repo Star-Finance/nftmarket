@@ -1,0 +1,63 @@
+.successModal
+    .ant-modal-body
+        padding: 0
+        padding: torem(38) 0 torem(30)
+
+    .ant-modal-content
+        background: #2C2D3A
+        border-radius: torem(16)
+
+    .modalTitle
+        position: relative
+        color: #fff
+        // border-bottom: torem(1) solid rgba(#fff, 0.15)
+        // height: torem(90)
+        flexCenter()
+        padding: 0 torem(24)
+
+        .title
+            font-size: torem(16)
+            color: #fff
+            text-align: center
+
+        em
+            position: absolute
+            top: torem(30)
+            right: torem(34)
+            width: torem(20)
+            height: torem(20)
+            display: block
+            background-size: 100% 100%
+            text-indent: -999em
+            overflow: hidden
+            cursor: pointer
+
+    .modalMain
+        // border-bottom: torem(1) solid rgba(#fff, 0.15)
+        // padding:torem(38) 0 0
+        .img
+            width: torem(240)
+            margin: 0 auto torem(34)
+            display: block
+
+        .btn
+            width: torem(392)
+            height: torem(50)
+            line-height: @height
+            border-radius: torem(7)
+            text-align: center
+            font-size: torem(20)
+            font-family: Avenir-Black, Avenir
+            font-weight: 900
+            margin: 0 auto 0
+            btnColor(1)
+
+    .modalFooter
+        justifyContentSpaceBetween()
+        padding: torem(30) 0
+        width: torem(300)
+        margin: 0 auto
+
+        .icon
+            size: torem(44)
+            color: #fff

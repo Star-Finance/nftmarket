@@ -1,0 +1,26 @@
+.modal-box 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    display: flex
+    .modal
+        position:relative
+        margin: auto
+
+ .fade-modal-enter 
+    opacity: 0;
+    transform: scale(0.9);
+.fade-modal-enter-active 
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+.fade-modal-exit
+    opacity: 1
+
+.fade-modal-exit-active
+    opacity: 0
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms

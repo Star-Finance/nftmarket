@@ -1,0 +1,19 @@
+.go2Top
+    position: relative
+
+    .go2TopBtn
+        position: fixed
+        right: 0
+        bottom: 100px
+        width: 96px
+        height: 96px
+        background: rgba(#fff, .15) url('./img/go2Top.png') no-repeat center
+        background-size: 38px 44px
+        border-radius: 14px 0 0 14px
+        cursor: pointer
+        z-index 1
+
+        @media screen and (max-width:1000px)
+            size: 40px
+            background-size: 20px auto
+            border-radius: 5px 0 0 5px

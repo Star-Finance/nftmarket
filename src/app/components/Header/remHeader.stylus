@@ -1,0 +1,439 @@
+
+.BoomDetail, .page-GetKey, .page-Exchange
+    .ant-input
+        transition: none
+
+    .headerMenu, &.navMenu
+        padding: torem(30) 0 0 !important
+
+    &.userMenu
+        padding: 0 !important
+        margin: torem(-5) 0 0
+
+    .ant-popover-arrow
+        display: none
+
+    .ant-popover-inner
+        background: none
+
+        .ant-popover-inner-content
+            padding: torem(18)
+            font-size: torem(16)
+            background: linear-gradient(225deg, rgba(#E8E8E8, 0.15) 0%, rgba(#C9C9C9, 0.15) 100%)
+            box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05)
+            border-radius: torem(12)
+            position: relative
+
+            &:after
+                content: ' '
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                z-index: -1
+                backdrop-filter: blur(torem(5))
+
+            .menuPopover
+                color: #fff
+                width: torem(387)
+
+                .item
+                    display: flex
+                    height: torem(70)
+                    cursor: pointer
+                    padding: torem(10) torem(24)
+
+                    &:hover
+                        background: rgba(#fff, 0.16)
+                        border-radius: torem(8)
+
+                        .txt
+                            .icon
+                                display: block
+
+                    .ico
+                        .icon
+                            size: torem(50)
+
+                    .txt
+                        display: flex
+                        flex: 1
+                        justifyContentSpaceBetween()
+                        padding: 0 0 0 torem(16)
+
+                        .mainTxt
+                            height: torem(28)
+                            font-size: torem(20)
+                            font-weight: 500
+                            line-height: torem(28)
+                            margin: torem(3) 0 0
+
+                        .subTxt
+                            color: #AAACC1
+                            height: torem(18)
+                            font-size: torem(14)
+                            line-height: @height
+
+                        .icon
+                            size: torem(18)
+                            margin: torem(16) 0 0
+                            display: none
+
+            .userPopover
+                color: #fff
+
+                .item
+                    display: flex
+                    height: torem(60)
+                    cursor: pointer
+                    alignItemsCenter()
+                    padding: 0 torem(28)
+
+                    &:hover
+                        background: rgba(#fff, 0.16)
+                        border-radius: torem(8)
+
+                    .ico
+                        .icon
+                            size: torem(20)
+                            margin: torem(5) torem(14) 0 0
+
+                    .txt
+                        display: flex
+                        flex: 1
+                        justifyContentSpaceBetween()
+
+                        .mainTxt
+                            font-size: torem(20)
+                            font-family: Avenir-Medium, Avenir
+                            font-weight: 500
+                            color: #FFFFFF
+
+                        .icon
+                            margin: torem(5) 0 0 torem(16)
+
+.BoomDetail, .page-GetKey, .page-Exchange
+    .lt-top
+        height: torem(40)
+        line-height: @height
+        padding: 0 torem(60)
+        background: #25252D
+        color: #fff
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 5
+
+        @media screen and (max-width: torem(768))
+            display: none
+
+        @media screen and (max-width: torem(820))
+            padding: 0 0
+
+        .main
+            justifyContentSpaceBetween()
+            margin: 0 auto
+            max-width: torem(1400)
+            padding: 0 torem(20)
+
+            @media screen and (max-width: torem(768))
+                padding: torem(7) torem(10)
+                width: auto
+
+            .left
+                font-size: torem(16)
+                display: flex
+
+                img
+                    margin: torem(8) 0
+                    size(torem(24))
+
+                .balance
+                    margin: 0 torem(20) 0 torem(10)
+
+                .collection
+                    fontColor()
+
+            .right
+                font-size: torem(16)
+                display: flex
+
+                .link
+                    margin: 0 torem(28) 0 0
+
+                .UserSwapToken
+                    padding-right: torem(20)
+                    fontColor()
+
+                .connect
+                    fontColor()
+
+                    &.user
+                        background: url('./img/user.png') no-repeat right center
+                        background-size: torem(24) torem(24)
+                        padding: 0 torem(34) 0 0
+
+                .im
+                    background: url('./img/line.png') no-repeat left center
+                    background-size: auto torem(20)
+                    display: flex
+                    margin: 0 0 0 torem(16)
+
+                    a
+                        height: torem(40)
+                        line-height: torem(40)
+
+                    .item
+                        size(torem(24))
+                        margin: torem(8) 0 torem(8) torem(16)
+                        fontColor()
+
+    .lt-header
+        width: 100%
+        position: fixed
+        top: torem(40)
+        border-bottom: torem(1) solid rgba(#fff, 0.15)
+        height: torem(85)
+        z-index: 2
+
+        .main
+            position: relative
+            z-index: 1
+
+        &:before
+            content: ' '
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: -1
+            backdrop-filter: blur(torem(5))
+
+        @media screen and (max-width: torem(768))
+            background: #25252d
+            height: torem(44)
+            position: fixed
+            top: 0
+
+        .main
+            padding: torem(5) torem(20)
+            clear: both
+            margin: 0 auto
+            max-width: torem(1400)
+
+            @media screen and (max-width: torem(768))
+                padding: torem(7) torem(10)
+                width: auto
+
+            .left
+                float: left
+                display: flex
+
+                .logo
+                    width: torem(194)
+                    height: torem(45)
+                    background: url('./img/logo.png') no-repeat
+                    background-size: 100% auto
+                    cursor: pointer
+                    margin: torem(15) 0
+
+                    @media screen and (max-width: torem(768))
+                        width: torem(116)
+                        height: torem(26)
+                        margin: 0
+
+                .search
+                    width: torem(300)
+                    height: torem(48)
+                    margin: torem(12) 0 0 torem(60)
+                    background: rgba(#fff, 0.1) url('./img/search.png') no-repeat torem(20) center
+                    background-size: torem(18) torem(18)
+                    padding: 0 0 0 torem(40)
+                    border-radius: torem(30)
+                    placeholder(torem(20))
+
+                    @media screen and (max-width: torem(1020))
+                        display: none
+
+                    @media screen and (max-width: torem(768))
+                        display: none
+
+                    .ant-input
+                        background: none
+                        border: 0 none
+                        height: torem(48)
+                        line-height: @height
+                        color: #fff
+                        font-size: torem(20)
+
+                        &:focus
+                            box-shadow: none
+
+            .right
+                float: right
+                display: flex
+                font-size: torem(21)
+
+                @media screen and (max-width: torem(768))
+                    display: none
+
+                .menu
+                    display: flex
+
+                    .item
+                        margin: torem(12) torem(50) 0 0
+                        height: torem(48)
+                        line-height: @height
+                        cursor: pointer
+                        fontColor()
+
+                        .down
+                            position: relative
+                            padding: 0 torem(15) 0 0
+
+                            .icon
+                                position: absolute
+                                size: torem(9)
+                                top: 50%
+                                right: 0
+                                transform: translateY(-50%)
+
+                .create
+                    width: torem(118)
+                    height: torem(50)
+                    line-height: @height
+                    padding: 0 torem(30)
+                    font-size: torem(21)
+                    cursor: pointer
+                    margin: torem(10) 0 0
+                    background: url('./img/btn.png') no-repeat
+                    box-sizing: border-box
+                    background-size: 100%
+
+                    span
+                        background: linear-gradient(90deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+
+                    &:hover
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        border-radius: torem(26)
+
+                        span
+                            background: none
+                            -webkit-background-clip: unset
+                            -webkit-text-fill-color: #fff
+
+                    &:active
+                        background: linear-gradient(24deg, #E023B6 0%, #E08926 100%)
+
+                        span
+                            background: none
+                            -webkit-background-clip: unset
+                            -webkit-text-fill-color: #fff
+
+                .language
+                    background: url('./img/language.png') no-repeat
+                    background-size: 100% 100%
+                    size(torem(52))
+                    margin: torem(10) 0 torem(10) torem(40)
+                    cursor: pointer
+
+                .theme
+                    background-repeat: no-repeat
+                    background-size: 100% 100%
+                    size(torem(52))
+                    margin: torem(10) 0 torem(10) torem(24)
+                    cursor: pointer
+
+                    &.default
+                        background-image: url('./img/default.png')
+
+            .mobileMenu
+                float: right
+                display: none
+                height: torem(26)
+                line-height: @height
+                color: #fff
+
+                .icon
+                    size: @height
+
+                @media screen and (max-width: torem(768))
+                    display: block
+
+    .drawerMenu
+        background: #25252d
+        height: 100%
+        color: #fff
+        padding: torem(20)
+        position: relative
+
+        .balanceBox
+            display: flex
+            margin: torem(10) 0 torem(10)
+
+            img
+                margin: 0 torem(10) 0 0
+
+        .menu
+            font-size: torem(16)
+            margin: torem(20) 0
+
+            .item
+                display: block
+                height: torem(46)
+                line-height: @height
+                color: #fff
+                border-bottom: torem(1) solid rgba(#fff, 0.2)
+                padding: 0 torem(10)
+
+                &.defi
+                    display: none
+
+            .create
+                display: block
+                height: torem(46)
+                line-height: @height
+                color: #fff
+                padding: 0 torem(10)
+
+            .language
+                background: url('./img/language.png') no-repeat
+                background-size: 100% 100%
+                size(torem(18))
+                margin: torem(9) 0 torem(9) torem(40)
+                cursor: pointer
+
+            .theme
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                size(torem(18))
+                margin: torem(9) 0 torem(9) torem(24)
+                cursor: pointer
+
+                &.default
+                    background-image: url('./img/default.png')
+
+        .im
+            .item
+                size(torem(24))
+                margin: torem(8) 0 torem(8) torem(16)
+                color: #fff
+
+        .userBox
+            position: absolute
+            bottom: torem(20)
+            left: torem(20)
+
+            .collection
+                font-size: torem(20)
+                margin: torem(10) 0 0
+
+            .connect
+                background: url('./img/user.png') no-repeat left center
+                background-size: torem(24) torem(24)
+                padding: 0 0 0 torem(34)
+                font-size: torem(16)

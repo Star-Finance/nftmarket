@@ -1,0 +1,408 @@
+    .unitDownDom
+        .ant-popover-arrow
+            display: none
+
+        .ant-popover-inner
+            background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+            box-shadow: torem(0) torem(14) torem(10) torem(-10) rgba(0, 0, 0, 0.05)
+            border-radius: torem(7)
+            border: torem(1) solid rgba(255, 255, 255, 0.1)
+            margin: torem(-12) 0 0
+
+            .unitDownDomMain
+                position: relative
+                z-index: 2
+
+                .item
+                    display: flex
+                    font-size: torem(14)
+                    padding: torem(5) 0
+                    cursor: pointer
+                    color: #fff
+
+                    &:hover
+                        color: rgba(#fff, 0.7)
+
+                    span
+                        padding: 0 0 0 torem(10)
+                        height: torem(24)
+                        line-height: @height
+                        display: block
+                        width: torem(60)
+                        font-size: torem(18)
+                        font-weight: bold
+
+                        @media screen and (max-width: 768px)
+                            font-size: torem(14)
+                            width: torem(50)
+
+                    img
+                        size: torem(24)
+    div.page-MyNFTShell
+        padding: torem(132) 0 0
+        
+        @media screen and (max-width: 768px)
+            padding: torem(40) 0 0
+        .lt-header
+            background-color: #25252d
+        .content
+            background: #2C2D3A
+            background-size: 100% 100%
+            color: #fff
+            height: 100%
+            padding: 0 0 torem(100)
+
+            .header
+                background: #25252D
+
+                .headerMain
+                    width: torem(1400)
+                    margin: 0 auto
+                    position: relative
+                    display: flex
+                    height: torem(90)
+
+                    @media screen and (max-width: 768px)
+                        width: 100%
+                        height: torem(80)
+
+                    .back
+                        position: absolute
+                        top: torem(34)
+                        cursor: pointer
+
+                        @media screen and (max-width: 768px)
+                            top: torem(33)
+                            left: torem(10)
+
+                        .icon
+                            height: torem(24)
+                            width: torem(15)
+
+                            @media screen and (max-width: 768px)
+                                height: torem(13)
+                                width: torem(8)
+
+                    .userAvatar
+                        margin: torem(20) 0 0 torem(50)
+
+                        @media screen and (max-width: 768px)
+                            margin: torem(24) 0 0 torem(38)
+
+                        .cardImage
+                            height: torem(50) !important
+                            width: @height
+
+                            @media screen and (max-width: 768px)
+                                height: torem(36) !important
+                                width: @height
+
+                            img
+                                size: 100%
+                                display: block
+                                border-radius: torem(8)
+
+                    .userInfo
+                        padding: torem(20) 0 0 torem(22)
+
+                        @media screen and (max-width: 768px)
+                            padding: torem(22) 0 0 torem(10)
+
+                        .userLtd
+                            height: torem(26)
+                            font-size: torem(14)
+                            font-family: Avenir-Heavy, Avenir
+                            font-weight: 800
+                            color: #6B6C80
+                            line-height: @height
+
+                            @media screen and (max-width: 768px)
+                                height: torem(14)
+                                line-height: torem(14)
+                                font-size: torem(12)
+
+                        .username
+                            height: torem(23)
+                            font-size: torem(20)
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #FFFFFF
+                            line-height: @height
+
+                            @media screen and (max-width: 768px)
+                                font-size: torem(16)
+                                height: torem(18)
+                                line-height: @height
+                                margin: torem(5) 0 0
+
+            .box
+                width: torem(1400)
+                margin: 0 auto
+                padding: 0 torem(50)
+                justifyContentSpaceBetween()
+
+                @media screen and (max-width: 768px)
+                    width: 100%
+                    position: relative
+                    padding: torem(568) torem(20) 0
+                    box-sizing: border-box
+                    display: block
+
+                .left
+                    .title
+                        height: torem(40)
+                        font-size: torem(34)
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        line-height: torem(40)
+                        margin: torem(44) 0 torem(30)
+
+                        @media screen and (max-width: 768px)
+                            margin: torem(18) 0
+                            font-size: torem(20)
+                            height: torem(22)
+                            line-height: @height
+                            margin: torem(10) 0 torem(20)
+
+                    .item
+                        padding: 0 0 torem(30)
+
+                        @media screen and (max-width: 768px)
+                            padding: 0 0 torem(24)
+
+                        .itemTitle
+                            height: torem(30)
+                            line-height: @height
+                            font-size: torem(18)
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #FFFFFF
+                            margin: 0 0 torem(17)
+
+                            @media screen and (max-width: 768px)
+                                height: torem(18)
+                                line-height: @height
+                                font-size: torem(16)
+                                margin: 0 0 torem(10)
+
+                        .type
+                            display: flex
+                            border-radius: torem(12)
+                            border-radius: torem(12)
+                            border: torem(1) solid #FFA200
+                            overflow: hidden
+                            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+
+                            .typeItem
+                                flex: 1
+                                height: torem(84)
+                                padding: 0 torem(45)
+                                background: #2C2D3A
+                                cursor: pointer
+
+                                @media screen and (max-width: 768px)
+                                    height: torem(56)
+
+                                &.cur
+                                    background: none
+
+                                .typeTitle
+                                    font-size: torem(20)
+                                    font-family: Avenir Black, Avenir
+                                    font-weight: 900
+                                    margin: torem(17) 0 0
+
+                                    @media screen and (max-width: 768px)
+                                        font-size: torem(16)
+                                        margin: torem(10) 0 0
+                                        height: torem(20)
+                                        line-height: torem(20)
+                                        display: flex
+
+                                    .icon
+                                        margin: 0 torem(6) 0 0
+
+                                .typeDesc
+                                    height: torem(25)
+                                    font-size: torem(13)
+                                    font-family: Avenir-Medium, Avenir
+                                    font-weight: 500
+                                    color: #FFFFFF
+                                    line-height: torem(25)
+
+                                    @media screen and (max-width: 768px)
+                                        font-size: torem(12)
+
+                        .input
+                            width: torem(584)
+                            height: torem(68)
+                            border-radius: torem(12)
+                            border: torem(1) solid rgba(#fff, 0.15)
+                            position: relative
+                            placeholder()
+
+                            @media screen and (max-width: 768px)
+                                width: 100%
+                                height: torem(46)
+                                placeholder(torem(16))
+
+                            .ant-input
+                                height: 100%
+                                color: #fff
+                                font-size: torem(24)
+                                font-weight: 900
+                                padding: 0 torem(26)
+                                background: #2C2D3A
+                                border-radius: torem(12)
+                                position: relative
+                                z-index: 1
+                                width: torem(474)
+
+                                @media screen and (max-width: 768px)
+                                    width: 80%
+                                    font-size: torem(16)
+
+                            .unitWrap
+                                width: torem(132)
+                                height: 100%
+                                background: linear-gradient(7deg, #FF00E5 0%, #FFA200 100%)
+                                border-radius: torem(12)
+                                position: absolute
+                                top: 0
+                                right: 0
+                                cursor: pointer
+
+                                .unit
+                                    position: absolute
+                                    display: flex
+                                    right: torem(26)
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    height: torem(32)
+
+                                    @media screen and (max-width: 768px)
+                                        height: torem(26)
+                                        right: torem(10)
+
+                                    img
+                                        size: torem(32)
+
+                                        @media screen and (max-width: 768px)
+                                            size: torem(26)
+
+                                    .icon
+                                        margin: torem(6) 0 0 torem(10)
+
+                                        @media screen and (max-width: 768px)
+                                            size: torem(12) torem(7)
+                                            margin: torem(10) 0 0 torem(10)
+
+                            .ant-picker
+                                width: 100%
+                                height: 100%
+                                color: #fff
+                                font-size: torem(24)
+                                font-weight: 900
+                                padding: 0 torem(26)
+
+                                .ant-picker-input>input
+                                    color: #fff
+                                    font-size: torem(24)
+                                    font-weight: 900
+
+                                .anticon
+                                    color: #fff
+
+                            .DatePicker
+                                width: 100%
+                                height: 100%
+                                color: #fff
+                                font-size: torem(24)
+                                font-weight: 900
+                                padding: 0 torem(26) 0 torem(50)
+                                line-height: torem(66)
+                                cursor: not-allowed
+                                background: url('./img/datePicker.png') no-repeat torem(20) center
+                                background-size: torem(20) auto
+
+                                @media screen and (max-width: 768px)
+                                    height: torem(46)
+                                    line-height: @height
+                                    font-size: torem(16)
+
+                        .fee
+                            justifyContentSpaceBetween()
+
+                            .feeTitle
+                                font-size: torem(14)
+                                font-family: Avenir-Black, Avenir
+                                font-weight: 900
+                                color: #FFFFFF
+
+                            .feeNumber
+                                font-size: torem(14)
+                                font-family: Avenir-Black, Avenir
+                                font-weight: 900
+                                color: #A1A4CE
+
+                    .btn
+                        width: torem(451)
+                        height: torem(50)
+                        line-height: @height
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        border-radius: torem(7)
+                        font-size: torem(20)
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        text-align: center
+                        border: 0 none
+                        padding: 0
+
+                        @media screen and (max-width: 768px)
+                            width: 100%
+
+                        &[disabled]
+                            color: rgba(#FFFFFF, 0.5)
+                            background: rgba(#999, 0.5)
+
+                            &:active, &:hover
+                                background: rgba(#999, 0.5)
+
+                        &:hover
+                            background: linear-gradient(24deg, #FF42D5 0%, #FFA844 100%)
+
+                        &:active
+                            background: linear-gradient(24deg, #E023B6 0%, #E08926 100%)
+
+                >.right
+                    @media screen and (max-width: 768px)
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        box-sizing: border-box
+                        padding: torem(20)
+
+                    .title
+                        height: torem(40)
+                        font-size: torem(30)
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        line-height: torem(40)
+                        margin: torem(68) 0 torem(22)
+
+                        @media screen and (max-width: 768px)
+                            margin: torem(18) 0
+                            font-size: torem(20)
+                            height: torem(22)
+                            line-height: @height
+
+                    .myCardBlock
+                        background: #25252D
+                        width: torem(340)
+
+                        @media screen and (max-width: 768px)
+                            width: 100%

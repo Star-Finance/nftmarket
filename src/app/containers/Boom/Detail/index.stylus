@@ -1,0 +1,385 @@
+
+// ::-webkit-scrollbar
+// width: torem(5)
+// height: torem(5)
+
+// ::-webkit-scrollbar-track-piece
+// -webkit-border-radius: torem(6)
+// background-color: rgba(0, 0, 0, 0.2)
+
+// ::-webkit-scrollbar-thumb:vertical
+// height: torem(5)
+// -webkit-border-radius: torem(6)
+// background-color: rgba(125, 125, 125, 0.7)
+
+// ::-webkit-scrollbar-thumb:horizontal
+// width: torem(5)
+// -webkit-border-radius: torem(6)
+// background-color: rgba(125, 125, 125, 0.7)
+.BoomDetail
+    background: #100D27
+    padding: torem(125) 0 torem(100)
+    font-family: Avenir-Heavy, Avenir
+
+    a
+        color: #fff
+
+    article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul
+        font-family: Avenir-Heavy, Avenir
+
+    .fade-scale-enter
+        opacity: 0
+        transform: scale(0.9)
+
+    .fade-scale-enter-active
+        opacity: 1
+        transform: translateX(0)
+        transition: opacity 500ms, transform 500ms
+
+    .fade-scale-exit
+        opacity: 1
+
+    .fade-scale-exit-active
+        opacity: 0
+        transform: scale(0.9)
+        transition: opacity 500ms, transform 500ms
+
+    .fade-enter
+        opacity: 0
+
+    .fade-enter-active
+        opacity: 1
+        transition: all 300ms
+
+    .fade-exit
+        opacity: 1
+
+    .fade-exit-active
+        opacity: 0
+        transition: opacity 300ms
+
+    .lt-header
+        z-index: 103
+
+    .modal-box
+        z-index: 199
+
+    .modal-content-box
+        color: #fff
+        padding: torem(56) 0
+
+        &:before
+            content: ' '
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: linear-gradient(220deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)
+            box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05)
+            border-radius: torem(12)
+            // opacity: 0.29;
+            // filter: blur(torem(50))
+            backdrop-filter: blur(torem(50))
+            z-index: 2
+
+        .modal-content
+            position: absolute
+            z-index: 6
+            height: 100%
+            width: 100%
+
+    .ant-modal-root
+        .ant-modal-mask
+            background-color: transparent
+
+        .ant-modal-content
+            background-color: transparent
+            color: #fff
+
+            .ant-modal-body
+                height: torem(453)
+                position: relative
+                overflow: hidden
+                border-radius: torem(12)
+                padding: torem(56) 0
+
+                &:before
+                    content: ' '
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    background: linear-gradient(220deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)
+                    box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05)
+                    border-radius: torem(12)
+                    // opacity: 0.29;
+                    filter: blur(torem(50))
+                    backdrop-filter: blur(torem(50))
+                    z-index: 2
+
+                .modal-content-box
+                    position: absolute
+                    z-index: 6
+
+    .modal-win-prize
+        height: 5.8rem
+        display: flex
+        flexCenter()
+
+        .modal-content-lose
+            text-align: center
+            flexCenter()
+            flex-direction: column
+
+            img
+                width: torem(244)
+                height: torem(131)
+                margin-bottom: torem(30)
+
+        .title
+            font-size: torem(54)
+            font-family: Avenir-Heavy, Avenir
+            font-weight: 800
+            color: #FFFFFF
+            letter-spacing: torem(1)
+            margin-bottom: torem(12)
+
+        .desc
+            font-size: torem(20)
+            font-family: Avenir-Book, Avenir
+            font-weight: normal
+            color: #FFFFFF
+
+        .modal-content-win
+            flexCenter()
+
+            >div
+                margin: 0 torem(26)
+
+            .left
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+                .combination
+                    display: flex
+                    perspective: torem(800)
+
+                    .item
+                        .div-img
+                            border-radius: torem(10)
+                            width: torem(350)
+                            height: torem(350)
+                            box-shadow: torem(0) torem(2) torem(24) torem(2) rgba(#000, 0.7)
+
+                    .one
+                        transform: rotateY(22deg)
+
+                    .two
+                        transform: rotateY(-22deg)
+
+            .right
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: torem(380)
+
+                .top
+                    .title
+                        font-size: torem(74)
+                        font-family: TransformersMovie
+                        color: #FFFFFF
+                        letter-spacing: torem(2)
+                        line-height: torem(90)
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        margin-bottom: torem(8)
+
+                    .boom-num
+                        font-size: torem(24)
+                        font-family: Avenir-Medium, Avenir
+                        font-weight: 500
+                        color: #AAACC1
+
+                .bottom
+                    .prize-amount
+                        font-size: torem(34)
+                        color: #FFFFFF
+                        letter-spacing: torem(2)
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+
+                        span
+                            font-size: torem(74)
+                            margin-right: torem(16)
+                            display: inline-block
+                            font-family: Trattatello
+
+                    .btn
+                        btnColor(1)
+                        flexCenter()
+                        border: 0
+                        width: torem(420)
+                        height: torem(60)
+                        border-radius: torem(8)
+                        margin: 0 0 torem(10) 0
+                        font-size: torem(24)
+                        font-family: PingFangSC-Semibold, PingFang SC
+                        font-weight: 600
+
+                    .desc
+                        font-size: torem(17)
+                        font-family: PangMenZhengDao
+                        color: #AAACC1
+
+/* .BoomDetail
+    .lt-top
+        height: torem(40)
+        line-height: @height
+        padding: 0 torem(60)
+        background: #25252D
+        color: #fff
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 103
+
+        @media screen and (max-width: torem(768))
+            display: none
+
+        @media screen and (max-width: torem(820))
+            padding: 0 0
+
+        .main
+            justifyContentSpaceBetween()
+            margin: 0 auto
+            // width: torem(1400)
+            padding: 0 torem(20)
+
+            @media screen and (max-width: torem(768))
+                padding: torem(7) torem(10)
+                width: auto
+
+            .left
+                font-size: torem(16)
+                display: flex
+
+                img
+                    margin: torem(8) 0
+                    size(torem(24))
+
+                .balance
+                    margin: 0 torem(20) 0 torem(10)
+
+                .collection
+                    cursor: pointer
+
+            .right
+                font-size: torem(16)
+                display: flex
+
+                .UserSwapToken
+                    padding-right: torem(20)
+                    cursor: pointer
+
+                .connect
+                    cursor: pointer
+
+                    &.user
+                        background-size: torem(24) torem(24)
+                        padding: 0 torem(34) 0 0
+
+                    &:hover
+                        color: rgba(#fff, 0.5)
+
+                .im
+                    background-size: auto torem(20)
+                    display: flex
+                    margin: 0 0 0 torem(16)
+
+                    a
+                        height: torem(40)
+                        line-height: torem(40)
+
+                    .item
+                        size(torem(24))
+                        margin: torem(8) 0 torem(8) torem(16)
+                        color: #fff
+
+                        &:hover
+                            color: rgba(#fff, 0.5)
+                            cursor: pointer
+
+    .lt-top
+        height: torem(40)
+        line-height: @height
+        padding: 0 torem(60)
+        background: #25252D
+        color: #fff
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 3
+
+        @media screen and (max-width: torem(768))
+            display: none
+
+        @media screen and (max-width: torem(820))
+            padding: 0 0
+
+        .main
+            justifyContentSpaceBetween()
+            margin: 0 auto
+            max-width: torem(1400)
+            padding: 0 torem(20)
+
+            @media screen and (max-width: torem(768))
+                padding: torem(7) torem(10)
+                width: auto
+
+            .left
+                font-size: torem(16)
+                display: flex
+
+                img
+                    margin: torem(8) 0
+                    size(torem(24))
+
+                .balance
+                    margin: 0 torem(20) 0 torem(10)
+
+                .collection
+                    fontColor()
+
+            .right
+                font-size: torem(16)
+                display: flex
+
+                .UserSwapToken
+                    padding-right: torem(20)
+                    fontColor()
+
+                .connect
+                    fontColor()
+
+                    &.user
+                        background-size: torem(24) torem(24)
+                        padding: 0 torem(34) 0 0
+
+                .im
+                    background-size: auto torem(20)
+                    display: flex
+                    margin: 0 0 0 torem(16)
+
+                    a
+                        height: torem(40)
+                        line-height: torem(40)
+
+                    .item
+                        size(torem(24))
+                        margin: torem(8) 0 torem(8) torem(16)
+                        fontColor() */

@@ -1,0 +1,108 @@
+.component-header
+    padding: 0 0
+    border-bottom: torem(1) solid rgba(112, 155, 231, 0.2)
+
+    .headerMain
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: torem(84)
+        padding:0 torem(220)
+        a
+            color: #fff
+
+        .logo
+            display: inline-block
+            width: torem(202)
+            height: torem(52)
+            background: url('./logo.png') no-repeat
+            background-size: 100% 100%
+            cursor: pointer
+
+        .div-header-btn
+            btnColor(3)
+            display: flex
+            justify-content: center
+            align-items: center
+            width: torem(146)
+            height: torem(50)
+            border-radius: torem(25)
+            font-size: torem(20)
+
+            &:hover
+                border-radius: torem(25)
+
+        .div-account
+            alignItemsCenter()
+
+            .balance
+                alignItemsCenter()
+                margin-right: torem(16)
+
+                img
+                    margin-right: torem(8)
+
+        .right
+            display: flex
+            align-items: center
+
+            .langWrap
+                height: 100%
+                border-radius: torem(12)
+                cursor: pointer
+                margin-left: torem(36)
+
+                .lang
+                    display: flex
+                    right: torem(16)
+
+                    img
+                        width: torem(52)
+
+                    span
+                        height: torem(32)
+                        font-size: torem(20)
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        line-height: torem(32)
+                        padding: 0 0 0 torem(10)
+
+.langDown
+    .ant-popover-arrow-content
+        background: linear-gradient(225deg, hsla(0, 0%, 91%, 0.15), hsla(0, 0%, 78.8%, 0.15))
+
+    .ant-popover-inner
+        background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+        box-shadow: torem(0) torem(14) torem(10) torem(-10) rgba(0, 0, 0, 0.05)
+        border-radius: torem(7)
+        border: torem(1) solid rgba(255, 255, 255, 0.1)
+        background: linear-gradient(225deg, hsla(0, 0%, 91%, 0.15), hsla(0, 0%, 78.8%, 0.15))
+        box-shadow: 0 torem(24) torem(16) torem(-16) rgb(0 0 0 / 5%)
+
+        .langDownDomMain
+            position: relative
+            z-index: 2
+
+            .item
+                display: flex
+                font-size: torem(14)
+                padding: torem(5) 0
+                cursor: pointer
+                color: #fff
+
+                &:hover
+                    color: rgba(#fff, 0.7)
+
+                span
+                    padding: 0 0 0 torem(10)
+                    height: torem(24)
+                    line-height: @height
+                    display: block
+                    width: torem(60)
+                    font-size: torem(18)
+                    font-weight: bold
+
+                img
+                    width: torem(52)
+                    cursor: pointer

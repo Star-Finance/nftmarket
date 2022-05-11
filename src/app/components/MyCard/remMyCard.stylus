@@ -1,0 +1,110 @@
+
+//  @media screen and (min-width:768px)
+    div.cardDownDom
+        .ant-popover-arrow
+            display: none
+
+        .ant-popover-inner
+            background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+            box-shadow: torem(0) torem(14) torem(10) torem(-10) rgba(0, 0, 0, 0.05)
+            border-radius: torem(7)
+            border: torem(1) solid rgba(255, 255, 255, 0.1)
+            margin: torem(-10) 0 0
+
+            .cardDownDomMain
+                position: relative
+                z-index: 2
+
+                .item
+                    display: flex
+                    font-size: torem(14)
+                    padding: torem(5) 0
+                    cursor: pointer
+                    color: #fff
+
+                    &:hover
+                        color: rgba(#fff, .7)
+
+                    span
+                        padding: 0 0 0 torem(10)
+
+    .myCardBlock
+        background: #2C2D3A
+        border-radius: torem(12)
+        padding: 0 torem(20) torem(22)
+        box-sizing border-box
+        position relative
+
+        &:hover
+            background: #37394C
+
+        .cardHeader
+            justifyContentSpaceBetween()
+            padding: torem(16) 0
+
+            .right
+                display: flex
+
+                .owned
+                    padding: 0 torem(10)
+
+                .more
+                    cursor: pointer
+
+        .cardImage
+            border-radius: torem(5)
+            cursor: pointer
+            margin: 0 auto
+            width: 2.95rem !important
+            height: 2.95rem !important
+        .cardContent
+            position: relative
+            justifyContentSpaceBetween()
+
+            .userLtd
+                height: torem(19)
+                font-size: torem(14)
+                font-family: Avenir-Book, Avenir
+                font-weight: normal
+                color: #A1A4CE
+                line-height: torem(19)
+                margin: torem(12) 0 0
+
+            .username
+                height: torem(25)
+                font-size: torem(18)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                line-height: torem(25)
+                margin: torem(8) 0
+
+            .num
+                height: torem(25)
+                font-size: torem(18)
+                font-family: Avenir-Book, Avenir
+                font-weight: normal
+                color: #FFFFFF
+                line-height: torem(25)
+
+            .priceTitle
+                height: torem(19)
+                font-size: torem(14)
+                font-family: Avenir-Book, Avenir
+                font-weight: normal
+                color: #FFFFFF
+                line-height: torem(19)
+                margin: 0 0 torem(5)
+                text-align: right
+
+            .priceNumber
+                height: torem(30)
+                font-size: torem(22)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                line-height: torem(30)
+                background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                text-align: right

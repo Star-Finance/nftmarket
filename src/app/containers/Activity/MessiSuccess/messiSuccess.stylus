@@ -1,0 +1,79 @@
+.page-messiSuccess
+    .container
+        height: 100%
+        width: 100%
+
+        .content
+            width: 1920px
+            height: 1080px
+            position: relative
+
+            .mynft
+                display: block
+                width: 393px
+                height: 562px
+                position: absolute
+                top: 328px
+                left: 446px
+
+            .tulations
+                width: 420px
+                height: 73px
+                font-size: 56px
+                font-family: Futura-Medium, Futura
+                font-weight: 500
+                color: #f3264d
+                line-height: 75px
+                position: absolute
+                top: 383px
+                left: 932px
+
+            .claim
+                width: 569px
+                height: 60px
+                font-size: 42px
+                font-family: Futura-Medium, Futura
+                font-weight: 500
+                color: #ffffff
+                line-height: 61px
+                position: absolute
+                top: 470px
+                left: 932px
+
+            .btn
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 439px
+                height: 67px
+                background: linear-gradient(225deg, #ffffff 0%, #ffffff 100%)
+                box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+                border-radius: 7px
+                font-size: 21px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #20033e
+                line-height: 30px
+                position: absolute
+                top: 670px
+                left: 932px
+
+            .share
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 439px
+                height: 67px
+                background: linear-gradient(225deg, #fa2b56 0%, #f91c3d 100%)
+                box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+                border-radius: 7px
+                font-size: 21px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #ffffff
+                line-height: 30px
+                position: absolute
+                left: 932px
+                top: 769px

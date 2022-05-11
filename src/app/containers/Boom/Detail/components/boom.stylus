@@ -1,0 +1,277 @@
+.BoomDetail
+  .TrxFail
+       height:torem(182);
+       padding: 0
+       flexCenter()
+       .modal-content
+           flexCenter()
+           flex-direction: column
+       .modalTitle
+           text-align: center
+           margin-bottom: torem(16)
+           img 
+             width: torem(64)
+       .modalMain
+            font-size: torem(18);
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #FFFFFF;
+    .OpenLoading
+         height:torem(1200);
+         width:torem(1200);
+         padding: 0
+         &::before
+             display: none
+         img 
+          height: 100%
+          position relative;
+          top:-2rem
+  .boom-box
+     .img-open-loading
+         display: none
+    .approve
+        background-image: url(../img/approve_bg.png)
+        flexCenter()
+        flex-direction: column
+        padding:torem(65) 0 torem(80) 0
+        .title
+            font-size: torem(42);
+            font-family: Avenir-Black, Avenir;
+            font-weight: 900;
+            color: #FFFFFF;
+            letter-spacing: torem(1);
+            margin-bottom: torem(12)
+        .desc
+            width:torem(330)
+            font-size: torem(20);
+            font-family: Avenir-Medium, Avenir;
+            font-weight: 500;
+            color: #AAACC1;
+            margin-bottom: torem(26)
+        .btn
+            btnColor(1)
+            width: torem(360);
+            height: torem(60);
+            background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+            border-radius: torem(8);
+            font-size: torem(20);
+            font-family: Avenir-Black, Avenir;
+            font-weight: 900;
+            color: #FFFFFF;
+    .combination-box
+        display: flex
+        flex-wrap: wrap
+        width: torem(1460)
+        margin: 0 auto;
+        background: #160F37;
+        padding: torem(10) torem(10) 0
+        color:#fff
+        border-radius: 0 0 torem(24) torem(24);
+        .item-box
+             flex:0 0 20%
+             margin-bottom: torem(16)
+            .item
+                margin: 0 auto;
+                width: torem(268);
+                height: torem(100);
+                background: linear-gradient(209deg, #243C54 0%, #242041 100%);
+                border-radius: torem(12);
+                padding: torem(9) torem(12)
+                display: flex
+                .i-right
+                    flex:1
+                    flexCenter()
+                    font-size: torem(20);
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    //font-weight: 600;
+                    color: #29F0B6;
+                .i-left
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    .nft
+                         display: flex
+                         align-items: center
+                        .nft-img
+                            width: torem(36);
+                            height: torem(36);
+                            border-radius: torem(4)
+                            margin-right: torem(14)
+                        span
+                         font-size: torem(18);
+                         font-family: Avenir-Heavy, Avenir;
+                         //font-weight: 800;
+        .Done,.Boom
+            .item 
+                background:rgba(#838383,0.4);
+                .i-right
+                    color:#FF1A5E;
+    .boom
+        display: flex
+        justify-content: center
+        //margin-top: torem(50)
+        padding: torem(36) 0
+        background: #161031
+        div.showCheckAllNFTS
+             overflow: visible
+             background: linear-gradient(225deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+             box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05);
+             
+             background: rgba(255, 255, 255, 0.2)
+        .left
+            display: flex
+            align-items: center
+            margin-right: torem(26)
+            position: relative
+            top: torem(4)
+            background: transparent
+            transition: background 0.5s
+            border-radius: torem(12);
+            // cursor pointer
+            width: torem(930)
+            .nfts
+                display: flex
+                flex-wrap: wrap
+                padding: 0.1rem 0.1rem
+                .nft
+                    width: torem(162)
+                    height: torem(162)
+                    margin: torem(10) torem(10) torem(10)
+                    border-radius: torem(8)
+                    cursor pointer
+                    color:#fff
+                    font-size: torem(18)
+                    background-color: #fff
+                    .isBoom
+                        position relative
+                        &:before
+                            content: ''
+                            background-color: rgba(#929292,0.6)
+                            position: absolute
+                            border-radius: torem(8)
+                            width: 100%
+                            height: 100%
+            .my-all-nfts
+                 position: absolute
+                 left torem(16)
+                 right: torem(16)
+                 top:100%
+                 display: flex
+                 z-index:6
+                 background: #342A58;
+                 box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05);
+                 border-radius: torem(0) torem(0) torem(13) torem(13);
+                 padding: torem(18) torem(8) 0
+                 display: flex
+                 flex-wrap: wrap
+                 cursor default
+                 .nft
+                    //flex:0 0 20%
+                    width: torem(156)
+                    height: torem(156)
+                    margin: 0 torem(10) torem(18)
+                    border-radius: torem(8)
+                    cursor pointer
+                    color:#fff
+                    font-size: torem(18)
+                    background-color: #fff
+                .isBoom
+                    position relative
+                    &:before
+                        content: ''
+                        background-color: rgba(#929292,0.6)
+                        position: absolute
+                        border-radius: torem(8)
+                        width: 100%
+                        height: 100%
+
+            .mask
+                width: 100%
+                height: 100%
+                position: absolute
+                border-radius: torem(12)
+                overflow: hidden
+                flexCenter()
+
+                &:before
+                    content: ' '
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    background: linear-gradient(220deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)
+                    box-shadow: torem(0) torem(24) torem(16) torem(-16) rgba(0, 0, 0, 0.05)
+                    border-radius: torem(18)
+                    // opacity: 0.29;
+                    filter: blur(torem(6))
+                    backdrop-filter: blur(torem(6))
+                    z-index: 2
+
+                >.btn
+                    btnColor(1)
+                    flexCenter()
+                    width: torem(360)
+                    height: torem(60)
+                    border-radius: torem(8)
+                    position: absolute
+                    z-index: 4
+                    font-size: torem(20)
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: torem(27)
+                    border: 0
+        div.twoRow
+             .title
+                 margin-bottom: torem(20)
+             .intro2
+                 margin-bottom: torem(52)
+        .right
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            min-height: torem(266)
+            .title
+                font-size: torem(42)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                letter-spacing: torem(1)
+                margin-bottom: torem(3)
+
+            .intro1
+                width: torem(343)
+                font-size: torem(20)
+                font-family: Avenir-Medium, Avenir
+                font-weight: 500
+                color: #AAACC1
+            .intro2
+                font-size: torem(20)
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FD346E
+                margin:0 0 torem(22) 0 
+
+            .div-btns
+                display: flex
+
+                .btn
+                    width: torem(228)
+                    height: torem(60)
+                    border-radius: torem(8)
+                    color: #fff
+                    font-size: torem(24)
+                    margin: 0 torem(8)
+
+                    &:nth-child(1)
+                        btnColor(1)
+                        flexCenter()
+                        border-radius: torem(8)
+                        margin-left: 0
+
+                    &:nth-child(2)
+                        btnColor(3)
+                        flexCenter()
+                        margin-right: 0
+                        background-image: linear-gradient(rgba(#161031,1),rgba(#161031,1)),linear-gradient(24deg,#ff00e5,#ffa200);

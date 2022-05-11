@@ -1,0 +1,23 @@
+.page-marketDetail
+    .TrxHistory
+        .div-table
+            .create
+              color: #46EFDA;
+            .sales
+               color:rgba(239, 70, 111, 1)
+             .price
+                span
+                 display: inline-block
+                 max-width 100px 
+                 overflow: hidden;
+                 text-overflow:ellipsis;
+                 white-space: nowrap;
+            .date,.price
+                display: flex
+                align-items: center
+                .anticon-field-time
+                     margin-right: 6px
+                     svg
+                      font-size: 18px
+                .icon
+                 margin-right: 6px

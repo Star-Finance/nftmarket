@@ -1,0 +1,18 @@
+.headTitle
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 18px;
+    width: 100%;
+    .icon
+        width: 24px;
+        height: 24px
+    .fold
+        cursor pointer
+    .h-left
+        font-size: 18px;
+        font-weight: 900;
+        display:flex;
+        align-items: center;
+        .icon
+            margin-right: 12px

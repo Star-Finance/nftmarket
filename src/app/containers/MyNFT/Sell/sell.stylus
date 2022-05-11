@@ -1,0 +1,411 @@
+.unitDownDom
+    .ant-popover-arrow
+        display: none
+
+    .ant-popover-inner
+        background: linear-gradient(225deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%)
+        box-shadow: 0px 14px 10px -10px rgba(0, 0, 0, 0.05)
+        border-radius: 7px
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        margin: -12px 0 0
+
+        .unitDownDomMain
+            position: relative
+            z-index: 2
+
+            .item
+                display: flex
+                font-size: 14px
+                padding: 5px 0
+                cursor: pointer
+                color: #fff
+
+                &:hover
+                    color: rgba(#fff, 0.7)
+
+                span
+                    padding: 0 0 0 10px
+                    height: 24px
+                    line-height: @height
+                    display: block
+                    width: 60px
+                    font-size: 18px
+                    font-weight: bold
+
+                    @media screen and (max-width: 768px)
+                        font-size: 14px
+                        width: 50px
+
+                img
+                    size: 24px
+
+.page-MyNFTShell
+    padding: 125px 0 0
+    background: #2C2D3A
+
+    // .lt-header
+    //     background: #25252D
+
+    @media screen and (max-width: 768px)
+        padding: 40px 0 0
+
+    .content
+        background-size: 100% 100%
+        color: #fff
+        height: 100%
+        padding: 0 0 100px
+
+        .header
+            background: #25252D
+
+            .headerMain
+                width: 1400px
+                margin: 0 auto
+                position: relative
+                display: flex
+                height: 90px
+
+                @media screen and (max-width: 768px)
+                    width: 100%
+                    height: 80px
+
+                .back
+                    position: absolute
+                    top: 34px
+                    cursor: pointer
+
+                    @media screen and (max-width: 768px)
+                        top: 33px
+                        left: 10px
+
+                    .icon
+                        height: 24px
+                        width: 15px
+
+                        @media screen and (max-width: 768px)
+                            height: 13px
+                            width: 8px
+
+                .userAvatar
+                    margin: 20px 0 0 50px
+
+                    @media screen and (max-width: 768px)
+                        margin: 24px 0 0 38px
+
+                    .cardImage
+                        height: 50px !important
+                        width: @height
+
+                        @media screen and (max-width: 768px)
+                            height: 36px !important
+                            width: @height
+
+                        img
+                            size: 100%
+                            display: block
+                            border-radius: 8px
+
+                .userInfo
+                    padding: 20px 0 0 22px
+
+                    @media screen and (max-width: 768px)
+                        padding: 22px 0 0 10px
+
+                    .userLtd
+                        height: 26px
+                        font-size: 14px
+                        font-family: Avenir-Heavy, Avenir
+                        font-weight: 800
+                        color: #6B6C80
+                        line-height: @height
+
+                        @media screen and (max-width: 768px)
+                            height: 14px
+                            line-height: 14px
+                            font-size: 12px
+
+                    .username
+                        height: 23px
+                        font-size: 20px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        line-height: @height
+
+                        @media screen and (max-width: 768px)
+                            font-size: 16px
+                            height: 18px
+                            line-height: @height
+                            margin: 5px 0 0
+
+        .box
+            width: 1400px
+            margin: 0 auto
+            padding: 0 50px
+            justifyContentSpaceBetween()
+
+            @media screen and (max-width: 768px)
+                width: 100%
+                position: relative
+                padding: 568px 20px 0
+                box-sizing: border-box
+                display: block
+
+            .left
+                .title
+                    height: 40px
+                    font-size: 34px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 40px
+                    margin: 44px 0 30px
+
+                    @media screen and (max-width: 768px)
+                        margin: 18px 0
+                        font-size: 20px
+                        height: 22px
+                        line-height: @height
+                        margin: 10px 0 20px
+
+                .item
+                    padding: 0 0 30px
+
+                    @media screen and (max-width: 768px)
+                        padding: 0 0 24px
+
+                    .itemTitle
+                        height: 30px
+                        line-height: @height
+                        font-size: 18px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        margin: 0 0 10px
+
+                        @media screen and (max-width: 768px)
+                            height: 18px
+                            line-height: @height
+                            font-size: 16px
+                            margin: 0 0 10px
+
+                    .type
+                        display: flex
+                        border-radius: 12px
+                        border-radius: 12px
+                        border: 1px solid #FFA200
+                        overflow: hidden
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+
+                        .typeItem
+                            flex: 1
+                            height: 84px
+                            padding: 0 45px
+                            background: #2C2D3A
+                            cursor: pointer
+
+                            @media screen and (max-width: 768px)
+                                height: 56px
+
+                            &.cur
+                                background: none
+
+                            .typeTitle
+                                font-size: 20px
+                                font-family: Avenir Black, Avenir
+                                font-weight: 900
+                                margin: 17px 0 0
+
+                                @media screen and (max-width: 768px)
+                                    font-size: 16px
+                                    margin: 10px 0 0
+                                    height: 20px
+                                    line-height: 20px
+                                    display: flex
+
+                                .icon
+                                    margin: 0 6px 0 0
+
+                            .typeDesc
+                                height: 25px
+                                font-size: 13px
+                                font-family: Avenir-Medium, Avenir
+                                font-weight: 500
+                                color: #FFFFFF
+                                line-height: 25px
+
+                                @media screen and (max-width: 768px)
+                                    font-size: 12px
+
+                    .input
+                        width: 413px
+                        height: 68px
+                        border-radius: 12px
+                        border: 1px solid rgba(#fff, 0.15)
+                        position: relative
+                        placeholder()
+
+                        @media screen and (max-width: 768px)
+                            width: 100%
+                            height: 46px
+                            placeholder(16px)
+
+                        .ant-input
+                            height: 100%
+                            color: #fff
+                            font-size: 24px
+                            font-weight: 900
+                            padding: 0 26px
+                            background: #2C2D3A
+                            border-radius: 12px
+                            position: relative
+                            z-index: 1
+                            width: 292px
+
+                            @media screen and (max-width: 768px)
+                                width: 80%
+                                font-size: 16px
+
+                        .unitWrap
+                            width: 132px
+                            height: 100%
+                            background: linear-gradient(7deg, #FF00E5 0%, #FFA200 100%)
+                            border-radius: 12px
+                            position: absolute
+                            top: 0
+                            right: 0
+                            cursor: pointer
+
+                            .unit
+                                position: absolute
+                                display: flex
+                                right: 16px
+                                top: 50%
+                                transform: translateY(-50%)
+                                height: 32px
+
+                                @media screen and (max-width: 768px)
+                                    height: 26px
+                                    right: 10px
+
+                                img
+                                    size: 32px
+
+                                    @media screen and (max-width: 768px)
+                                        size: 26px
+
+                                span
+                                    height: 32px
+                                    font-size: 20px
+                                    font-family: Avenir-Black, Avenir
+                                    font-weight: 900
+                                    color: #FFFFFF
+                                    line-height: 32px
+                                    padding: 0 0 0 10px
+
+                    .date
+                        width: 584px
+                        height: 68px
+                        border-radius: 12px
+                        border: 1px solid rgba(#fff, 0.15)
+                        position: relative
+                        placeholder()
+
+                        @media screen and (max-width: 768px)
+                            width: 100%
+                            height: 46px
+                            placeholder(16px)
+
+                        .ant-picker
+                            width: 100%
+                            height: 100%
+                            color: #fff
+                            font-size: 24px
+                            font-weight: 900
+                            padding: 0 26px
+
+                            .ant-picker-input>input
+                                color: #fff
+                                font-size: 24px
+                                font-weight: 900
+
+                            .anticon
+                                color: #fff
+
+                        .DatePicker
+                            width: 100%
+                            height: 100%
+                            color: #fff
+                            font-size: 24px
+                            font-weight: 900
+                            padding: 0 26px 0 50px
+                            line-height: 66px
+                            cursor: not-allowed
+                            background: url('./img/datePicker.png') no-repeat 20px center
+                            background-size: 20px auto
+
+                            @media screen and (max-width: 768px)
+                                height: 46px
+                                line-height: @height
+                                font-size: 16px
+
+                    .fee
+                        justifyContentSpaceBetween()
+
+                        .feeTitle
+                            font-size: 14px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #AAACC1
+
+                        .feeNumber
+                            font-size: 14px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #AAACC1
+
+                .btn
+                    width: 292px
+                    height: 50px
+                    line-height: @height
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                    font-size: 20px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    border: 0 none
+                    padding: 0
+                    btnColor(1)
+
+                    @media screen and (max-width: 768px)
+                        width: 100%
+
+            >.right
+                @media screen and (max-width: 768px)
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    box-sizing: border-box
+                    padding: 20px
+
+                .title
+                    height: 40px
+                    font-size: 24px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: 40px
+                    margin: 47px 0 19px
+
+                    @media screen and (max-width: 768px)
+                        margin: 18px 0
+                        font-size: 20px
+                        height: 22px
+                        line-height: @height
+
+                .myCardBlock
+                    background: #25252D
+                    width: 340px
+
+                    @media screen and (max-width: 768px)
+                        width: 100%

@@ -1,0 +1,284 @@
+.page-MyNFTList
+    .blindBox
+        .blindBoxWrap
+            .header
+                display: flex
+                padding: 0 25px 124px
+
+                .img
+                    width: 624px
+
+                    img
+                        width: 100%
+
+                    .count
+                        text-align: center
+                        height: 30px
+                        font-size: 22px
+                        font-family: PingFangSC-Medium, PingFang SC
+                        font-weight: 500
+                        color: #AAACC1
+                        line-height: 30px
+                        margin: 30px 0 0
+
+                .info
+                    flex: 1
+                    padding: 0 0 0 82px
+
+                    .title
+                        height: 62px
+                        line-height: 62px
+                        font-size: 60px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        margin: 35px 0 52px
+
+                    .time
+                        .timeTitle
+                            height: 28px
+                            font-size: 24px
+                            font-family: Avenir-Black, Avenir
+                            font-weight: 900
+                            color: #6B6C80
+                            line-height: 38px
+                            margin: 0 0 31px
+
+                        .timeInfo
+                            display: flex
+
+                            .item
+                                padding: 0 90px 0 0
+
+                                .num
+                                    height: 38px
+                                    font-size: 38px
+                                    font-family: Avenir-Black, Avenir
+                                    font-weight: 900
+                                    color: #FFFFFF
+                                    line-height: 38px
+                                    margin: 0 0 17px
+
+                                .txt
+                                    height: 28px
+                                    font-size: 20px
+                                    font-family: Avenir-Medium, Avenir
+                                    font-weight: 500
+                                    color: #AAACC1
+                                    line-height: 28px
+
+                    .price
+                        margin: 159px 0 30px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+                        letter-spacing: 1px
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+
+                        .num
+                            font-size: 46px
+                            padding: 0 10px 0 0
+
+                        .unit
+                            font-size: 26px
+
+                    .btn
+                        height: 70px
+                        line-height: @height
+                        btnColor(1)
+                        font-size: 26px
+                        font-family: Avenir-Black, Avenir
+                        font-weight: 900
+                        color: #FFFFFF
+
+            .card
+                .title
+                    height: 42px
+                    font-size: 40px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+                    line-height: @height
+                    margin: 0 0 40px 25px
+
+                .list
+                    clear: both
+                    padding: 0 25px 0 0
+
+                    .item
+                        width: 308px
+                        background: #2C2D3A
+                        border-radius: 12px
+                        margin: 0 0 25px 25px
+                        padding: 22px 20px 30px
+                        float: left
+
+                        img
+                            width: 100%
+
+                        .info
+                            justifyContentSpaceBetween()
+                            padding: 20px 0 0
+
+                            .name
+                                height: 25px
+                                font-size: 18px
+                                font-family: Avenir-Black, Avenir
+                                font-weight: 900
+                                color: #FFFFFF
+                                line-height: 25px
+
+                            .number
+                                height: 25px
+                                font-size: 18px
+                                font-family: Avenir-Medium, Avenir
+                                font-weight: 500
+                                line-height: 25px
+
+                                &.N
+                                    color: #DE7E44
+
+                                &.R
+                                    color: #CDA920
+
+                                &.SR
+                                    color: #C520CD
+
+                                &.SSR
+                                    color: #79DE44
+
+                                &.SSSR
+                                    color: #4BBDEF
+
+    .blindBoxOpen
+        text-align: center
+        width: 708px
+        margin: 100px auto 0
+        position: relative
+
+        .close
+            position: absolute
+            top: 0
+            right: 0
+            cursor: pointer
+
+        img
+            display: inline-block
+            size: 500px
+
+        .btn
+            margin: 0 auto
+            width: 472px
+            height: 70px
+            line-height: @height
+            btnColor(1)
+            font-size: 34px
+            font-family: Avenir-Black, Avenir
+            font-weight: 900
+            color: #FFFFFF
+            border: 0 none
+
+    .blindBoxSuccess
+        width: 1004px
+        margin: 150px auto 0
+        clear: both
+        position: relative
+
+        .close
+            position: absolute
+            top: -50px
+            right: -50px
+            cursor: pointer
+
+        .img
+            border-radius: 12px
+            overflow: hidden
+            size: 456px
+            background: linear-gradient(225deg, rgba(50, 197, 255, 1), rgba(182, 32, 224, 1), rgba(247, 181, 0, 1))
+            padding: 2px
+            float: left
+
+            video
+                border-radius: 12px
+
+        .info
+            width: 548px
+            padding: 0 0 0 92px
+            float: left
+
+            .title
+                height: 76px
+                font-size: 56px
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                line-height: 76px
+                background: linear-gradient(343deg, #FF00E5 0%, #FFA200 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                margin: 0 0 16px
+
+            .text
+                height: 72px
+                font-size: 23px
+                font-family: Avenir-Medium, Avenir
+                font-weight: 500
+                color: #FFFFFF
+                line-height: 36px
+
+            .cardName
+                height: 30px
+                font-size: 22px
+                font-family: Avenir-Black, Avenir
+                font-weight: 900
+                color: #FFFFFF
+                line-height: 30px
+                margin: 38px 0 43px
+
+            .btn
+                width: 456px
+                height: 66px
+                line-height: @height
+                text-align: center
+                font-size: 22px
+                font-family: Avenir-Heavy, Avenir
+                font-weight: 800
+                margin: 0 0 32px
+
+                &.reOpen
+                    btnColor(1)
+                    border: 0 none
+
+                &.share
+                    background: #FFFFFF
+                    box-shadow: 27px 27px 80px 0px rgba(0, 0, 0, 0.4)
+                    border-radius: 8px
+                    color: #25252D
+
+    .modal-box
+        .modal-content-box
+            color: #fff
+
+            &.open
+                height: 690px
+                padding: 50px 0
+
+            &.success
+                height: 480px
+                padding: 50px 0
+
+            &:before
+                content: ' '
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                backdrop-filter: blur(50px)
+                z-index: 2
+
+            .modal-content
+                position: relative
+                z-index: 6

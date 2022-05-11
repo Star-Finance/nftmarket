@@ -1,0 +1,318 @@
+@-webkit-keyframes fadeInDown {
+    from {
+        /* opacity: 0; */
+        -webkit-transform: translate3d(0, torem(-60), 0);
+        transform: translate3d(0, torem(-60), 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        /* opacity: 0; */
+        -webkit-transform: translate3d(0, torem(-60), 0);
+        transform: translate3d(0, torem(-60), 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInDownOpacity {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, torem(-74), 0);
+        transform: translate3d(0, torem(-74), 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDownOpacity {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, torem(-74), 0);
+        transform: translate3d(0, torem(-74), 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.BoomDetail
+    .modal-win-prize
+        height: 5.8rem
+        display: flex
+        flexCenter()
+        .modal-content-lose
+             text-align: center
+             img
+               width: torem(244)
+               height: torem(131)
+               margin-bottom: torem(30)
+            .title
+                font-size: torem(54);
+                font-family: Avenir-Heavy, Avenir;
+                font-weight: 800;
+                color: #FFFFFF;
+                letter-spacing: torem(1);
+                margin-bottom: torem(12)
+            .desc
+                font-size: torem(20);
+                font-family: Avenir-Book, Avenir;
+                font-weight: normal;
+                color: #FFFFFF;
+        .modal-content-win
+            flexCenter()
+            >div
+              margin: 0 torem(26)
+            .left
+                display: flex
+                flex-direction: column
+                justify-content: center
+                .combination
+                    display: flex
+                    perspective:torem(800);
+                    .item
+                        .div-img
+                            border-radius: torem(10)
+                            width: torem(350)
+                            height: torem(350)
+                            box-shadow: torem(0) torem(2) torem(24) torem(2) rgba(#000,0.7);
+                    .one
+                        transform:rotateY(22deg)
+                    .two
+                        transform:rotateY(-22deg)
+            .right
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height:torem(380)
+                .top
+                    .title
+                        font-size: torem(74);
+                        font-family: TransformersMovie;
+                        color: #FFFFFF;
+                        letter-spacing: torem(2);
+                        line-height: torem(90)
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin-bottom: torem(8)
+                    .boom-num
+                        font-size: torem(24);
+                        font-family: Avenir-Medium, Avenir;
+                        font-weight: 500;
+                        color: #AAACC1;
+                .bottom
+                    .prize-amount
+                        font-size: torem(34);
+                        color: #FFFFFF;
+                        letter-spacing: torem(2);
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                       
+                        span
+                         font-size: torem(74)
+                         margin-right: torem(16)
+                         display: inline-block
+                         font-family: Trattatello;
+                    .btn
+                         btnColor(1)
+                         flexCenter()
+                         border:0
+                         width: torem(420);
+                         height: torem(60);
+                         border-radius: torem(8);
+                         margin: 0 0 torem(10) 0
+                         font-size: torem(24);
+                         font-family: PingFangSC-Semibold, PingFang SC;
+                         font-weight: 600;
+                    .desc
+                        font-size: torem(17);
+                        font-family: PangMenZhengDao;
+                        color: #AAACC1;
+
+    .winner
+        display: flex
+        justify-content: center
+        padding-top: torem(90)
+        padding-bottom: torem(90)
+        margin-top: torem(20)
+        background-image: url(../img/winner_bg.png)
+        // background-repeat: no-repeat;
+        // background-position: center center
+        >div
+          margin: 0 torem(70)
+        .left
+           .info
+                >.title
+                    text-align: center
+                    height: torem(60);
+                    font-size: torem(56);
+                    font-family: TransformersMovie;
+                    color: #FFFFFF;
+                    line-height: torem(60);
+                    letter-spacing: torem(1);
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: torem(36)
+               .combination
+                    display: flex
+                    perspective:torem(800);
+                    .item
+                        .div-img
+                            width: torem(280)
+                            height: torem(280)
+                            margin-bottom: torem(20)
+                            box-shadow: torem(0) torem(2) torem(24) torem(2) rgba(#FF00E5,0.3);
+                        .num
+                            font-size: torem(28);
+                            font-family: Avenir-Heavy, Avenir;
+                            font-weight: 800;
+                            color: #FFFFFF; 
+                            text-align: center
+                    .one
+                        transform:rotateY(22deg)
+                    .two
+                        transform:rotateY(-22deg)
+                .lucky-user
+                    margin-top: torem(10)
+                    .title
+                        margin-bottom: torem(10)
+                        width: torem(150);
+                        height: torem(34);
+                        font-size: torem(24);
+                        font-family: Avenir-Heavy, Avenir;
+                        font-weight: 800;
+                        color: #FFFFFF;
+                        line-height: torem(33);
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    .address
+                        width: torem(568);
+                        height: torem(30);
+                        font-size: torem(22);
+                        font-family: Avenir-Black, Avenir;
+                        font-weight: 900;
+                        color: #FFFFFF;
+                        line-height: torem(30);
+        .right
+            .title
+                font-size: torem(28);
+                font-family: Avenir-Black, Avenir;
+                font-weight: 900;
+                color: #FFFFFF;
+                margin-bottom: torem(24)  
+            .table
+                 color:#fff
+                 .table-head
+                     display: flex
+                     font-size: torem(24)
+                     margin-bottom: torem(24)
+                     color: #6B6C80
+                 .combin
+                     width: torem(360)
+                 .grade
+                     width: torem(210)
+                 .address
+                     width: torem(130)
+                 .table-body
+                     font-size: torem(20)
+                     height: torem(386)
+                     overflow: hidden
+                     position relative
+                     .shadow
+                         position: absolute
+                         width: 100%
+                         height: torem(75);
+                     .top-shadow
+                         top:0
+                         background: linear-gradient(180deg, #100D27 0%, rgba(16, 13, 39, 0) 100%);
+                     .bottom-shadow
+                         bottom:0
+                         background: linear-gradient(180deg, rgba(16, 13, 39, 0)  0%, #100D27  100%);
+                        // >.TransitionGroup
+                        // transform: translateY(torem(-0))
+                     .slide-enter 
+                        margin-top:torem(-60)
+                        //transform: translateY(torem(-60));
+                     .animated 
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                        animation-timing-function: linear;
+                    .fadeInDown 
+                        -webkit-animation-name: fadeInDown;
+                        animation-name: fadeInDown;
+                     .fadeInDownOp 
+                        -webkit-animation-name: fadeInDownOpacity;
+                        animation-name: fadeInDownOpacity;
+                         
+                     .row
+                         display: flex
+                            //margin-bottom: torem(22)
+                         transition: margin 1s linear;
+                         height: torem(60);
+                         &:nth-child(n+7)
+                             display: flex
+                            // .grade
+                            //     color:#FF7F11;
+                         .prize1
+                            color: #FF246C; 
+                         .prize2
+                            color: #FF7F11; 
+                         .prize3
+                            color: #E8B807; 
+                         .prize4
+                            color: #1BB1FF; 
+                            // .prize4
+                            //     color: #A942FF; 
+                         .combin
+                             display: flex
+                             .nft
+                                 display: flex
+                                 margin-right: torem(26)
+                                 min-width:torem(105);
+                                 .nft-img
+                                     width: torem(36);
+                                     height: torem(36);
+                                     border-radius: torem(4)
+                                     margin-right: torem(14)
+                                 .nft-img-1
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/1.png)
+                                 .nft-img-2
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/2.png)
+                                 .nft-img-3
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/3.png)
+                                 .nft-img-4
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/4.png)
+                                 .nft-img-5
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/5.png)
+                                 .nft-img-6
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/6.png)
+                                 .nft-img-7
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/7.png)
+                                 .nft-img-8
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/8.png)
+                                 .nft-img-9
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/9.png)
+                                 .nft-img-10
+                                     background-image: url(https://nftbomb.org/metadata/luka-bsc-testnet-video/10.png)
+

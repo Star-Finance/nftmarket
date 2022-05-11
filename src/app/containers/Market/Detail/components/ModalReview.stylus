@@ -1,0 +1,136 @@
+.ModalReview
+   
+    .ant-modal-body
+        padding: 0
+    .ant-modal-content
+        background: rgba(44, 45, 58, 1)
+        border-radius: 16px
+        padding: 20px 0
+
+    .modalTitle
+        position: relative
+        color:#fff
+        border-bottom: 1px solid rgba(255,255,255,0.15)
+        padding:0 20px 20px
+        .title
+            font-size: 24px
+            color: #fff
+            text-align: center
+
+        em
+            position: absolute
+            top: 5px
+            right: 20px
+            width: 18px
+            height: 18px
+            display: block
+            background: url('../../../../components/LogoutDialog/img/close.png') no-repeat
+            background-size: 100% 100%
+            text-indent: -999em
+            overflow: hidden
+            cursor: pointer
+
+    .modalMain
+        color:rgba(255,255,255,0.8)
+        border-radius: 9px
+        // padding: 0 22px 36px
+        box-sizing: border-box
+        padding: 0 34px 16px
+        font-size: 16px
+        justifyContentSpaceBetween()
+        margin: 20px 0 0
+        .content>p
+            margin:4px 0 24px 0
+            font-size: 20px
+            color: #AAACC1;
+        .score-box
+            // border:1px solid rgba(255,255,255,0.2)
+            // margin-top: 24px
+            border-radius: 4px
+            font-size: 18px
+
+            .head
+                padding: 12px 36px 
+                display: flex
+                // border-bottom: 1px solid rgba(255,255,255,0.2)
+                .left
+                    display: flex
+                    align-items: center
+                    color:#fff
+                    font-weight: 700
+                    font-size: 18px
+                    img
+                      margin-left: 20px
+                      cursor pointer
+                .right
+                    flex:1
+                    margin-left: 20px
+            .body
+                padding: 0 36px
+                .item:first-child
+                    .value
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        background: linear-gradient(354deg, #FF477F 0%, #FF8923 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                .item
+                    padding: 12px 0
+                    display: flex
+                    // border-bottom: 1px solid rgba(255,255,255,0.2)
+                    .name
+                        width: 232px
+                        color: #AAACC1;
+                    .value
+                        color:#fff
+                        a
+                         color:#fff
+                // .item:nth-child(1) .value
+                //     color:#1890ff
+                .item:last-child
+                    border-bottom: 0
+    .ModalBtn
+        justifyContentCenter()
+        margin: 17px 0 0
+        padding-top:16px
+        font-size: 16px
+        border-top: 1px solid rgba(255,255,255,0.15)
+        .ant-checkbox-wrapper
+            color: #8485A0;
+            font-size: 18px
+        .btn
+            width: 120px
+            height: 36px
+            line-height: @height
+            text-align: center
+            color: #fff
+            border: 1px solid #616570
+            border-radius: 18px
+
+            &:hover
+                background: #2781FF
+                border: 1px solid #2781FF
+                cursor: pointer
+                
+     checkbox-border-color()
+        border-color: rgba(253, 52, 110, 1)
+     .ant-checkbox-input:focus+.ant-checkbox-inner, .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner
+            checkbox-border-color()
+    .ant-checkbox-checked 
+        .ant-checkbox-inner:after
+            checkbox-border-color()
+    .ant-checkbox-checked:after
+        checkbox-border-color()
+    .ant-checkbox-wrapper
+        color: rgba(255, 255, 255, 0.8)
+    .ant-checkbox-inner
+        background-color: transparent
+        border-color: #8485A0;
+    .ant-checkbox-input:focus+.ant-checkbox-inner, .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner
+         checkbox-border-color()
+    .ant-checkbox-checked 
+        .ant-checkbox-inner
+         checkbox-border-color()
+    .ant-checkbox
+        top:0.1em

@@ -1,0 +1,60 @@
+.page-myNft
+    .container
+        background: url('./img/bg.png') no-repeat top center
+        background-size: 100% 100%
+        position: relative
+        // padding: 92px 0 0
+        height: 100%
+        box-sizing: border-box
+
+        .content
+            overflow:hidden
+            .series
+                height: 33px
+                font-size: 20px
+                font-family: PingFangSC-Regular, PingFang SC
+                font-weight: 400
+                color: #FFFFFF
+                line-height: 33px
+                // margin:50px 0 0 50px
+                margin:20px 0 0 50px
+            .my
+                width: 184px
+                height: 65px
+                font-size: 32px
+                font-family: PingFangSC-Medium, PingFang SC
+                font-weight: 500
+                color: #FFFFFF
+                line-height: 65px
+                margin:20px 0 0 50px
+                
+
+            .nftList
+        
+                .listMain
+                    display: flex
+                    margin:20px 0 0 50px
+                    flex-wrap: wrap
+                    .listitem
+                        padding:0 50px 50px 0
+                        .img
+                            width: 200px
+                            height:300px
+                            position relative
+                           
+                            img
+                                width: 100%
+                                height: 100%
+
+                            .my-number
+                                height:30pxs
+                                position: absolute
+                                bottom 5px
+                                right: 5px
+                                font-size: 16px;
+                                font-family: Avenir-Medium, Avenir;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                                background-color: rgba(255,255,255,.251)
+                                line-height: 44px;
+                                border-radius: 8px;

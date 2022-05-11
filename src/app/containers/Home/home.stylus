@@ -1,0 +1,611 @@
+
+body
+    .swiper-pagination-bullet
+        background: rgba(#fff, 0.2)
+        size: 6px
+
+        &.swiper-pagination-bullet-active
+            background: #fff
+
+.page-home
+    .lt-header
+        top: 40px
+        position: fixed
+        background: none
+
+        .main
+            position: relative
+            z-index: 1
+
+        &:before
+            content: ' '
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: -1
+            backdrop-filter: blur(5px)
+
+        @media screen and (max-width: 768px)
+            background: #25252d
+            height: 44px
+            position: fixed
+            top: 0
+
+    .banner
+        color: #fff
+        position: relative
+        background: #25252D
+
+        @media screen and (max-width: 768px)
+            height: 203px
+            margin: 40px 0 0
+
+        .swiper-button-prev
+            background-image: url('./img/bannerArrowLeft.png')
+            background-size: 100% 100%
+            width: 83px
+            height: 112px
+            top: calc(50px + 50%)
+            transform: translateY(-50%)
+            left: 17px
+            opacity: 0.7
+
+            @media screen and (max-width: 768px)
+                width: 17px
+                height: 23px
+                top: calc(17px + 50%)
+
+            &.swiper-button-disabled
+                opacity: 0.25
+
+            &:after
+                display: none
+
+        .swiper-button-next
+            background-image: url('./img/bannerArrowRight.png')
+            background-size: 100% 100%
+            width: 83px
+            height: 112px
+            top: calc(50px + 50%)
+            transform: translateY(-50%)
+            right: 17px
+            opacity: 0.7
+
+            @media screen and (max-width: 768px)
+                width: 17px
+                height: 23px
+                top: calc(17px + 50%)
+
+            &.swiper-button-disabled
+                opacity: 0.25
+
+            &:after
+                display: none
+
+        .swiper-container
+            height: 100%
+
+            @media screen and (max-width: 768px)
+                height: 203px
+
+        .bannerItem
+            height: 100%
+
+            @media screen and (max-width: 768px)
+                height: 203px
+
+            .box
+                width: 1300px
+                margin: 0 auto
+                height: 100%
+                padding: 327px 20px 0
+                clear: both
+
+                @media screen and (max-width: 768px)
+                    width: 100%
+                    padding: 58px 20px 0
+                    box-sizing: border-box
+
+                .left
+                    width: 558px
+                    float: left
+
+                    @media screen and (max-width: 768px)
+                        width: 150px
+
+                    .title2
+                        // font-size: 58px
+                        background: url('./img/text4.png') no-repeat
+                        background-size: auto 100%
+                        size: 604px 147px
+                        margin: 45px 0 24px
+
+                        @media screen and (max-width: 768px)
+                            font-size: 12px
+                            padding: 0 0 0 10px
+
+                    .text
+                        width: 558px
+                        padding: 10px 20px
+                        font-size: 17px
+                        box-sizing: border-box
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.28) 100%)
+                        font-family: Avenir-Medium, Avenir
+
+                        @media screen and (max-width: 768px)
+                            font-size: 12px
+                            padding: 10px
+                            width: auto
+                            height: auto
+
+                        .btnWrap
+                            display: flex
+                            padding: 20px 0 10px
+
+                            .btn
+                                width: 222px
+                                height: 50px
+                                line-height: @height
+                                text-align: center
+                                border-radius: 6px
+                                border: 1px solid #FFFFFF
+                                color: #fff
+
+                                &:nth-child(2)
+                                    margin: 0 25px
+
+                .right
+                    width: 638px
+                    height: 510px
+                    float: right
+                    display: block
+                    
+                    background: url('./img/banner5.png') no-repeat
+                    background-size: 100% auto
+
+                    @media screen and (max-width: 768px)
+                        width: 155px
+                        height: 100px
+                        background-size: auto 100% !important
+
+            .btnBox
+                padding: 46px 20px
+                display: flex
+                font-size: 17px
+                font-weight: bold
+
+                @media screen and (max-width: 768px)
+                    display: none
+
+                .Blind
+                    width: 166px
+                    height: 50px
+                    line-height: @height
+                    text-align: center
+                    background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                    border-radius: 6px
+                    position: relative
+                    cursor: pointer
+
+                    span
+                        position: relative
+                        z-index: 1
+
+                    &:after
+                        display: block
+                        content: ' '
+                        width: 156px
+                        height: 50px
+                        background: linear-gradient(24deg, #FF00E5 0%, #FFA200 100%)
+                        border-radius: 8px
+                        filter: blur(9px)
+                        position: absolute
+                        top: 6px
+                        right: 5px
+
+                .UserSwapToken
+                    margin-left: 30px
+
+                .Messi
+                    width: 222px
+                    height: 50px
+                    line-height: @height
+                    text-align: center
+                    border-radius: 6px
+                    border: 1px solid #FFFFFF
+                    margin: 0 0 0 28px
+                    cursor: pointer
+
+            &.banner0
+                background: #25252D url('./img/banner.jpeg') no-repeat top center
+                background-size: auto 100%
+
+                .box
+                    .right
+                        background: url('./img/banner5.png') no-repeat
+                        background-size: 100% auto
+
+            &.banner1
+                background: #25252D url('./img/banner.jpeg') no-repeat top center
+                background-size: auto 100%
+
+                .box
+                    .left
+                        .title1
+                            background: url('./img/text1.png') no-repeat
+                            background-size: auto 100%
+                            size: 604px 147px
+                            margin: 45px 0 24px
+
+                        .text
+                            width: auto
+                            display: inline-block
+
+                    .right
+                        background: url('./img/banner1.png') no-repeat
+                        background-size: 100% auto
+
+            &.banner2
+                background: #25252D url('./img/banner.jpeg') no-repeat top center
+                background-size: auto 100%
+
+                .box
+                    .left
+                        .title2
+                            background: url('./img/text2.png') no-repeat
+                            background-size: auto 100%
+                            size: 632px 147px
+                            margin: 64px 0 16px
+
+                    .right
+                        background: url('./img/banner2.png') no-repeat
+                        background-size: 100% auto
+
+            &.banner3
+                background: none
+                background-size: auto 100%
+                position: relative
+
+                .video
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    top: 0
+                    right: 0
+                    size: 100%
+                    object-fit: fill
+
+                .box
+                    z-index: 1
+                    position: relative
+
+                    .left
+                        // .title
+                        // font-size: 57px
+                        .title2
+                            background: url('./img/text3.png') no-repeat
+                            background-size: auto 100%
+                            size: 732px 156px
+
+                        .text
+                            background: none
+                            padding: 48px 0 0 10px
+
+                    .right
+                        background: url('./img/banner3.png') no-repeat top center
+                        background-size: auto 100%
+
+            &.banner6
+                background: #25252D url('./img/banner.jpeg') no-repeat top center
+                background-size: auto 100%
+
+                .left
+                    .title2
+                        background: url('./img/text6.png') no-repeat
+                        background-size: 100% auto 
+                        size: 558px 120px
+
+                .box
+                    .right
+                        background: url('./img/banner6.png') no-repeat
+                        background-size: 100% auto
+
+    .content
+        padding: 88px 0 0
+        background: #25252D
+        color: #fff
+
+        @media screen and (max-width: 768px)
+            padding: 26px 0 0
+
+        .box
+            max-width: 1404px
+            margin: 0 auto
+            padding: 0 20px
+
+            @media screen and (max-width: 1440px)
+                max-width: 1060px
+
+            @media screen and (max-width: 1020px)
+                max-width: 706px
+
+            @media screen and (max-width: 768px)
+                width: 100%
+
+            .header
+                justifyContentSpaceBetween()
+
+                .title
+                    height: 42px
+                    line-height: 42px
+                    font-size: 40px
+                    font-family: Avenir-Black, Avenir
+                    font-weight: 900
+                    color: #FFFFFF
+
+                    @media screen and (max-width: 768px)
+                        font-size: 20px
+
+                .more
+                    margin: 20px 0 0
+                    height: 20px
+                    line-height: @height
+                    font-size: 18px
+                    font-family: Avenir-Medium, Avenir
+                    font-weight: 500
+                    color: rgba(#FFFFFF, 0.5)
+                    cursor: pointer
+
+                    &:hover
+                        color: rgba(#fff, 0.3)
+
+                    @media screen and (max-width: 768px)
+                        font-size: 14px
+                        height: 26px
+                        line-height: @height
+
+            .swiper-container
+                box-sizing: border-box
+
+            .swiper-button-prev
+                background-image: url('./img/arrowLeft.png')
+                background-size: 100% 100%
+                size(54px)
+                left: -27px
+                margin-top: -27px
+                z-index: 1
+
+                @media screen and (max-width: 768px)
+                    display: none
+
+                &:after
+                    display: none
+
+            .swiper-button-next
+                background-image: url('./img/arrowRight.png')
+                background-size: 100% 100%
+                size(54px)
+                right: -27px
+                margin-top: -27px
+                z-index: 1
+
+                @media screen and (max-width: 768px)
+                    display: none
+
+                &:after
+                    display: none
+
+            .collections
+                margin: 0 0 120px
+
+                @media screen and (max-width: 768px)
+                    margin: 0 0 20px
+
+                .main
+                    margin: 44px 0 0
+                    position: relative
+
+                    @media screen and (max-width: 768px)
+                        margin: 22px 0 0
+
+                    .item
+                        width: 388px
+                        border-radius: 10px
+                        overflow: hidden
+                        cursor: pointer
+
+                        @media screen and (max-width: 768px)
+                            padding: 0 0 40px
+
+                        .max
+                            position: relative
+
+                            .user
+                                position: absolute
+                                width: 100%
+
+                                .avatar
+                                    size(110px)
+                                    border: 3px solid rgba(#fff, 0.5)
+                                    border-radius: 110px
+                                    overflow: hidden
+                                    margin: 58px auto 10px
+                                    background-size: cover
+
+                                .name
+                                    text-align: center
+                                    font-size: 28px
+                                    font-family: Avenir-Black, Avenir
+                                    font-weight: 900
+                                    color: #FFFFFF
+
+                                .address
+                                    text-align: center
+                                    font-size: 16px
+                                    font-family: Avenir-Medium, Avenir
+                                    font-weight: 500
+                                    color: #FFFFFF
+
+                            .img
+                                height: 280px
+                                background-size: 100% auto
+                                background-position: center
+
+                        .min
+                            justifyContentSpaceBetween()
+                            margin: 5px 0 0
+
+                            span
+                                display: block
+                                width: 125px
+                                height: 102px
+                                background-size: 100% auto
+                                background-position: center
+
+                                @media screen and (max-width: 768px)
+                                    flex: 1
+
+                                    &:nth-child(2)
+                                        margin: 0 5px
+
+            .boom
+                margin: 0 0 77px
+
+                @media screen and (max-width: 768px)
+                    margin: 0 0 20px
+
+                .main
+                    margin: 44px 0 0
+                    position: relative
+
+                    @media screen and (max-width: 768px)
+                        margin: 22px 0 0
+
+                    .item
+                        width: 340px
+                        height: 245px
+                        position: relative
+                        border-radius: 5px
+
+                        @media screen and (max-width: 768px)
+                            height: 285px
+                            padding: 0 0 40px
+
+                        .itemMain
+                            position: absolute
+                            size(100%)
+
+                            .itemTitle
+                                border-bottom: 1px solid rgba(#fff, 0.3)
+                                height: 50px
+                                line-height: @height
+                                color: #fff
+                                justifyContentSpaceBetween()
+                                padding: 0 14px
+
+                                .itemText
+                                    font-size: 18px
+
+                                .itemTime
+                                    font-size: 18px
+                                    font-weight: normal
+                                    background: url('./img/boomTime.png') no-repeat left center
+                                    background-size: 17px auto
+                                    padding: 0 0 0 27px
+
+                                    span
+                                        background: linear-gradient(180deg, #EEEEEE 0%, #D8D8D8 100%)
+                                        -webkit-background-clip: text
+
+                            .itemNumber
+                                text-align: center
+                                font-size: 34px
+                                font-family: Avenir-Black, Avenir
+                                font-weight: 900
+                                margin: 29px 0 -10px
+                                background: linear-gradient(180deg, #EEEEEE 0%, #D8D8D8 100%)
+                                -webkit-background-clip: text
+                                -webkit-text-fill-color: transparent
+
+                            .itemType
+                                font-size: 20px
+                                font-family: Avenir-Medium, Avenir
+                                font-weight: 500
+                                text-align: center
+                                color: #A7A7AF
+
+                            .itemBtn
+                                width: 213px
+                                height: 50px
+                                line-height: @height
+                                font-size: 20px
+                                font-family: Avenir-Heavy, Avenir
+                                font-weight: 800
+                                margin: 17px auto 0
+                                btnColor(1)
+
+                        img
+                            size(100%)
+
+            .newest
+                padding: 0 0 60px
+                width: 100%
+
+                .main
+                    margin: 44px auto 0
+                    padding: 0 0 26px
+                    clear: both
+
+                    @media screen and (max-width: 768px)
+                        margin: 22px 0 0
+                        display: block
+
+                    .item
+                        padding: 20px 0 0 0
+                        cursor: pointer
+                        box-sizing: border-box
+                        margin: 0 28px 28px 0
+                        float: left
+
+                        &.item1155
+                            background: url('./img/1155.png') no-repeat top center
+                            background-size: calc(100% - 20px) auto
+
+                        &:nth-child(4n)
+                            margin: 0 0 28px
+
+                        @media screen and (max-width: 1440px)
+                            &:nth-child(4n)
+                                margin: 0 28px 28px 0
+
+                            &:nth-child(3n)
+                                margin: 0 0 28px
+
+                        @media screen and (max-width: 1020px)
+                            &:nth-child(4n), &:nth-child(3n)
+                                margin: 0 28px 28px 0
+
+                            &:nth-child(2n)
+                                margin: 0 0 28px
+
+                        @media screen and (max-width: 768px)
+                            margin: 0 0 10px !important
+                            float: none
+
+                            .cardBlock
+                                width: 100%
+
+                .loadMore
+                    text-align: center
+                    height: 60px
+                    line-height: @height
+                    color: #fff
+                    font-size: 22px
+                    background: rgba(#fff, 0.2)
+                    border-radius: 29px
+                    cursor: pointer
+
+                    &.disable
+                        cursor: not-allowed
